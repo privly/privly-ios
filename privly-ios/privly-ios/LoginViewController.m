@@ -69,7 +69,9 @@
             if (jsonResponse != nil && error == nil) {
                 NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
                 NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
+                [self.authenticationTokenLabel setText:authenticationKey];
                 NSLog(@"%@", authenticationKey);
+                
             }
         } else if ([data length] == 0 && error == nil) {
             NSLog(@"Success. No response.");
@@ -77,15 +79,10 @@
             NSLog(@"Something went wrong");
         }
     }];
-}
-
-- (NSString *)urlEncodeUsingEncoding:(CFStringEncoding)encoding {
     
-    return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                                     (__bridge CFStringRef)self,
-                                                                     NULL,
-                                                                     CFSTR("!*'();:@&=+$,/?%#[]"),
-                                                                     encoding));
+    [self.view endEditing:YES];
+
+    
 }
 
 @end
