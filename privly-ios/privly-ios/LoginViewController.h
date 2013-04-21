@@ -10,4 +10,12 @@
 
 @interface LoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *authenticationTokenLabel;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)getToken:(id)sender;
+-(NSString *)urlEncodeString:(NSString *)thisString
+               UsingEncoding:(NSStringEncoding)encoding;
+
 @end

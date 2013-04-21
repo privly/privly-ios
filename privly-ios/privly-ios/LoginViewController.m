@@ -29,10 +29,63 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)getToken:(id)sender {
+    NSString *email = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
+    
+    NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"
+                           ];
+    NSURL *requestURL = [NSURL URLWithString:stringURL];
+    NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+    
+    // Set request's method
+    [mutableURLRequest setHTTPMethod:@"POST"];
+    
+    // Set request's parameters
+    NSString *parameterString = [NSString stringWithFormat:@"email=%@&password=%@", email, password];
+    NSData *parameterData = [parameterString dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    [mutableURLRequest setHTTPBody:parameterData];
+    
+    // Set request's Content-Type
+    [mutableURLRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        // Was the request successful ?
+        if ([data length] > 0 && error == nil) {
+            // Deserialize JSON response and get authentication key
+            id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            if (jsonResponse != nil && error == nil) {
+                NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
+                NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
+                NSLog(@"%@", authenticationKey);
+            }
+        } else if ([data length] == 0 && error == nil) {
+            NSLog(@"Success. No response.");
+        } else if (error != nil) {
+            NSLog(@"Something went wrong");
+        }
+    }];
+}
+
+- (NSString *)urlEncodeUsingEncoding:(CFStringEncoding)encoding {
+    
+    return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                     (__bridge CFStringRef)self,
+                                                                     NULL,
+                                                                     CFSTR("!*'();:@&=+$,/?%#[]"),
+                                                                     encoding));
 }
 
 @end
