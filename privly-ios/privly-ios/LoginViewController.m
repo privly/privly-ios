@@ -32,6 +32,12 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    NSString * authToken;
+    if ((authToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"auth_token"])) {
+        [self.authenticationTokenLabel setText:authToken];
+    } else {
+        [self.authenticationTokenLabel setText:@"No token"];
+    }    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +45,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark API CALLS
 
 - (IBAction)getToken:(id)sender {
     NSString *email = self.emailTextField.text;
@@ -71,7 +79,10 @@
                 NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
                 [self.authenticationTokenLabel setText:authenticationKey];
                 NSLog(@"%@", authenticationKey);
-                
+                // Save token in user preferences
+                NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+                [userDefaults setObject:authenticationKey forKey:@"auth_token"];
+                [userDefaults synchronize];
             }
         } else if ([data length] == 0 && error == nil) {
             NSLog(@"Success. No response.");
@@ -81,8 +92,6 @@
     }];
     
     [self.view endEditing:YES];
-
-    
 }
 
 @end
