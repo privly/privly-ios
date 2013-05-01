@@ -29,13 +29,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    NSString * authToken;
-    if ((authToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"auth_token"])) {
-        [self.authenticationTokenLabel setText:authToken];
-    } else {
-        [self.authenticationTokenLabel setText:@"No token"];
-    }    
+    [super viewWillAppear:animated];   
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +38,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark API CALLS
+#pragma mark - Authentication
 
 - (IBAction)getToken:(id)sender {
     NSString *email = self.emailTextField.text;
@@ -75,7 +69,6 @@
             if (jsonResponse != nil && error == nil) {
                 NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
                 NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
-                [self.authenticationTokenLabel setText:authenticationKey];
                 NSLog(@"%@", authenticationKey);
                 // Save token in user preferences
                 NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -88,8 +81,9 @@
             NSLog(@"Something went wrong");
         }
     }];
-    
     [self.view endEditing:YES];
+    ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+    [self.navigationController pushViewController:applicationTypeViewController animated:YES];
 }
 
 @end

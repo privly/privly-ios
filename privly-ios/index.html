@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>ZeroBin</title>
+<link id="privlyStylesheet" type="text/css" rel="stylesheet" href="/zero_bin/css/privly.css?2" />
+<link id="zerobinStylesheet" type="text/css" rel="stylesheet" href="/zero_bin/css/zerobin.css?2" />
+<script type="text/javascript" src="/zero_bin/js/jquery.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/sjcl.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/base64.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/rawdeflate.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/rawinflate.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/zerobin.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/privlyservice.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/privlyshare.js?2"></script>
+<script type="text/javascript" src="/zero_bin/js/privly_tooltip.js?2"></script>
+
+<!--[if lt IE 10]>
+<style> body {padding-left:60px;padding-right:60px;} div#ienotice {display:block;} </style>
+<![endif]-->
+
+<!--[if lt IE 10]>
+<style> div#ienotice {display:block; }  div#oldienotice {display:block; } </style>
+<![endif]-->
+
+</head>
+  <body privly-exclude="true">
+    
+    <div id="privlyHeightWrapper">
+    <div id="wrapper_center">
+    <div id="status">&nbsp;</div>
+    <div id="errormessage" style="display:none"></div>
+    <div id="pastelink" style="display:none;"></div>
+    <div id="cleartext" style="display:none;"></div>
+    <div class="iframe_hide">
+      <textarea id="message" name="message" cols="80" rows="5" style="display:none;"></textarea>
+      <br />
+    </div>
+    
+    <div class="iframe_hide">
+      <div id="aboutbox">
+          <div id="manage_link_div" style="display:none;">
+            <a target="_blank" href="" id="manage_link">Manage this content (must have permission).</a>
+            <br /><br />
+          </div>
+          If you don't know what you are looking at, you should 
+          <a href="https://priv.ly/pages/about">read about Privly.</a>
+          This is a closed-Alpha Privly form. You must be logged into a 
+          closed Alpha account to use this form. Accounts are currently limited to developers.
+          Data is encrypted/decrypted <i>in the browser</i> using 256 
+          bits AES. This page is the <a href="https://github.com/privly/ZeroBin">
+            Privly Fork</a> of the 
+            <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">
+              ZeroBin Project</a>.<br />
+          <span style="text-decoration:blink;font-size:10pt;color:#a4b3c4;">
+            &#9654;</span> 
+            Note: This is pre-release software. Do NOT use this expecting 
+            privacy and security.
+      </div>
+      
+      <noscript><div class="nonworking">Javascript is required for ZeroBin to work.<br>Sorry for the inconvenience.</div></noscript>
+      <div id="oldienotice" class="nonworking">ZeroBin requires a modern browser to work.</div>
+      <div id="ienotice">Still using Internet Explorer ? &nbsp;Do yourself a favor, switch to a modern browser: 
+        <a href="http://www.mozilla.org/firefox/">Firefox</a>, 
+        <a href="http://www.opera.com/">Opera</a>, 
+        <a href="http://www.google.com/chrome">Chrome</a>, 
+        <a href="http://www.apple.com/safari">Safari</a>...
+      </div>
+      <div id="toolbar" style="display:none;">
+        <div id="share_form_elements" style="display:none;">
+          <br />
+          <label for="post_public">Public: </label>
+          <input id="post_public" type="checkbox" value="1" onclick="$('#csv_form').slideDown('slow');" name="post[public]" checked="checked">
+          <div id="csv_form" style="display:none;">
+            <p>
+                Sharing Rule: <br /><span id="type_mesasge">Type an Email, domain, IP Address, or password</span>
+                <br />
+                <input autocomplete="off" id="share_share_csv" name="share[share_csv]" style="display:none;" type="text" value="" />
+                <input id="identity_provider_name" type="hidden" value="Password" name="share[identity_provider_name]">
+                <input autocomplete="off" id="share_identity" name="share[identity]" onchange="identityIdAndMessage($('#share_identity').val(), $('#type_mesasge'), $('#identity_provider_name'))" onkeyup="identityIdAndMessage($('#share_identity').val(), $('#type_mesasge'), $('#identity_provider_name'))" onsubmit="identityIdAndMessage($('#share_identity').val(), $('#type_mesasge'), $('#identity_provider_name'))" size="30" type="text" />
+                <br />
+                <input checked="checked" id="share_can_show" name="share[can_show]" type="checkbox" value="1" />
+                <label for="share_can_show">Can View</label>
+                <input id="share_can_destroy" name="share[can_destroy]" type="checkbox" value="1" />
+                <label for="share_can_destroy">Can destroy</label>
+                <input id="share_can_update" name="share[can_update]" type="checkbox" value="1" />
+                <label for="share_can_update">Can update</label>
+                <input id="share_can_share" name="share[can_share]" type="checkbox" value="1" />
+                <label for="share_can_share">Can share</label>
+            </p>
+          </div>
+        </div>
+        <button id="sendbutton" onclick="send_data();return false;" style="display:none;">
+          <img src="/zero_bin/img/icon_send.png" width="18" height="15" />Encrypt+Send
+        </button>
+        <button id="newbutton" onclick="window.location.href=scriptLocation();return false;" style="display:none;">
+          <img src="/zero_bin/img/icon_new.png" width="11" height="15" />New
+        </button>
+        <button id="clonebutton" onclick="initializePosting();return false;" style="display:none;">
+          <img src="/zero_bin/img/icon_clone.png" width="15" height="17" />Clone
+        </button>
+      </div>
+      <div id="loginprompt" style="display:none;">
+        <p style="font-size:200%;color:white;">
+          You need to <a style="color:white;" target="_blank" href="/users/sign_in">log in</a> to this server first.
+        </p>
+        <button id="loginbutton" onclick="initializePosting();return false;">
+          <img src="/zero_bin/img/icon_new.png" width="11" height="15" />I Am Now Logged In
+        </button>
+      </div>
+    </div><!-- iframe_hide -->
+    </div><!-- wrapper_center -->
+    </div><!-- privlyHeightWrapper -->
+  </body>
+</html>

@@ -1,0 +1,21 @@
+/**
+ * Stylesheet for when the application is embedded in a page
+ */
+ 
+.iframe_hide {
+display: none;
+}
+ 
+html {
+  cursor:pointer;
+}
+
+#tooltip {
+  position:absolute;
+  border:1px solid #333;
+  background:#f7f5d1;
+  padding:1px 1px;
+  color:#333;
+  display:none;
+  font:14px Helvetica;
+}

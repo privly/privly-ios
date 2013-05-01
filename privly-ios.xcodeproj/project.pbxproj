@@ -17,7 +17,23 @@
 		358D71D81724752700979F57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D71724752700979F57 /* Default@2x.png */; };
 		358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D91724752700979F57 /* Default-568h@2x.png */; };
 		358D71E917248B3000979F57 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D71E717248B3000979F57 /* LoginViewController.m */; };
-		358D71EA17248B3000979F57 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D71E817248B3000979F57 /* LoginViewController.xib */; };
+		35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943DA173193E0009052DC /* ZeroBinPostViewController.m */; };
+		35A943EC17319F7C009052DC /* privly.css in Resources */ = {isa = PBXBuildFile; fileRef = 35A943DF17319F7C009052DC /* privly.css */; };
+		35A943ED17319F7C009052DC /* zerobin.css in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E017319F7C009052DC /* zerobin.css */; };
+		35A943EE17319F7C009052DC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E117319F7C009052DC /* index.html */; };
+		35A943EF17319F7C009052DC /* base64.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E317319F7C009052DC /* base64.js */; };
+		35A943F017319F7C009052DC /* jquery.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E417319F7C009052DC /* jquery.js */; };
+		35A943F117319F7C009052DC /* privly_tooltip.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E517319F7C009052DC /* privly_tooltip.js */; };
+		35A943F217319F7C009052DC /* privlyservice.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E617319F7C009052DC /* privlyservice.js */; };
+		35A943F317319F7C009052DC /* privlyshare.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E717319F7C009052DC /* privlyshare.js */; };
+		35A943F417319F7C009052DC /* rawdeflate.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E817319F7C009052DC /* rawdeflate.js */; };
+		35A943F517319F7C009052DC /* rawinflate.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E917319F7C009052DC /* rawinflate.js */; };
+		35A943F617319F7C009052DC /* sjcl.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943EA17319F7C009052DC /* sjcl.js */; };
+		35A943F717319F7C009052DC /* zerobin.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943EB17319F7C009052DC /* zerobin.js */; };
+		35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */; };
+		35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */; };
+		35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */; };
+		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +52,25 @@
 		358D71D91724752700979F57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		358D71E617248B3000979F57 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		358D71E717248B3000979F57 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		358D71E817248B3000979F57 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		35A943D9173193E0009052DC /* ZeroBinPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroBinPostViewController.h; sourceTree = "<group>"; };
+		35A943DA173193E0009052DC /* ZeroBinPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroBinPostViewController.m; sourceTree = "<group>"; };
+		35A943DF17319F7C009052DC /* privly.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = privly.css; sourceTree = "<group>"; };
+		35A943E017319F7C009052DC /* zerobin.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = zerobin.css; sourceTree = "<group>"; };
+		35A943E117319F7C009052DC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		35A943E317319F7C009052DC /* base64.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = base64.js; sourceTree = "<group>"; };
+		35A943E417319F7C009052DC /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		35A943E517319F7C009052DC /* privly_tooltip.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = privly_tooltip.js; sourceTree = "<group>"; };
+		35A943E617319F7C009052DC /* privlyservice.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = privlyservice.js; sourceTree = "<group>"; };
+		35A943E717319F7C009052DC /* privlyshare.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = privlyshare.js; sourceTree = "<group>"; };
+		35A943E817319F7C009052DC /* rawdeflate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rawdeflate.js; sourceTree = "<group>"; };
+		35A943E917319F7C009052DC /* rawinflate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rawinflate.js; sourceTree = "<group>"; };
+		35A943EA17319F7C009052DC /* sjcl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sjcl.js; sourceTree = "<group>"; };
+		35A943EB17319F7C009052DC /* zerobin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zerobin.js; sourceTree = "<group>"; };
+		35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewController.h; sourceTree = "<group>"; };
+		35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewController.m; sourceTree = "<group>"; };
+		35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationTypeViewController.xib; sourceTree = "<group>"; };
+		35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZeroBinPostViewController.xib; sourceTree = "<group>"; };
+		35A944001731A497009052DC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +121,14 @@
 				358D71D31724752700979F57 /* AppDelegate.m */,
 				358D71E617248B3000979F57 /* LoginViewController.h */,
 				358D71E717248B3000979F57 /* LoginViewController.m */,
-				358D71E817248B3000979F57 /* LoginViewController.xib */,
+				35A944001731A497009052DC /* LoginViewController.xib */,
+				35A943D9173193E0009052DC /* ZeroBinPostViewController.h */,
+				35A943DA173193E0009052DC /* ZeroBinPostViewController.m */,
+				35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */,
+				35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */,
+				35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */,
+				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
+				35A943F817319F81009052DC /* ZeroBin */,
 				358D71CA1724752700979F57 /* Supporting Files */,
 			);
 			path = "privly-ios";
@@ -105,6 +146,41 @@
 				358D71D91724752700979F57 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35A943DE17319F7C009052DC /* css */ = {
+			isa = PBXGroup;
+			children = (
+				35A943DF17319F7C009052DC /* privly.css */,
+				35A943E017319F7C009052DC /* zerobin.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		35A943E217319F7C009052DC /* js */ = {
+			isa = PBXGroup;
+			children = (
+				35A943E317319F7C009052DC /* base64.js */,
+				35A943E417319F7C009052DC /* jquery.js */,
+				35A943E517319F7C009052DC /* privly_tooltip.js */,
+				35A943E617319F7C009052DC /* privlyservice.js */,
+				35A943E717319F7C009052DC /* privlyshare.js */,
+				35A943E817319F7C009052DC /* rawdeflate.js */,
+				35A943E917319F7C009052DC /* rawinflate.js */,
+				35A943EA17319F7C009052DC /* sjcl.js */,
+				35A943EB17319F7C009052DC /* zerobin.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		35A943F817319F81009052DC /* ZeroBin */ = {
+			isa = PBXGroup;
+			children = (
+				35A943DE17319F7C009052DC /* css */,
+				35A943E117319F7C009052DC /* index.html */,
+				35A943E217319F7C009052DC /* js */,
+			);
+			name = ZeroBin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +238,12 @@
 				358D71D61724752700979F57 /* Default.png in Resources */,
 				358D71D81724752700979F57 /* Default@2x.png in Resources */,
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
-				358D71EA17248B3000979F57 /* LoginViewController.xib in Resources */,
+				35A943EC17319F7C009052DC /* privly.css in Resources */,
+				35A943ED17319F7C009052DC /* zerobin.css in Resources */,
+				35A943EE17319F7C009052DC /* index.html in Resources */,
+				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
+				35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */,
+				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +257,17 @@
 				358D71D01724752700979F57 /* main.m in Sources */,
 				358D71D41724752700979F57 /* AppDelegate.m in Sources */,
 				358D71E917248B3000979F57 /* LoginViewController.m in Sources */,
+				35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */,
+				35A943EF17319F7C009052DC /* base64.js in Sources */,
+				35A943F017319F7C009052DC /* jquery.js in Sources */,
+				35A943F117319F7C009052DC /* privly_tooltip.js in Sources */,
+				35A943F217319F7C009052DC /* privlyservice.js in Sources */,
+				35A943F317319F7C009052DC /* privlyshare.js in Sources */,
+				35A943F417319F7C009052DC /* rawdeflate.js in Sources */,
+				35A943F517319F7C009052DC /* rawinflate.js in Sources */,
+				35A943F617319F7C009052DC /* sjcl.js in Sources */,
+				35A943F717319F7C009052DC /* zerobin.js in Sources */,
+				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +388,7 @@
 				358D71DF1724752700979F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
