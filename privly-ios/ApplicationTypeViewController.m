@@ -53,7 +53,10 @@
 }
 
 - (void)switchToReadingMode {
-    UIAlertView *featureNotAvailableAlertView = [[UIAlertView alloc] initWithTitle:@"Feature Not Available" message:@"Reading capabilities will be added soon. " delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    UIAlertView *featureNotAvailableAlertView = [[UIAlertView alloc] initWithTitle:@"Feature Not Available"
+                                                                           message:@"Reading capabilities will be added soon. "
+                                                                          delegate:self cancelButtonTitle:@"Ok"
+                                                                 otherButtonTitles:nil];
     [featureNotAvailableAlertView show];
     // Push reading mode view controller
 }
