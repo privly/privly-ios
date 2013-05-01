@@ -1,9 +1,7 @@
 //
 //  ApplicationTypeViewController.m
 //  privly-ios
-//
-//  Created by devplayerx on 5/1/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
+//  Copyright 2013 The Privly Foundation.
 //
 
 #import "ApplicationTypeViewController.h"
@@ -53,7 +51,8 @@
 }
 
 - (void)switchToReadingMode {
-    NSLog(@"Feature not implemented yet.");
+    UIAlertView *featureNotAvailableAlertView = [[UIAlertView alloc] initWithTitle:@"Feature Not Available" message:@"Reading capabilities will be added soon. " delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [featureNotAvailableAlertView show];
     // Push reading mode view controller
 }
 @end

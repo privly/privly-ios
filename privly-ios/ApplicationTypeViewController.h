@@ -1,9 +1,7 @@
 //
 //  ApplicationTypeViewController.h
 //  privly-ios
-//
-//  Created by devplayerx on 5/1/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
+//  Copyright 2013 The Privly Foundation.
 //
 
 #import <UIKit/UIKit.h>
