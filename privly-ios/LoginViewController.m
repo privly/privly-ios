@@ -64,6 +64,8 @@
         // Set request's Content-Type
         [mutableURLRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
         
+        NSLog(@"Getting authentication token.");
+        
         NSOperationQueue *queue = [[NSOperationQueue alloc] init];
         [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
             // Was the request successful ?
@@ -73,11 +75,12 @@
                 if (jsonResponse != nil && error == nil) {
                     NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
                     NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
-                    NSLog(@"%@", authenticationKey);
+                    NSLog(@"Authentication token received: %@.", authenticationKey);
                     // Save token in user preferences
                     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
                     [userDefaults setObject:authenticationKey forKey:@"auth_token"];
                     [userDefaults synchronize];
+                    NSLog(@"Authentication token saved in user preferences.");
                 }
             } else if ([data length] == 0 && error == nil) {
                 NSLog(@"Success. No response.");
@@ -89,8 +92,6 @@
         ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
         [self.navigationController pushViewController:applicationTypeViewController animated:YES];
     }
-    
-    
 }
 
 @end
