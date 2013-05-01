@@ -19,7 +19,9 @@
         // Custom initialization
         self.title = @"Post Type";
         
-        UIBarButtonItem *readingMode = [[UIBarButtonItem alloc] initWithTitle:@"Read" style:UIBarButtonItemStylePlain target:self action:@selector(switchToReadingMode)];
+        UIBarButtonItem *readingMode = [[UIBarButtonItem alloc] initWithTitle:@"Read"
+                                                                        style:UIBarButtonItemStylePlain target:self
+                                                                       action:@selector(switchToReadingMode)];
         UINavigationItem *nav = self.navigationItem;
         [nav setRightBarButtonItem:readingMode];
         
