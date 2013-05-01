@@ -17,6 +17,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"Login";
     }
     return self;
 }
@@ -44,46 +45,52 @@
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     
-    NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"
-                           ];
-    NSURL *requestURL = [NSURL URLWithString:stringURL];
-    NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
-    
-    // Set request's method
-    [mutableURLRequest setHTTPMethod:@"POST"];
-    
-    // Set request's parameters
-    NSString *parameterString = [NSString stringWithFormat:@"email=%@&password=%@", email, password];
-    NSData *parameterData = [parameterString dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-    [mutableURLRequest setHTTPBody:parameterData];
-    
-    // Set request's Content-Type
-    [mutableURLRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-        // Was the request successful ?
-        if ([data length] > 0 && error == nil) {
-            // Deserialize JSON response and get authentication key
-            id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-            if (jsonResponse != nil && error == nil) {
-                NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
-                NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
-                NSLog(@"%@", authenticationKey);
-                // Save token in user preferences
-                NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-                [userDefaults setObject:authenticationKey forKey:@"auth_token"];
-                [userDefaults synchronize];
+    if ([email isEqualToString:@""] || [password isEqualToString:@""]) {
+        NSLog(@"All fields are required.");
+    } else {
+        NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"
+                               ];
+        NSURL *requestURL = [NSURL URLWithString:stringURL];
+        NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+        
+        // Set request's method
+        [mutableURLRequest setHTTPMethod:@"POST"];
+        
+        // Set request's parameters
+        NSString *parameterString = [NSString stringWithFormat:@"email=%@&password=%@", email, password];
+        NSData *parameterData = [parameterString dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+        [mutableURLRequest setHTTPBody:parameterData];
+        
+        // Set request's Content-Type
+        [mutableURLRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+        
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+            // Was the request successful ?
+            if ([data length] > 0 && error == nil) {
+                // Deserialize JSON response and get authentication key
+                id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+                if (jsonResponse != nil && error == nil) {
+                    NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
+                    NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
+                    NSLog(@"%@", authenticationKey);
+                    // Save token in user preferences
+                    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+                    [userDefaults setObject:authenticationKey forKey:@"auth_token"];
+                    [userDefaults synchronize];
+                }
+            } else if ([data length] == 0 && error == nil) {
+                NSLog(@"Success. No response.");
+            } else if (error != nil) {
+                NSLog(@"Something went wrong");
             }
-        } else if ([data length] == 0 && error == nil) {
-            NSLog(@"Success. No response.");
-        } else if (error != nil) {
-            NSLog(@"Something went wrong");
-        }
-    }];
-    [self.view endEditing:YES];
-    ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
-    [self.navigationController pushViewController:applicationTypeViewController animated:YES];
+        }];
+        [self.view endEditing:YES];
+        ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+        [self.navigationController pushViewController:applicationTypeViewController animated:YES];
+    }
+    
+    
 }
 
 @end
