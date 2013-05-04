@@ -26,11 +26,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.passwordTextField.delegate = self;
+    self.emailTextField.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];   
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,6 +94,13 @@
         ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
         [self.navigationController pushViewController:applicationTypeViewController animated:YES];
     }
+}
+
+#pragma mark - textfield delegate methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
