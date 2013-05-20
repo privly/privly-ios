@@ -30,6 +30,12 @@
                                                                                                                          ofType:@"html"]isDirectory:NO]]];
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSString *javascriptOutput = [webView stringByEvaluatingJavaScriptFromString:@""];
+    NSLog(@"");
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

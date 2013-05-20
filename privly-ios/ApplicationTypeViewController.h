@@ -7,6 +7,7 @@
 #import <UIKit/UIKit.h>
 #import "ApplicationTypeViewController.h"
 #import "ZeroBinPostViewController.h"
+#import "PlainPostViewController.h"
 
 @interface ApplicationTypeViewController : UIViewController
 

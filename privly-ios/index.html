@@ -36,6 +36,15 @@
       <textarea id="message" name="message" cols="80" rows="5" style="display:none;"></textarea>
       <br />
     </div>
+        
+        <div id="loginprompt" style="display:none;">
+            <p style="font-size:200%;color:white;">
+            You need to <a style="color:white;" target="_blank" href="/users/sign_in">log in</a> to this server first.
+            </p>
+            <button id="loginbutton" onclick="initializePosting();return false;">
+                <img src="/zero_bin/img/icon_new.png" width="11" height="15" />I Am Now Logged In
+            </button>
+        </div>
     
     <div class="iframe_hide">
       <div id="aboutbox">
@@ -100,14 +109,7 @@
           <img src="/zero_bin/img/icon_clone.png" width="15" height="17" />Clone
         </button>
       </div>
-      <div id="loginprompt" style="display:none;">
-        <p style="font-size:200%;color:white;">
-          You need to <a style="color:white;" target="_blank" href="/users/sign_in">log in</a> to this server first.
-        </p>
-        <button id="loginbutton" onclick="initializePosting();return false;">
-          <img src="/zero_bin/img/icon_new.png" width="11" height="15" />I Am Now Logged In
-        </button>
-      </div>
+      
     </div><!-- iframe_hide -->
     </div><!-- wrapper_center -->
     </div><!-- privlyHeightWrapper -->

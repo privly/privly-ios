@@ -21,19 +21,21 @@
 		35A943EC17319F7C009052DC /* privly.css in Resources */ = {isa = PBXBuildFile; fileRef = 35A943DF17319F7C009052DC /* privly.css */; };
 		35A943ED17319F7C009052DC /* zerobin.css in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E017319F7C009052DC /* zerobin.css */; };
 		35A943EE17319F7C009052DC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E117319F7C009052DC /* index.html */; };
-		35A943EF17319F7C009052DC /* base64.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E317319F7C009052DC /* base64.js */; };
-		35A943F017319F7C009052DC /* jquery.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E417319F7C009052DC /* jquery.js */; };
-		35A943F117319F7C009052DC /* privly_tooltip.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E517319F7C009052DC /* privly_tooltip.js */; };
-		35A943F217319F7C009052DC /* privlyservice.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E617319F7C009052DC /* privlyservice.js */; };
-		35A943F317319F7C009052DC /* privlyshare.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E717319F7C009052DC /* privlyshare.js */; };
-		35A943F417319F7C009052DC /* rawdeflate.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E817319F7C009052DC /* rawdeflate.js */; };
-		35A943F517319F7C009052DC /* rawinflate.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943E917319F7C009052DC /* rawinflate.js */; };
-		35A943F617319F7C009052DC /* sjcl.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943EA17319F7C009052DC /* sjcl.js */; };
-		35A943F717319F7C009052DC /* zerobin.js in Sources */ = {isa = PBXBuildFile; fileRef = 35A943EB17319F7C009052DC /* zerobin.js */; };
+		35A943EF17319F7C009052DC /* base64.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E317319F7C009052DC /* base64.js */; };
+		35A943F017319F7C009052DC /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E417319F7C009052DC /* jquery.js */; };
+		35A943F117319F7C009052DC /* privly_tooltip.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E517319F7C009052DC /* privly_tooltip.js */; };
+		35A943F217319F7C009052DC /* privlyservice.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E617319F7C009052DC /* privlyservice.js */; };
+		35A943F317319F7C009052DC /* privlyshare.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E717319F7C009052DC /* privlyshare.js */; };
+		35A943F417319F7C009052DC /* rawdeflate.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E817319F7C009052DC /* rawdeflate.js */; };
+		35A943F517319F7C009052DC /* rawinflate.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E917319F7C009052DC /* rawinflate.js */; };
+		35A943F617319F7C009052DC /* sjcl.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943EA17319F7C009052DC /* sjcl.js */; };
+		35A943F717319F7C009052DC /* zerobin.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943EB17319F7C009052DC /* zerobin.js */; };
 		35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */; };
 		35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */; };
 		35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */; };
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
+		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
+		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,9 @@
 		35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationTypeViewController.xib; sourceTree = "<group>"; };
 		35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZeroBinPostViewController.xib; sourceTree = "<group>"; };
 		35A944001731A497009052DC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
+		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
+		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +127,15 @@
 				358D71E617248B3000979F57 /* LoginViewController.h */,
 				358D71E717248B3000979F57 /* LoginViewController.m */,
 				35A944001731A497009052DC /* LoginViewController.xib */,
-				35A943D9173193E0009052DC /* ZeroBinPostViewController.h */,
-				35A943DA173193E0009052DC /* ZeroBinPostViewController.m */,
-				35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */,
 				35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */,
 				35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */,
 				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
+				9912C02C174AD62700E13A01 /* PlainPostViewController.h */,
+				9912C02D174AD62700E13A01 /* PlainPostViewController.m */,
+				9912C02E174AD62700E13A01 /* PlainPostViewController.xib */,
+				35A943D9173193E0009052DC /* ZeroBinPostViewController.h */,
+				35A943DA173193E0009052DC /* ZeroBinPostViewController.m */,
+				35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */,
 				35A943F817319F81009052DC /* ZeroBin */,
 				358D71CA1724752700979F57 /* Supporting Files */,
 			);
@@ -244,6 +252,16 @@
 				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
 				35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
+				35A943EF17319F7C009052DC /* base64.js in Resources */,
+				35A943F017319F7C009052DC /* jquery.js in Resources */,
+				35A943F117319F7C009052DC /* privly_tooltip.js in Resources */,
+				35A943F217319F7C009052DC /* privlyservice.js in Resources */,
+				35A943F317319F7C009052DC /* privlyshare.js in Resources */,
+				35A943F417319F7C009052DC /* rawdeflate.js in Resources */,
+				35A943F517319F7C009052DC /* rawinflate.js in Resources */,
+				35A943F617319F7C009052DC /* sjcl.js in Resources */,
+				35A943F717319F7C009052DC /* zerobin.js in Resources */,
+				9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,16 +276,8 @@
 				358D71D41724752700979F57 /* AppDelegate.m in Sources */,
 				358D71E917248B3000979F57 /* LoginViewController.m in Sources */,
 				35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */,
-				35A943EF17319F7C009052DC /* base64.js in Sources */,
-				35A943F017319F7C009052DC /* jquery.js in Sources */,
-				35A943F117319F7C009052DC /* privly_tooltip.js in Sources */,
-				35A943F217319F7C009052DC /* privlyservice.js in Sources */,
-				35A943F317319F7C009052DC /* privlyshare.js in Sources */,
-				35A943F417319F7C009052DC /* rawdeflate.js in Sources */,
-				35A943F517319F7C009052DC /* rawinflate.js in Sources */,
-				35A943F617319F7C009052DC /* sjcl.js in Sources */,
-				35A943F717319F7C009052DC /* zerobin.js in Sources */,
 				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
+				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +361,7 @@
 				INFOPLIST_FILE = "privly-ios/privly-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -364,7 +374,7 @@
 				INFOPLIST_FILE = "privly-ios/privly-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

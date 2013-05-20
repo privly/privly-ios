@@ -42,6 +42,8 @@
 }
 
 - (IBAction)createPlainPost:(id)sender {
+    PlainPostViewController *plainPostViewController = [[PlainPostViewController alloc] init];
+    [self.navigationController pushViewController:plainPostViewController animated:YES];
 }
 
 - (IBAction)createZeroBinPost:(id)sender {
