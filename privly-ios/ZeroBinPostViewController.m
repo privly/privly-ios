@@ -32,8 +32,8 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    NSString *javascriptOutput = [webView stringByEvaluatingJavaScriptFromString:@""];
-    NSLog(@"");
+    // JavaScript code to be loaded here.
+    // See https://github.com/hery/PrivlyJavaScriptSandbox
 }
 
 - (void)didReceiveMemoryWarning
