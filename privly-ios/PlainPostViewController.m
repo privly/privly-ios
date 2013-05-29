@@ -45,6 +45,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+# pragma mark textfield behavior methods
+
 - (BOOL)textViewShouldReturn:(UITextView *)textView {
     [textView resignFirstResponder];
     return YES;
@@ -62,6 +64,12 @@
 
 - (void)dismissKeyboard {
     [self.PlainPostContent resignFirstResponder];
+}
+
+# pragma mark content posting methods 
+
+- (IBAction)createPlainPost:(id)sender {
+   // Handle Content Posting here
 }
 
 @end

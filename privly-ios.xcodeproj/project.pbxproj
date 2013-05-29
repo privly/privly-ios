@@ -36,6 +36,7 @@
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
 		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
+		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
 		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
 		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
+		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
+		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,13 +133,8 @@
 				35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */,
 				35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */,
 				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
-				9912C02C174AD62700E13A01 /* PlainPostViewController.h */,
-				9912C02D174AD62700E13A01 /* PlainPostViewController.m */,
-				9912C02E174AD62700E13A01 /* PlainPostViewController.xib */,
-				35A943D9173193E0009052DC /* ZeroBinPostViewController.h */,
-				35A943DA173193E0009052DC /* ZeroBinPostViewController.m */,
-				35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */,
-				35A943F817319F81009052DC /* ZeroBin */,
+				996E2634175695A9003B51A5 /* Posting */,
+				996E26371756961A003B51A5 /* JS Applications */,
 				358D71CA1724752700979F57 /* Supporting Files */,
 			);
 			path = "privly-ios";
@@ -189,6 +187,45 @@
 				35A943E217319F7C009052DC /* js */,
 			);
 			name = ZeroBin;
+			sourceTree = "<group>";
+		};
+		996E2634175695A9003B51A5 /* Posting */ = {
+			isa = PBXGroup;
+			children = (
+				996E2635175695BC003B51A5 /* PlainPost */,
+				996E2636175695D3003B51A5 /* ZeroBin */,
+			);
+			name = Posting;
+			sourceTree = "<group>";
+		};
+		996E2635175695BC003B51A5 /* PlainPost */ = {
+			isa = PBXGroup;
+			children = (
+				996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */,
+				996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */,
+				9912C02C174AD62700E13A01 /* PlainPostViewController.h */,
+				9912C02D174AD62700E13A01 /* PlainPostViewController.m */,
+				9912C02E174AD62700E13A01 /* PlainPostViewController.xib */,
+			);
+			name = PlainPost;
+			sourceTree = "<group>";
+		};
+		996E2636175695D3003B51A5 /* ZeroBin */ = {
+			isa = PBXGroup;
+			children = (
+				35A943D9173193E0009052DC /* ZeroBinPostViewController.h */,
+				35A943DA173193E0009052DC /* ZeroBinPostViewController.m */,
+				35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */,
+			);
+			name = ZeroBin;
+			sourceTree = "<group>";
+		};
+		996E26371756961A003B51A5 /* JS Applications */ = {
+			isa = PBXGroup;
+			children = (
+				35A943F817319F81009052DC /* ZeroBin */,
+			);
+			name = "JS Applications";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +315,7 @@
 				35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */,
 				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
 				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
+				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +399,7 @@
 				INFOPLIST_FILE = "privly-ios/privly-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,7 +412,7 @@
 				INFOPLIST_FILE = "privly-ios/privly-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

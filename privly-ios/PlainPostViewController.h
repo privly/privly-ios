@@ -11,4 +11,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *PlainPostContent;
 @property (strong, nonatomic) UIBarButtonItem *dismissKeyboardButton;
 
+- (IBAction)createPlainPost:(id)sender;
+
 @end
