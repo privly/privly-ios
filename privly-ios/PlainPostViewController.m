@@ -69,7 +69,12 @@
 # pragma mark content posting methods 
 
 - (IBAction)createPlainPost:(id)sender {
-   // Handle Content Posting here
+    NSURL *requestURL = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/update.json"];
+    NSString *status = _PlainPostContent.text;
+    NSDictionary *params = [[NSDictionary alloc] initWithObjects:@[status] forKeys:@[@"status"]];
+    SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] initWithURL:requestURL params:params];
+    [requestHandler setupAccountForServiceTypeInt:_socialNetworkId];
+    [requestHandler postMessage];
 }
 
 @end

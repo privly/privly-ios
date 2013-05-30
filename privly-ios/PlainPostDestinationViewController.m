@@ -112,6 +112,7 @@
 {
     PlainPostViewController *plainPostViewController = [[PlainPostViewController alloc] init];
     plainPostViewController.title = [availableServices objectAtIndex:indexPath.row];
+    plainPostViewController.socialNetworkId = indexPath.row;
     [self.navigationController pushViewController:plainPostViewController animated:YES];
 
 }
