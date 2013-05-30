@@ -75,6 +75,8 @@
     SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] initWithURL:requestURL params:params];
     [requestHandler setupAccountForServiceTypeInt:_socialNetworkId];
     [requestHandler postMessage];
+    UIAlertView *messagePosted = [[UIAlertView alloc] initWithTitle:@"Message posted!" message:nil delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
+    [messagePosted show];
 }
 
 @end
