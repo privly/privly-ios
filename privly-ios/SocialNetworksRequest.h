@@ -13,11 +13,9 @@
     NSString* accountIdentifierString;
 }
 
-@property (nonatomic) ACAccountStore *accountStore;
-@property (nonatomic) NSURL *requestURL;
-@property (nonatomic) NSDictionary *params;
+@property (nonatomic) UIViewController *delegate;
+@property (nonatomic) NSString *postContent;
 
-- (id) initWithURL:(NSURL *)requestURL params:(NSDictionary *)params;
 - (void)setupAccountForServiceTypeInt:(int)serviceTypeInt;
 - (void)postMessage;
 

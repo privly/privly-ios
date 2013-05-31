@@ -144,7 +144,7 @@
 				35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */,
 				35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */,
 				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
-				99EC26A11757BBB700EC234F /* Helper */,
+				99EC26A11757BBB700EC234F /* Helpers */,
 				996E2634175695A9003B51A5 /* Posting */,
 				996E26371756961A003B51A5 /* JS Applications */,
 				358D71CA1724752700979F57 /* Supporting Files */,
@@ -240,13 +240,13 @@
 			name = "JS Applications";
 			sourceTree = "<group>";
 		};
-		99EC26A11757BBB700EC234F /* Helper */ = {
+		99EC26A11757BBB700EC234F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */,
 				99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */,
 			);
-			name = Helper;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

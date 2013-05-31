@@ -69,14 +69,16 @@
 # pragma mark content posting methods 
 
 - (IBAction)createPlainPost:(id)sender {
-    NSURL *requestURL = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/update.json"];
-    NSString *status = _PlainPostContent.text;
-    NSDictionary *params = [[NSDictionary alloc] initWithObjects:@[status] forKeys:@[@"status"]];
-    SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] initWithURL:requestURL params:params];
+    NSString *userMessage = _PlainPostContent.text;
+    NSString *privlyMessage = @"Ultimately, this would be converted to a privly link.";
+    NSString *postContent = [userMessage stringByAppendingFormat:@"\n\n%@", privlyMessage];
+    SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] init];
+    // Set delegate to push SocialNetworkRequest's SLComposeViewController
+    requestHandler.delegate = self;
+    requestHandler.postContent = postContent;
+    // Select appropriate social network
     [requestHandler setupAccountForServiceTypeInt:_socialNetworkId];
     [requestHandler postMessage];
-    UIAlertView *messagePosted = [[UIAlertView alloc] initWithTitle:@"Message posted!" message:nil delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
-    [messagePosted show];
 }
 
 @end
