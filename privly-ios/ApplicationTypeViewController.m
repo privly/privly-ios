@@ -47,8 +47,16 @@
 }
 
 - (IBAction)createZeroBinPost:(id)sender {
-    ZeroBinPostViewController *zeroBinPostViewController = [[ZeroBinPostViewController alloc] init];
-    [self.navigationController pushViewController:zeroBinPostViewController animated:YES];
+//    Drop JS app here.
+//    ZeroBinPostViewController *zeroBinPostViewController = [[ZeroBinPostViewController alloc] init];
+//    [self.navigationController pushViewController:zeroBinPostViewController animated:YES];
+    UIAlertView *zeroBinAlert = [[UIAlertView alloc] initWithTitle:@"ZeroBin" message:@"The app is currently being implemented..." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
+    [zeroBinAlert show];
+}
+
+- (IBAction)createTestPost:(id)sender {
+    TestPostViewController *testPostViewController = [[TestPostViewController alloc] init];
+    [self.navigationController pushViewController:testPostViewController animated:YES];
 }
 
 - (IBAction)logout:(id)sender {

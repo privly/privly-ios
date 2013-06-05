@@ -24,6 +24,10 @@
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
 		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
+		99307B1F175FB27300954F16 /* simpleApp.js in Resources */ = {isa = PBXBuildFile; fileRef = 99307B1E175FB27300954F16 /* simpleApp.js */; };
+		99307B24175FB73B00954F16 /* TestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B22175FB73B00954F16 /* TestPostViewController.m */; };
+		99307B25175FB73B00954F16 /* TestPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99307B23175FB73B00954F16 /* TestPostViewController.xib */; };
+		99307B27175FBD6B00954F16 /* simpleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 99307B26175FBD6B00954F16 /* simpleApp.html */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
 		9992CD5F175A853900EC283F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
 		9992CD60175A853900EC283F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
@@ -61,6 +65,11 @@
 		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
 		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
 		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
+		99307B1E175FB27300954F16 /* simpleApp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = simpleApp.js; sourceTree = "<group>"; };
+		99307B21175FB73B00954F16 /* TestPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPostViewController.h; sourceTree = "<group>"; };
+		99307B22175FB73B00954F16 /* TestPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPostViewController.m; sourceTree = "<group>"; };
+		99307B23175FB73B00954F16 /* TestPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPostViewController.xib; sourceTree = "<group>"; };
+		99307B26175FBD6B00954F16 /* simpleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = simpleApp.html; sourceTree = "<group>"; };
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
 		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
 		9992CD5D175A853900EC283F /* TestingTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +154,7 @@
 				35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */,
 				35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */,
 				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
+				99307B1D175FB25800954F16 /* JS apps */,
 				99EC26A11757BBB700EC234F /* Helpers */,
 				996E2634175695A9003B51A5 /* Posting */,
 				358D71CA1724752700979F57 /* Supporting Files */,
@@ -166,9 +176,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99307B1D175FB25800954F16 /* JS apps */ = {
+			isa = PBXGroup;
+			children = (
+				99307B1E175FB27300954F16 /* simpleApp.js */,
+				99307B26175FBD6B00954F16 /* simpleApp.html */,
+			);
+			name = "JS apps";
+			sourceTree = "<group>";
+		};
+		99307B20175FB70D00954F16 /* TestPost */ = {
+			isa = PBXGroup;
+			children = (
+				99307B21175FB73B00954F16 /* TestPostViewController.h */,
+				99307B22175FB73B00954F16 /* TestPostViewController.m */,
+				99307B23175FB73B00954F16 /* TestPostViewController.xib */,
+			);
+			name = TestPost;
+			sourceTree = "<group>";
+		};
 		996E2634175695A9003B51A5 /* Posting */ = {
 			isa = PBXGroup;
 			children = (
+				99307B20175FB70D00954F16 /* TestPost */,
 				996E2635175695BC003B51A5 /* PlainPost */,
 				996E2636175695D3003B51A5 /* ZeroBin */,
 			);
@@ -300,10 +330,13 @@
 				358D71D61724752700979F57 /* Default.png in Resources */,
 				358D71D81724752700979F57 /* Default@2x.png in Resources */,
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
+				99307B1F175FB27300954F16 /* simpleApp.js in Resources */,
 				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
 				35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
 				9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */,
+				99307B25175FB73B00954F16 /* TestPostViewController.xib in Resources */,
+				99307B27175FBD6B00954F16 /* simpleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +379,7 @@
 				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
 				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
 				99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */,
+				99307B24175FB73B00954F16 /* TestPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
