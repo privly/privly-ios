@@ -18,18 +18,6 @@
 		358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D91724752700979F57 /* Default-568h@2x.png */; };
 		358D71E917248B3000979F57 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D71E717248B3000979F57 /* LoginViewController.m */; };
 		35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943DA173193E0009052DC /* ZeroBinPostViewController.m */; };
-		35A943EC17319F7C009052DC /* privly.css in Resources */ = {isa = PBXBuildFile; fileRef = 35A943DF17319F7C009052DC /* privly.css */; };
-		35A943ED17319F7C009052DC /* zerobin.css in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E017319F7C009052DC /* zerobin.css */; };
-		35A943EE17319F7C009052DC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E117319F7C009052DC /* index.html */; };
-		35A943EF17319F7C009052DC /* base64.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E317319F7C009052DC /* base64.js */; };
-		35A943F017319F7C009052DC /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E417319F7C009052DC /* jquery.js */; };
-		35A943F117319F7C009052DC /* privly_tooltip.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E517319F7C009052DC /* privly_tooltip.js */; };
-		35A943F217319F7C009052DC /* privlyservice.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E617319F7C009052DC /* privlyservice.js */; };
-		35A943F317319F7C009052DC /* privlyshare.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E717319F7C009052DC /* privlyshare.js */; };
-		35A943F417319F7C009052DC /* rawdeflate.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E817319F7C009052DC /* rawdeflate.js */; };
-		35A943F517319F7C009052DC /* rawinflate.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943E917319F7C009052DC /* rawinflate.js */; };
-		35A943F617319F7C009052DC /* sjcl.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943EA17319F7C009052DC /* sjcl.js */; };
-		35A943F717319F7C009052DC /* zerobin.js in Resources */ = {isa = PBXBuildFile; fileRef = 35A943EB17319F7C009052DC /* zerobin.js */; };
 		35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */; };
 		35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */; };
 		35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */; };
@@ -37,6 +25,11 @@
 		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
 		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
+		9992CD5F175A853900EC283F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
+		9992CD60175A853900EC283F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
+		9992CD61175A853900EC283F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
+		9992CD67175A853900EC283F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9992CD65175A853900EC283F /* InfoPlist.strings */; };
+		9992CD6A175A853900EC283F /* TestingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992CD69175A853900EC283F /* TestingTest.m */; };
 		99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */; };
 		99EC26A91758080400EC234F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26A81758080400EC234F /* Accounts.framework */; };
 		99EC26AB1758080800EC234F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
@@ -60,18 +53,6 @@
 		358D71E717248B3000979F57 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		35A943D9173193E0009052DC /* ZeroBinPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroBinPostViewController.h; sourceTree = "<group>"; };
 		35A943DA173193E0009052DC /* ZeroBinPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroBinPostViewController.m; sourceTree = "<group>"; };
-		35A943DF17319F7C009052DC /* privly.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = privly.css; sourceTree = "<group>"; };
-		35A943E017319F7C009052DC /* zerobin.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = zerobin.css; sourceTree = "<group>"; };
-		35A943E117319F7C009052DC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		35A943E317319F7C009052DC /* base64.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = base64.js; sourceTree = "<group>"; };
-		35A943E417319F7C009052DC /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
-		35A943E517319F7C009052DC /* privly_tooltip.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = privly_tooltip.js; sourceTree = "<group>"; };
-		35A943E617319F7C009052DC /* privlyservice.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = privlyservice.js; sourceTree = "<group>"; };
-		35A943E717319F7C009052DC /* privlyshare.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = privlyshare.js; sourceTree = "<group>"; };
-		35A943E817319F7C009052DC /* rawdeflate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rawdeflate.js; sourceTree = "<group>"; };
-		35A943E917319F7C009052DC /* rawinflate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rawinflate.js; sourceTree = "<group>"; };
-		35A943EA17319F7C009052DC /* sjcl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sjcl.js; sourceTree = "<group>"; };
-		35A943EB17319F7C009052DC /* zerobin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zerobin.js; sourceTree = "<group>"; };
 		35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewController.h; sourceTree = "<group>"; };
 		35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewController.m; sourceTree = "<group>"; };
 		35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationTypeViewController.xib; sourceTree = "<group>"; };
@@ -82,6 +63,13 @@
 		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
 		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
+		9992CD5D175A853900EC283F /* TestingTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9992CD5E175A853900EC283F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9992CD64175A853900EC283F /* TestingTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingTest-Info.plist"; sourceTree = "<group>"; };
+		9992CD66175A853900EC283F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9992CD68175A853900EC283F /* TestingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingTest.h; sourceTree = "<group>"; };
+		9992CD69175A853900EC283F /* TestingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingTest.m; sourceTree = "<group>"; };
+		9992CD6B175A853900EC283F /* TestingTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingTest-Prefix.pch"; sourceTree = "<group>"; };
 		99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworksRequest.h; sourceTree = "<group>"; };
 		99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworksRequest.m; sourceTree = "<group>"; };
 		99EC26A81758080400EC234F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -101,6 +89,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9992CD59175A853900EC283F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9992CD5F175A853900EC283F /* SenTestingKit.framework in Frameworks */,
+				9992CD60175A853900EC283F /* UIKit.framework in Frameworks */,
+				9992CD61175A853900EC283F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +108,7 @@
 				99EC26AA1758080800EC234F /* Social.framework */,
 				99EC26A81758080400EC234F /* Accounts.framework */,
 				358D71C91724752700979F57 /* privly-ios */,
+				9992CD62175A853900EC283F /* TestingTest */,
 				358D71C21724752700979F57 /* Frameworks */,
 				358D71C11724752700979F57 /* Products */,
 			);
@@ -119,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				358D71C01724752700979F57 /* privly-ios.app */,
+				9992CD5D175A853900EC283F /* TestingTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +129,7 @@
 				358D71C31724752700979F57 /* UIKit.framework */,
 				358D71C51724752700979F57 /* Foundation.framework */,
 				358D71C71724752700979F57 /* CoreGraphics.framework */,
+				9992CD5E175A853900EC283F /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,7 +147,6 @@
 				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
 				99EC26A11757BBB700EC234F /* Helpers */,
 				996E2634175695A9003B51A5 /* Posting */,
-				996E26371756961A003B51A5 /* JS Applications */,
 				358D71CA1724752700979F57 /* Supporting Files */,
 			);
 			path = "privly-ios";
@@ -164,41 +164,6 @@
 				358D71D91724752700979F57 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		35A943DE17319F7C009052DC /* css */ = {
-			isa = PBXGroup;
-			children = (
-				35A943DF17319F7C009052DC /* privly.css */,
-				35A943E017319F7C009052DC /* zerobin.css */,
-			);
-			path = css;
-			sourceTree = "<group>";
-		};
-		35A943E217319F7C009052DC /* js */ = {
-			isa = PBXGroup;
-			children = (
-				35A943E317319F7C009052DC /* base64.js */,
-				35A943E417319F7C009052DC /* jquery.js */,
-				35A943E517319F7C009052DC /* privly_tooltip.js */,
-				35A943E617319F7C009052DC /* privlyservice.js */,
-				35A943E717319F7C009052DC /* privlyshare.js */,
-				35A943E817319F7C009052DC /* rawdeflate.js */,
-				35A943E917319F7C009052DC /* rawinflate.js */,
-				35A943EA17319F7C009052DC /* sjcl.js */,
-				35A943EB17319F7C009052DC /* zerobin.js */,
-			);
-			path = js;
-			sourceTree = "<group>";
-		};
-		35A943F817319F81009052DC /* ZeroBin */ = {
-			isa = PBXGroup;
-			children = (
-				35A943DE17319F7C009052DC /* css */,
-				35A943E117319F7C009052DC /* index.html */,
-				35A943E217319F7C009052DC /* js */,
-			);
-			name = ZeroBin;
 			sourceTree = "<group>";
 		};
 		996E2634175695A9003B51A5 /* Posting */ = {
@@ -232,12 +197,24 @@
 			name = ZeroBin;
 			sourceTree = "<group>";
 		};
-		996E26371756961A003B51A5 /* JS Applications */ = {
+		9992CD62175A853900EC283F /* TestingTest */ = {
 			isa = PBXGroup;
 			children = (
-				35A943F817319F81009052DC /* ZeroBin */,
+				9992CD68175A853900EC283F /* TestingTest.h */,
+				9992CD69175A853900EC283F /* TestingTest.m */,
+				9992CD63175A853900EC283F /* Supporting Files */,
 			);
-			name = "JS Applications";
+			path = TestingTest;
+			sourceTree = "<group>";
+		};
+		9992CD63175A853900EC283F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9992CD64175A853900EC283F /* TestingTest-Info.plist */,
+				9992CD65175A853900EC283F /* InfoPlist.strings */,
+				9992CD6B175A853900EC283F /* TestingTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		99EC26A11757BBB700EC234F /* Helpers */ = {
@@ -269,6 +246,24 @@
 			productReference = 358D71C01724752700979F57 /* privly-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9992CD5C175A853900EC283F /* TestingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9992CD6E175A853900EC283F /* Build configuration list for PBXNativeTarget "TestingTest" */;
+			buildPhases = (
+				9992CD58175A853900EC283F /* Sources */,
+				9992CD59175A853900EC283F /* Frameworks */,
+				9992CD5A175A853900EC283F /* Resources */,
+				9992CD5B175A853900EC283F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingTest;
+			productName = TestingTest;
+			productReference = 9992CD5D175A853900EC283F /* TestingTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -291,6 +286,7 @@
 			projectRoot = "";
 			targets = (
 				358D71BF1724752700979F57 /* privly-ios */,
+				9992CD5C175A853900EC283F /* TestingTest */,
 			);
 		};
 /* End PBXProject section */
@@ -304,26 +300,38 @@
 				358D71D61724752700979F57 /* Default.png in Resources */,
 				358D71D81724752700979F57 /* Default@2x.png in Resources */,
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
-				35A943EC17319F7C009052DC /* privly.css in Resources */,
-				35A943ED17319F7C009052DC /* zerobin.css in Resources */,
-				35A943EE17319F7C009052DC /* index.html in Resources */,
 				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
 				35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
-				35A943EF17319F7C009052DC /* base64.js in Resources */,
-				35A943F017319F7C009052DC /* jquery.js in Resources */,
-				35A943F117319F7C009052DC /* privly_tooltip.js in Resources */,
-				35A943F217319F7C009052DC /* privlyservice.js in Resources */,
-				35A943F317319F7C009052DC /* privlyshare.js in Resources */,
-				35A943F417319F7C009052DC /* rawdeflate.js in Resources */,
-				35A943F517319F7C009052DC /* rawinflate.js in Resources */,
-				35A943F617319F7C009052DC /* sjcl.js in Resources */,
-				35A943F717319F7C009052DC /* zerobin.js in Resources */,
 				9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9992CD5A175A853900EC283F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9992CD67175A853900EC283F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9992CD5B175A853900EC283F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		358D71BC1724752700979F57 /* Sources */ = {
@@ -341,6 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9992CD58175A853900EC283F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9992CD6A175A853900EC283F /* TestingTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -348,6 +364,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				358D71CD1724752700979F57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9992CD65175A853900EC283F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9992CD66175A853900EC283F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -439,6 +463,36 @@
 			};
 			name = Release;
 		};
+		9992CD6C175A853900EC283F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestingTest/TestingTest-Prefix.pch";
+				INFOPLIST_FILE = "TestingTest/TestingTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9992CD6D175A853900EC283F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestingTest/TestingTest-Prefix.pch";
+				INFOPLIST_FILE = "TestingTest/TestingTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,6 +510,15 @@
 			buildConfigurations = (
 				358D71DE1724752700979F57 /* Debug */,
 				358D71DF1724752700979F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9992CD6E175A853900EC283F /* Build configuration list for PBXNativeTarget "TestingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9992CD6C175A853900EC283F /* Debug */,
+				9992CD6D175A853900EC283F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
