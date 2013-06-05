@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestingTest.xcscheme</key>
+		<key>privly-ios-tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -18,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>358D71BF1724752700979F57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>99307B2C175FD29500954F16</key>
 		<dict>
 			<key>primary</key>
 			<true/>

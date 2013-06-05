@@ -16,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9992CD5C175A853900EC283F"
-               BuildableName = "TestingTest.octest"
-               BlueprintName = "TestingTest"
+               BlueprintIdentifier = "99307B2C175FD29500954F16"
+               BuildableName = "privly-ios-tests.octest"
+               BlueprintName = "privly-ios-tests"
                ReferencedContainer = "container:privly-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>

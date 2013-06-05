@@ -14,7 +14,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    loginViewController = [[LoginViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginViewController];
     nav.navigationBar.tintColor = [UIColor blackColor];
     

@@ -28,16 +28,26 @@
 		99307B24175FB73B00954F16 /* TestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B22175FB73B00954F16 /* TestPostViewController.m */; };
 		99307B25175FB73B00954F16 /* TestPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99307B23175FB73B00954F16 /* TestPostViewController.xib */; };
 		99307B27175FBD6B00954F16 /* simpleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 99307B26175FBD6B00954F16 /* simpleApp.html */; };
+		99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
+		99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
+		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
+		99307B36175FD29500954F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99307B34175FD29500954F16 /* InfoPlist.strings */; };
+		99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B38175FD29500954F16 /* privly_ios_tests.m */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
-		9992CD5F175A853900EC283F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
-		9992CD60175A853900EC283F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
-		9992CD61175A853900EC283F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
-		9992CD67175A853900EC283F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9992CD65175A853900EC283F /* InfoPlist.strings */; };
-		9992CD6A175A853900EC283F /* TestingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992CD69175A853900EC283F /* TestingTest.m */; };
 		99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */; };
 		99EC26A91758080400EC234F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26A81758080400EC234F /* Accounts.framework */; };
 		99EC26AB1758080800EC234F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99307B3E175FEDAB00954F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 358D71B81724752700979F57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 358D71BF1724752700979F57;
+			remoteInfo = "privly-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		358D71C01724752700979F57 /* privly-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "privly-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,15 +80,15 @@
 		99307B22175FB73B00954F16 /* TestPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPostViewController.m; sourceTree = "<group>"; };
 		99307B23175FB73B00954F16 /* TestPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPostViewController.xib; sourceTree = "<group>"; };
 		99307B26175FBD6B00954F16 /* simpleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = simpleApp.html; sourceTree = "<group>"; };
+		99307B2D175FD29500954F16 /* privly-ios-tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "privly-ios-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "privly-ios-tests-Info.plist"; sourceTree = "<group>"; };
+		99307B35175FD29500954F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99307B37175FD29500954F16 /* privly_ios_tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = privly_ios_tests.h; sourceTree = "<group>"; };
+		99307B38175FD29500954F16 /* privly_ios_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = privly_ios_tests.m; sourceTree = "<group>"; };
+		99307B3A175FD29500954F16 /* privly-ios-tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "privly-ios-tests-Prefix.pch"; sourceTree = "<group>"; };
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
 		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
-		9992CD5D175A853900EC283F /* TestingTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9992CD5E175A853900EC283F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9992CD64175A853900EC283F /* TestingTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingTest-Info.plist"; sourceTree = "<group>"; };
-		9992CD66175A853900EC283F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9992CD68175A853900EC283F /* TestingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingTest.h; sourceTree = "<group>"; };
-		9992CD69175A853900EC283F /* TestingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingTest.m; sourceTree = "<group>"; };
-		9992CD6B175A853900EC283F /* TestingTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingTest-Prefix.pch"; sourceTree = "<group>"; };
 		99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworksRequest.h; sourceTree = "<group>"; };
 		99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworksRequest.m; sourceTree = "<group>"; };
 		99EC26A81758080400EC234F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -98,13 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9992CD59175A853900EC283F /* Frameworks */ = {
+		99307B29175FD29500954F16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9992CD5F175A853900EC283F /* SenTestingKit.framework in Frameworks */,
-				9992CD60175A853900EC283F /* UIKit.framework in Frameworks */,
-				9992CD61175A853900EC283F /* Foundation.framework in Frameworks */,
+				99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */,
+				99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */,
+				99307B30175FD29500954F16 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +127,7 @@
 				99EC26AA1758080800EC234F /* Social.framework */,
 				99EC26A81758080400EC234F /* Accounts.framework */,
 				358D71C91724752700979F57 /* privly-ios */,
-				9992CD62175A853900EC283F /* TestingTest */,
+				99307B31175FD29500954F16 /* privly-ios-tests */,
 				358D71C21724752700979F57 /* Frameworks */,
 				358D71C11724752700979F57 /* Products */,
 			);
@@ -127,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				358D71C01724752700979F57 /* privly-ios.app */,
-				9992CD5D175A853900EC283F /* TestingTest.octest */,
+				99307B2D175FD29500954F16 /* privly-ios-tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +205,26 @@
 			name = TestPost;
 			sourceTree = "<group>";
 		};
+		99307B31175FD29500954F16 /* privly-ios-tests */ = {
+			isa = PBXGroup;
+			children = (
+				99307B37175FD29500954F16 /* privly_ios_tests.h */,
+				99307B38175FD29500954F16 /* privly_ios_tests.m */,
+				99307B32175FD29500954F16 /* Supporting Files */,
+			);
+			path = "privly-ios-tests";
+			sourceTree = "<group>";
+		};
+		99307B32175FD29500954F16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */,
+				99307B34175FD29500954F16 /* InfoPlist.strings */,
+				99307B3A175FD29500954F16 /* privly-ios-tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		996E2634175695A9003B51A5 /* Posting */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,26 +257,6 @@
 			name = ZeroBin;
 			sourceTree = "<group>";
 		};
-		9992CD62175A853900EC283F /* TestingTest */ = {
-			isa = PBXGroup;
-			children = (
-				9992CD68175A853900EC283F /* TestingTest.h */,
-				9992CD69175A853900EC283F /* TestingTest.m */,
-				9992CD63175A853900EC283F /* Supporting Files */,
-			);
-			path = TestingTest;
-			sourceTree = "<group>";
-		};
-		9992CD63175A853900EC283F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9992CD64175A853900EC283F /* TestingTest-Info.plist */,
-				9992CD65175A853900EC283F /* InfoPlist.strings */,
-				9992CD6B175A853900EC283F /* TestingTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		99EC26A11757BBB700EC234F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,22 +286,23 @@
 			productReference = 358D71C01724752700979F57 /* privly-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9992CD5C175A853900EC283F /* TestingTest */ = {
+		99307B2C175FD29500954F16 /* privly-ios-tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9992CD6E175A853900EC283F /* Build configuration list for PBXNativeTarget "TestingTest" */;
+			buildConfigurationList = 99307B3B175FD29500954F16 /* Build configuration list for PBXNativeTarget "privly-ios-tests" */;
 			buildPhases = (
-				9992CD58175A853900EC283F /* Sources */,
-				9992CD59175A853900EC283F /* Frameworks */,
-				9992CD5A175A853900EC283F /* Resources */,
-				9992CD5B175A853900EC283F /* ShellScript */,
+				99307B28175FD29500954F16 /* Sources */,
+				99307B29175FD29500954F16 /* Frameworks */,
+				99307B2A175FD29500954F16 /* Resources */,
+				99307B2B175FD29500954F16 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				99307B3F175FEDAB00954F16 /* PBXTargetDependency */,
 			);
-			name = TestingTest;
-			productName = TestingTest;
-			productReference = 9992CD5D175A853900EC283F /* TestingTest.octest */;
+			name = "privly-ios-tests";
+			productName = "privly-ios-tests";
+			productReference = 99307B2D175FD29500954F16 /* privly-ios-tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +327,7 @@
 			projectRoot = "";
 			targets = (
 				358D71BF1724752700979F57 /* privly-ios */,
-				9992CD5C175A853900EC283F /* TestingTest */,
+				99307B2C175FD29500954F16 /* privly-ios-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,18 +351,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9992CD5A175A853900EC283F /* Resources */ = {
+		99307B2A175FD29500954F16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9992CD67175A853900EC283F /* InfoPlist.strings in Resources */,
+				99307B36175FD29500954F16 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9992CD5B175A853900EC283F /* ShellScript */ = {
+		99307B2B175FD29500954F16 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,15 +394,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9992CD58175A853900EC283F /* Sources */ = {
+		99307B28175FD29500954F16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9992CD6A175A853900EC283F /* TestingTest.m in Sources */,
+				99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99307B3F175FEDAB00954F16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 358D71BF1724752700979F57 /* privly-ios */;
+			targetProxy = 99307B3E175FEDAB00954F16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		358D71CC1724752700979F57 /* InfoPlist.strings */ = {
@@ -402,10 +421,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		9992CD65175A853900EC283F /* InfoPlist.strings */ = {
+		99307B34175FD29500954F16 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9992CD66175A853900EC283F /* en */,
+				99307B35175FD29500954F16 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -497,32 +516,36 @@
 			};
 			name = Release;
 		};
-		9992CD6C175A853900EC283F /* Debug */ = {
+		99307B3C175FD29500954F16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/privly-ios.app/privly-ios";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestingTest/TestingTest-Prefix.pch";
-				INFOPLIST_FILE = "TestingTest/TestingTest-Info.plist";
+				GCC_PREFIX_HEADER = "privly-ios-tests/privly-ios-tests-Prefix.pch";
+				INFOPLIST_FILE = "privly-ios-tests/privly-ios-tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		9992CD6D175A853900EC283F /* Release */ = {
+		99307B3D175FD29500954F16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/privly-ios.app/privly-ios";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestingTest/TestingTest-Prefix.pch";
-				INFOPLIST_FILE = "TestingTest/TestingTest-Info.plist";
+				GCC_PREFIX_HEADER = "privly-ios-tests/privly-ios-tests-Prefix.pch";
+				INFOPLIST_FILE = "privly-ios-tests/privly-ios-tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -548,14 +571,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9992CD6E175A853900EC283F /* Build configuration list for PBXNativeTarget "TestingTest" */ = {
+		99307B3B175FD29500954F16 /* Build configuration list for PBXNativeTarget "privly-ios-tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9992CD6C175A853900EC283F /* Debug */,
-				9992CD6D175A853900EC283F /* Release */,
+				99307B3C175FD29500954F16 /* Debug */,
+				99307B3D175FD29500954F16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
