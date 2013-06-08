@@ -26,6 +26,7 @@
 {
     NSLog(@"%@ start", self.name);
     STAssertNotNil(appDelegate, @"Cannot find the application delegate");
+    STAssertNotNil(appDelegate.loginViewController, @"Cannot find application's delegate loginViewController");
     NSLog(@"%@ end", self.name);
 }
 
