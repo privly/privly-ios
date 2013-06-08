@@ -1,9 +1,7 @@
 //
 //  privly_ios_tests.h
-//  privly-ios-tests
-//
-//  Created by Hery Ratsimihah on 6/5/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
+//  privly-ios
+//  Copyright 2013 The Privly Foundation.
 //
 
 #import <SenTestingKit/SenTestingKit.h>

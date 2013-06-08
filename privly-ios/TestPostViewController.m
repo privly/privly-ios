@@ -1,11 +1,8 @@
 //
 //  TestPostViewController.m
 //  privly-ios
+//  Copyright 2013 The Privly Foundation.
 //
-//  Created by Hery Ratsimihah on 6/5/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
-//
-
 #import "TestPostViewController.h"
 
 @interface TestPostViewController ()
@@ -44,8 +41,8 @@
 }
 
 - (IBAction)loadThatJS:(id)sender {
-    NSString *jSFunction = @"getURL();";
+    NSString *jSFunction = @"makeCorsRequest();";
     NSString *url = [self.testPostWebView stringByEvaluatingJavaScriptFromString:jSFunction];
-    NSLog(@"JS URL is: %@", url);
+    NSLog(@"%@", @"CORS request sent.");
 }
 @end

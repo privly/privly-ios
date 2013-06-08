@@ -186,11 +186,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		99307B1D175FB25800954F16 /* JS apps */ = {
+		9915A1761760FFAE00E4311E /* SimplePost */ = {
 			isa = PBXGroup;
 			children = (
 				99307B1E175FB27300954F16 /* simpleApp.js */,
 				99307B26175FBD6B00954F16 /* simpleApp.html */,
+			);
+			name = SimplePost;
+			sourceTree = "<group>";
+		};
+		99307B1D175FB25800954F16 /* JS apps */ = {
+			isa = PBXGroup;
+			children = (
+				9915A1761760FFAE00E4311E /* SimplePost */,
 			);
 			name = "JS apps";
 			sourceTree = "<group>";
@@ -578,6 +586,7 @@
 				99307B3D175FD29500954F16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,9 +1,7 @@
 //
 //  privly_ios_tests.m
-//  privly-ios-tests
-//
-//  Created by Hery Ratsimihah on 6/5/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
+//  privly-ios
+//  Copyright 2013 The Privly Foundation.
 //
 
 #import "privly_ios_tests.h"
@@ -13,7 +11,6 @@
 - (void)setUp
 {
     [super setUp];
-    // Set-up code here.
     NSLog(@"%@ setUp", self.name);
     appDelegate = [[UIApplication sharedApplication] delegate];
 }
@@ -21,12 +18,15 @@
 - (void)tearDown
 {
     // Tear-down code here.
+    NSLog(@"%@ tearDown", self.name);
     [super tearDown];
 }
 
 - (void)testAppDelegate
 {
+    NSLog(@"%@ start", self.name);
     STAssertNotNil(appDelegate, @"Cannot find the application delegate");
+    NSLog(@"%@ end", self.name);
 }
 
 @end
