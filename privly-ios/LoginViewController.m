@@ -25,7 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    /**
+      set textfields delegate to receive the textFieldShouldReturn message
+      */
     self.passwordTextField.delegate = self;
     self.emailTextField.delegate = self;
 }
