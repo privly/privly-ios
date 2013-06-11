@@ -42,7 +42,7 @@
 
 - (IBAction)loadThatJS:(id)sender {
     NSString *jSFunction = @"makeCorsRequest();";
-    NSString *url = [self.testPostWebView stringByEvaluatingJavaScriptFromString:jSFunction];
+    [self.testPostWebView stringByEvaluatingJavaScriptFromString:jSFunction];
     NSLog(@"%@", @"CORS request sent.");
 }
 @end
