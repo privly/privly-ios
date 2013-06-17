@@ -9,6 +9,5 @@
 @interface TestPostViewController : UIViewController <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *testPostWebView;
-- (IBAction)loadThatJS:(id)sender;
 
 @end

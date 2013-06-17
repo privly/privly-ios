@@ -16,6 +16,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"Simple JS App";
     }
     return self;
 }
@@ -35,14 +36,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) webViewDidFinishLoad:(UIWebView *)webView
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-   
+    NSLog(@"Request URL: %@", [[request URL] absoluteString]);
+    return YES;
 }
 
-- (IBAction)loadThatJS:(id)sender {
-    NSString *jSFunction = @"makeCorsRequest();";
-    [self.testPostWebView stringByEvaluatingJavaScriptFromString:jSFunction];
-    NSLog(@"%@", @"CORS request sent.");
-}
+
 @end
