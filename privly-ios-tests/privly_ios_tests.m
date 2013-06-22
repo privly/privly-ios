@@ -17,8 +17,8 @@
 
 - (void)tearDown
 {
-    // Tear-down code here.
     NSLog(@"%@ tearDown", self.name);
+    appDelegate = nil;
     [super tearDown];
 }
 

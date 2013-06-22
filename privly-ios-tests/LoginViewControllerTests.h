@@ -8,6 +8,12 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface LoginViewControllerTests : SenTestCase
+@class LoginViewController;
+
+@interface LoginViewControllerTests : SenTestCase <UITextFieldDelegate>
+{
+    LoginViewController *loginViewController;
+}
+
 
 @end
