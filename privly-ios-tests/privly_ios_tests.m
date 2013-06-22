@@ -26,18 +26,7 @@
 {
     NSLog(@"%@ start", self.name);
     STAssertNotNil(appDelegate, @"Cannot find the application delegate");
-    STAssertNotNil(appDelegate.loginViewController, @"Cannot find application's delegate loginViewController");
     NSLog(@"%@ end", self.name);
-}
-
-- (void)testLoginViewController
-{
-    NSLog(@"%@ start", self.name);
-    STAssertTrue([appDelegate.loginViewController.passwordTextField.delegate isEqual:appDelegate.loginViewController] , @"Delegate not set properly");
-    STAssertTrue([appDelegate.loginViewController.emailTextField.delegate isEqual:appDelegate.loginViewController] , @"Delegate not set properly");
-    // Need a test for user authentication
-    NSLog(@"%@ end", self.name);
-
 }
 
 @end

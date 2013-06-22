@@ -47,9 +47,6 @@
 }
 
 - (IBAction)createZeroBinPost:(id)sender {
-//    Drop JS app here.
-//    ZeroBinPostViewController *zeroBinPostViewController = [[ZeroBinPostViewController alloc] init];
-//    [self.navigationController pushViewController:zeroBinPostViewController animated:YES];
     UIAlertView *zeroBinAlert = [[UIAlertView alloc] initWithTitle:@"ZeroBin" message:@"The app is currently being implemented..." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
     [zeroBinAlert show];
 }
@@ -68,6 +65,5 @@
                                                                           delegate:self cancelButtonTitle:@"Ok"
                                                                  otherButtonTitles:nil];
     [featureNotAvailableAlertView show];
-    // Push reading mode view controller
 }
 @end

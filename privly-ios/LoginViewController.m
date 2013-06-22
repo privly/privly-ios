@@ -26,15 +26,10 @@
 {
     [super viewDidLoad];
     /**
-      set textfields delegate to receive the textFieldShouldReturn message
+      set textfields delegate as self to receive the textFieldShouldReturn message
       */
     self.passwordTextField.delegate = self;
     self.emailTextField.delegate = self;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,46 +47,41 @@
     if ([email isEqualToString:@""] || [password isEqualToString:@""]) {
         NSLog(@"All fields are required.");
     } else {
-        NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"
-                               ];
+        NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"];
         NSURL *requestURL = [NSURL URLWithString:stringURL];
         NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
         
-        // Set request's method
-        [mutableURLRequest setHTTPMethod:@"POST"];
-        
-        // Set request's parameters
         NSString *parameterString = [NSString stringWithFormat:@"email=%@&password=%@", email, password];
         NSData *parameterData = [parameterString dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+        
+        [mutableURLRequest setHTTPMethod:@"POST"];
         [mutableURLRequest setHTTPBody:parameterData];
-        
-        // Set request's Content-Type
         [mutableURLRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-        
-        NSLog(@"Getting authentication token.");
-        
+                
         NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-        [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-            // Was the request successful ?
+        [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response,
+                                                                                                   NSData *data,
+                                                                                                   NSError *error) {
             if ([data length] > 0 && error == nil) {
-                // Deserialize JSON response and get authentication key
+                // If successful request, deserialize JSON response and get authentication key
                 id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
                 if (jsonResponse != nil && error == nil) {
                     NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
                     NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
                     NSLog(@"Authentication token received: %@.", authenticationKey);
-                    // Save token in user preferences
+                    // Save token in user preferences.
                     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
                     [userDefaults setObject:authenticationKey forKey:@"auth_token"];
                     [userDefaults synchronize];
-                    NSLog(@"Authentication token saved in user preferences.");
+                    NSLog(@"Authentication token saved in user preferenc™s.");
                 }
             } else if ([data length] == 0 && error == nil) {
-                NSLog(@"Success. No response.");
+                NSLog(@"Success, no response.");
             } else if (error != nil) {
                 NSLog(@"Something went wrong");
             }
         }];
+        
         [self.view endEditing:YES];
         ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
         [self.navigationController pushViewController:applicationTypeViewController animated:YES];
