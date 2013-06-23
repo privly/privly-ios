@@ -1,10 +1,9 @@
 //
 //  LoginViewControllerTests.h
 //  privly-ios
+//  Copyright 2013 The Privly Foundation.
 //
-//  Created by Hery Ratsimihah on 6/22/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
-//
+
 
 #import <SenTestingKit/SenTestingKit.h>
 

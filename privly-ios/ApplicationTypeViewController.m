@@ -33,6 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _mockNavigationController = [[UINavigationController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)createPlainPost:(id)sender {
+- (IBAction)createPlainPost:(id)snder {
     PlainPostDestinationViewController *plainPostDestinationViewController = [[PlainPostDestinationViewController alloc] init];
     [self.navigationController pushViewController:plainPostDestinationViewController animated:YES];
 }
@@ -65,5 +66,12 @@
                                                                           delegate:self cancelButtonTitle:@"Ok"
                                                                  otherButtonTitles:nil];
     [featureNotAvailableAlertView show];
+}
+
+#pragma mark Test-helper methods
+
+- (UINavigationController *)navigationController
+{
+    return _mockNavigationController;
 }
 @end
