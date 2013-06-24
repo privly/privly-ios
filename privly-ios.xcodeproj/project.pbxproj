@@ -17,10 +17,8 @@
 		358D71D81724752700979F57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D71724752700979F57 /* Default@2x.png */; };
 		358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D91724752700979F57 /* Default-568h@2x.png */; };
 		358D71E917248B3000979F57 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D71E717248B3000979F57 /* LoginViewController.m */; };
-		35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943DA173193E0009052DC /* ZeroBinPostViewController.m */; };
 		35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */; };
 		35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */; };
-		35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */; };
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
 		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
@@ -36,6 +34,8 @@
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
 		99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34455177653C60044CC04 /* LoginViewControllerTests.m */; };
 		99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */; };
+		99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */; };
+		99E3445D17779F6C0044CC04 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
 		99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */; };
 		99EC26A91758080400EC234F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26A81758080400EC234F /* Accounts.framework */; };
 		99EC26AB1758080800EC234F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
@@ -67,12 +67,9 @@
 		358D71D91724752700979F57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		358D71E617248B3000979F57 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		358D71E717248B3000979F57 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		35A943D9173193E0009052DC /* ZeroBinPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroBinPostViewController.h; sourceTree = "<group>"; };
-		35A943DA173193E0009052DC /* ZeroBinPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroBinPostViewController.m; sourceTree = "<group>"; };
 		35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewController.h; sourceTree = "<group>"; };
 		35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewController.m; sourceTree = "<group>"; };
 		35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationTypeViewController.xib; sourceTree = "<group>"; };
-		35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZeroBinPostViewController.xib; sourceTree = "<group>"; };
 		35A944001731A497009052DC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
 		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
@@ -95,6 +92,8 @@
 		99E34455177653C60044CC04 /* LoginViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControllerTests.m; sourceTree = "<group>"; };
 		99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewControllerTest.h; sourceTree = "<group>"; };
 		99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewControllerTest.m; sourceTree = "<group>"; };
+		99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialNetworksRequestTest.h; path = "../privly-ios/SocialNetworksRequestTest.h"; sourceTree = "<group>"; };
+		99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialNetworksRequestTest.m; path = "../privly-ios/SocialNetworksRequestTest.m"; sourceTree = "<group>"; };
 		99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworksRequest.h; sourceTree = "<group>"; };
 		99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworksRequest.m; sourceTree = "<group>"; };
 		99EC26A81758080400EC234F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -118,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E3445D17779F6C0044CC04 /* Social.framework in Frameworks */,
 				99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */,
 				99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */,
 				99307B30175FD29500954F16 /* Foundation.framework in Frameworks */,
@@ -228,6 +228,8 @@
 				99E34455177653C60044CC04 /* LoginViewControllerTests.m */,
 				99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */,
 				99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */,
+				99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */,
+				99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */,
 				99307B32175FD29500954F16 /* Supporting Files */,
 			);
 			path = "privly-ios-tests";
@@ -248,7 +250,6 @@
 			children = (
 				99307B20175FB70D00954F16 /* TestPost */,
 				996E2635175695BC003B51A5 /* PlainPost */,
-				996E2636175695D3003B51A5 /* ZeroBin */,
 			);
 			name = Posting;
 			sourceTree = "<group>";
@@ -263,16 +264,6 @@
 				9912C02E174AD62700E13A01 /* PlainPostViewController.xib */,
 			);
 			name = PlainPost;
-			sourceTree = "<group>";
-		};
-		996E2636175695D3003B51A5 /* ZeroBin */ = {
-			isa = PBXGroup;
-			children = (
-				35A943D9173193E0009052DC /* ZeroBinPostViewController.h */,
-				35A943DA173193E0009052DC /* ZeroBinPostViewController.m */,
-				35A943FE1731A3CA009052DC /* ZeroBinPostViewController.xib */,
-			);
-			name = ZeroBin;
 			sourceTree = "<group>";
 		};
 		99EC26A11757BBB700EC234F /* Helpers */ = {
@@ -361,7 +352,6 @@
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
 				99307B1F175FB27300954F16 /* simpleApp.js in Resources */,
 				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
-				35A943FF1731A3CA009052DC /* ZeroBinPostViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
 				9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */,
 				99307B25175FB73B00954F16 /* TestPostViewController.xib in Resources */,
@@ -403,7 +393,6 @@
 				358D71D01724752700979F57 /* main.m in Sources */,
 				358D71D41724752700979F57 /* AppDelegate.m in Sources */,
 				358D71E917248B3000979F57 /* LoginViewController.m in Sources */,
-				35A943DC173193E0009052DC /* ZeroBinPostViewController.m in Sources */,
 				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
 				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
 				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
@@ -419,6 +408,7 @@
 				99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */,
 				99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */,
 				99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */,
+				99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

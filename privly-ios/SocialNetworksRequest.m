@@ -19,11 +19,10 @@
 - (void)setupAccountForServiceTypeInt:(int)serviceTypeInt {
     switch (serviceTypeInt) {
         case 0:
-            serviceTypeString = SLServiceTypeFacebook;
-            
+            _serviceTypeString = SLServiceTypeFacebook;
             break;
         case 1:
-            serviceTypeString = SLServiceTypeTwitter;
+            _serviceTypeString = SLServiceTypeTwitter;
             break;
         case 2: // Privly
             break;
@@ -32,13 +31,13 @@
     }
 }
 
-- (BOOL)userHasAccessToService {    
-    return [SLComposeViewController isAvailableForServiceType:serviceTypeString];
+- (BOOL)userHasAccessToService {
+    return [SLComposeViewController isAvailableForServiceType:_serviceTypeString];
 }
 
 - (void)postMessage {
     if ([self userHasAccessToService]) {
-        SLComposeViewController *socialNetworkViewController = [SLComposeViewController composeViewControllerForServiceType:serviceTypeString];
+        SLComposeViewController *socialNetworkViewController = [SLComposeViewController composeViewControllerForServiceType:_serviceTypeString];
         [socialNetworkViewController setInitialText:_postContent];
         [_delegate presentViewController:socialNetworkViewController animated:YES completion:nil];
     }

@@ -46,16 +46,6 @@
     }
 }
 
-- (void)testCreateZeroBinPost
-{
-    [applicationTypeViewController createZeroBinPost:nil];
-    if ([applicationTypeViewController.navigationController.viewControllers count] >0 ) {
-        STAssertTrue([applicationTypeViewController.navigationController.viewControllers[0] isKindOfClass:[ZeroBinPostViewController class]], @"ZeroBin Post view controller could not be created.");
-    } else {
-        STFail(@"ZeroBin Post view controller could not be created.");
-    }
-}
-
 - (void)testLogout
 {
     

@@ -70,7 +70,7 @@
 
 - (IBAction)createPlainPost:(id)sender {
     NSString *userMessage = _PlainPostContent.text;
-    NSString *privlyMessage = @"Ultimately, this would be converted to a privly link.";
+    NSString *privlyMessage = @"Eventually, this would be converted to a privly link.";
     NSString *postContent = [userMessage stringByAppendingFormat:@"\n\n%@", privlyMessage];
     SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] init];
     // Set delegate to push SocialNetworkRequest's SLComposeViewController
