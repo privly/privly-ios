@@ -43,9 +43,4 @@
     STAssertFalse([loginViewController.emailTextField isFirstResponder], @"Textfield is still first responder.");
 }
 
-- (void)testAuthentication
-{
-    STFail(@"Authentication request is not tested.");
-}
-
 @end
