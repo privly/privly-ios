@@ -12,7 +12,7 @@
 {
     self = [super init];
     if (self) {
-    }
+    }    
     return self;
 }
 
@@ -40,6 +40,7 @@
         SLComposeViewController *socialNetworkViewController = [SLComposeViewController composeViewControllerForServiceType:_serviceTypeString];
         [socialNetworkViewController setInitialText:_postContent];
         [_delegate presentViewController:socialNetworkViewController animated:YES completion:nil];
+        NSLog(@"%@", _delegate.presentedViewController);
     }
 }
 

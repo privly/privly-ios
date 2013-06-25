@@ -14,11 +14,14 @@
 - (void)setUp
 {
     socialNetworkRequest = [[SocialNetworksRequest alloc] init];
+    delegate = [[UIViewController alloc] init];
+    socialNetworkRequest.delegate = delegate;
 }
 
 - (void)tearDown
 {
     socialNetworkRequest = nil;
+    delegate = nil;
 }
 
 - (void)testSetupAccountForServiceTypeInt
@@ -39,18 +42,6 @@
     socialNetworkRequest.serviceTypeString = SLServiceTypeTwitter;
     STAssertTrue([socialNetworkRequest userHasAccessToService] == [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter],
                  @"Can't verify access to Twitter account.");
-}
-
-- (void)testPostMessage
-{
-    NSString *testString = @"This is a test string.";
-    socialNetworkRequest.postContent = testString;
-    socialNetworkRequest.serviceTypeString = SLServiceTypeFacebook;
-    [socialNetworkRequest postMessage];
-    STAssertTrue(socialNetworkRequest.postContent == testString, @"Couldn't set post content.");
-    NSLog(@"Prout: %@", [socialNetworkRequest.delegate.presentedViewController class]);
-    STAssertTrue([socialNetworkRequest.delegate.presentedViewController isKindOfClass:[SLComposeViewController class]],
-                 @"SLComposeViewController couldn't be presented.");
 }
 
 @end
