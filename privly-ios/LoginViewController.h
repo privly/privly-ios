@@ -5,13 +5,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ApplicationTypeViewController.h"
 
-@interface LoginViewController : UIViewController
+/**
+ View controller that handles user authentication.
+ */
 
-@property (weak, nonatomic) IBOutlet UILabel *authenticationTokenLabel;
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+
+/** Outlet for user email address textfield */
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+/** Outlet for user password textfield */
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
+/**
+ Parses username and password and fire authentication request. 
+ @returns Stores authentication token in NSUserDefaults and returns
+ */
 - (IBAction)getToken:(id)sender;
 
 @end
