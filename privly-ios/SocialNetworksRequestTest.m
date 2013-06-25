@@ -43,14 +43,14 @@
 
 - (void)testPostMessage
 {
-//    NSString *testString = @"This is a test string.";
-//    socialNetworkRequest.postContent = testString;
-//    socialNetworkRequest.serviceTypeString = SLServiceTypeFacebook;
-//    [socialNetworkRequest postMessage];
-//    STAssertTrue(socialNetworkRequest.postContent == testString, @"Couldn't set post content.");
-//    NSLog(@"Prout: %@", [socialNetworkRequest.delegate.presentedViewController class]);
-//    STAssertTrue([socialNetworkRequest.delegate.presentedViewController isKindOfClass:[SLComposeViewController class]],
-//                 @"SLComposeViewController couldn't be presented.");
+    NSString *testString = @"This is a test string.";
+    socialNetworkRequest.postContent = testString;
+    socialNetworkRequest.serviceTypeString = SLServiceTypeFacebook;
+    [socialNetworkRequest postMessage];
+    STAssertTrue(socialNetworkRequest.postContent == testString, @"Couldn't set post content.");
+    NSLog(@"Prout: %@", [socialNetworkRequest.delegate.presentedViewController class]);
+    STAssertTrue([socialNetworkRequest.delegate.presentedViewController isKindOfClass:[SLComposeViewController class]],
+                 @"SLComposeViewController couldn't be presented.");
 }
 
 @end

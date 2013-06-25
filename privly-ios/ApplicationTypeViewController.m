@@ -51,11 +51,6 @@
     [zeroBinAlert show];
 }
 
-- (IBAction)createTestPost:(id)sender {
-    TestPostViewController *testPostViewController = [[TestPostViewController alloc] init];
-    [self.navigationController pushViewController:testPostViewController animated:YES];
-}
-
 - (IBAction)logout:(id)sender {
 }
 

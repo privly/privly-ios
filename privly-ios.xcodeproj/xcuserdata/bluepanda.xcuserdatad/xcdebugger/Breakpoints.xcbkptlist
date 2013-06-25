@@ -8,19 +8,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "privly-ios-tests/ApplicationTypeViewControllerTest.m"
-         timestampString = "393865522.956308"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "42"
-         endingLineNumber = "42"
-         landmarkName = "-testCreatePlainPost"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "privly-ios-tests/ApplicationTypeViewControllerTest.m"
          timestampString = "393715151.35455"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"

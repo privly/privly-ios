@@ -33,24 +33,4 @@
                          @"Read", @"Reading mode button is not set.");
 }
 
-- (void)testCreatePlainPost
-{
-    [applicationTypeViewController createPlainPost:nil];
-    if ([applicationTypeViewController.navigationController.viewControllers count] > 0) {
-        STAssertTrue([applicationTypeViewController.navigationController.viewControllers[0] isKindOfClass:[PlainPostDestinationViewController class]], @"Plain Post view controller could not be created.");
-    } else {
-        STFail(@"Plain Post view controller could not be created.");
-    }
-}
-
-- (void)testLogout
-{
-    
-}
-
-- (void)testSwitchToReadingMode
-{
-    
-}
-
 @end

@@ -13,7 +13,6 @@
 
 - (IBAction)createPlainPost:(id)sender;
 - (IBAction)createZeroBinPost:(id)sender;
-- (IBAction)createTestPost:(id)sender;
 - (IBAction)logout:(id)sender;
 
 @end
