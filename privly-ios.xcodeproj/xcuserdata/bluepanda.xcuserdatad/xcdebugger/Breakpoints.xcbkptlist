@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "privly-ios-tests/ApplicationTypeViewControllerTest.m"
-         timestampString = "393712550.730251"
+         timestampString = "393865522.956308"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
          landmarkName = "-testCreatePlainPost"
          landmarkType = "5">
       </FileBreakpoint>

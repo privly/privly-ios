@@ -13,14 +13,11 @@
 - (void)setUp
 {
     applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
-    UINavigationController *mock = [[UINavigationController alloc] init];
-    applicationTypeViewController.mockNavigationController = mock;
 }
 
 - (void)tearDown
 {
     applicationTypeViewController = nil;
-    mockNavigationController = nil;    
 }
 
 - (void)testTitle

@@ -17,7 +17,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _mockNavigationController = [[UINavigationController alloc] init];
         self.title = @"Post Type";
         
         UIBarButtonItem *readingMode = [[UIBarButtonItem alloc] initWithTitle:@"Read"
@@ -66,14 +65,6 @@
                                                                           delegate:self cancelButtonTitle:@"Ok"
                                                                  otherButtonTitles:nil];
     [featureNotAvailableAlertView show];
-}
-
-#pragma mark Test-helper methods
-
-- (UINavigationController *)navigationController
-{
-    NSLog(@"Navigation controller accessed.");
-    return _mockNavigationController;
 }
 
 @end

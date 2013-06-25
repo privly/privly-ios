@@ -11,7 +11,6 @@
 
 @interface ApplicationTypeViewControllerTest : SenTestCase {
     ApplicationTypeViewController *applicationTypeViewController;
-    UINavigationController *mockNavigationController;
 }
 
 @end
