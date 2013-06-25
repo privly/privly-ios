@@ -11,7 +11,7 @@
 
 @interface ApplicationTypeViewController : UIViewController
 
-@property (nonatomic, strong) UINavigationController *mockNavigationController;
+@property (nonatomic) UINavigationController *mockNavigationController;
 
 - (IBAction)createPlainPost:(id)sender;
 - (IBAction)createZeroBinPost:(id)sender;

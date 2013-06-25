@@ -17,6 +17,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        _mockNavigationController = [[UINavigationController alloc] init];
         self.title = @"Post Type";
         
         UIBarButtonItem *readingMode = [[UIBarButtonItem alloc] initWithTitle:@"Read"
@@ -24,7 +25,6 @@
                                                                        action:@selector(switchToReadingMode)];
         UINavigationItem *nav = self.navigationItem;
         [nav setRightBarButtonItem:readingMode];
-        
     }
     return self;
 }
@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    _mockNavigationController = [[UINavigationController alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,6 +72,8 @@
 
 - (UINavigationController *)navigationController
 {
+    NSLog(@"Navigation controller accessed.");
     return _mockNavigationController;
 }
+
 @end
