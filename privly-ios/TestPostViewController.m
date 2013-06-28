@@ -16,7 +16,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Simple JS App";
+        self.title = @"Integration Test";
     }
     return self;
 }
@@ -25,9 +25,16 @@
 {
     [super viewDidLoad];
     self.testPostWebView.delegate = self;
-    // Do any additional setup after loading the view from its nib.
-    [self.testPostWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"simpleApp"
-                                                                                                                      ofType:@"html"]]]];
+    NSBundle *main = [NSBundle mainBundle];
+    NSString *urlStringForHTML = [main pathForResource:@"new" ofType:@".html" inDirectory:@"privly-applications/PlainPost"];
+    // Encode string using Core Foundation String
+    NSString *escapedURLString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                                                    (CFStringRef)urlStringForHTML,
+                                                                                                    NULL,
+                                                                                                    CFSTR(":?#[]@!$&’()*+,;="), 
+                                                                                                    kCFStringEncodingUTF8));
+    NSURL *urlRequestForHTML = [NSURL URLWithString:escapedURLString];    
+    [self.testPostWebView loadRequest:[NSURLRequest requestWithURL:urlRequestForHTML]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +48,5 @@
     NSLog(@"Request URL: %@", [[request URL] absoluteString]);
     return YES;
 }
-
 
 @end

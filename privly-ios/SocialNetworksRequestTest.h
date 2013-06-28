@@ -12,6 +12,7 @@
 
 @interface SocialNetworksRequestTest : SenTestCase {
     SocialNetworksRequest *socialNetworkRequest;
+    UIViewController *delegate;
 }
 
 @end

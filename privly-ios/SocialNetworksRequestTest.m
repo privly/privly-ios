@@ -14,11 +14,14 @@
 - (void)setUp
 {
     socialNetworkRequest = [[SocialNetworksRequest alloc] init];
+    delegate = [[UIViewController alloc] init];
+    socialNetworkRequest.delegate = delegate;
 }
 
 - (void)tearDown
 {
     socialNetworkRequest = nil;
+    delegate = nil;
 }
 
 - (void)testSetupAccountForServiceTypeInt
@@ -39,11 +42,6 @@
     socialNetworkRequest.serviceTypeString = SLServiceTypeTwitter;
     STAssertTrue([socialNetworkRequest userHasAccessToService] == [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter],
                  @"Can't verify access to Twitter account.");
-}
-
-- (void)testPostMessage
-{
-    
 }
 
 @end

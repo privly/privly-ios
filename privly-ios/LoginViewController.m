@@ -73,7 +73,7 @@
                     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
                     [userDefaults setObject:authenticationKey forKey:@"auth_token"];
                     [userDefaults synchronize];
-                    NSLog(@"Authentication token saved in user preferenc™s.");
+                    NSLog(@"Authentication token saved in user preferences.");
                 }
             } else if ([data length] == 0 && error == nil) {
                 NSLog(@"Success, no response.");

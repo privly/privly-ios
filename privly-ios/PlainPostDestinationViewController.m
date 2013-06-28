@@ -18,7 +18,7 @@
     if (self) {
         // Custom initialization
         self.title = @"Destination";
-        availableServices = [NSArray arrayWithObjects:@"Facebook", @"Twitter", @"Privly", nil];
+        availableServices = [NSArray arrayWithObjects:@"Facebook", @"Twitter", nil];
     }
     return self;
 }

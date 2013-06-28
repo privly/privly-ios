@@ -24,7 +24,6 @@
                                                                        action:@selector(switchToReadingMode)];
         UINavigationItem *nav = self.navigationItem;
         [nav setRightBarButtonItem:readingMode];
-        
     }
     return self;
 }
@@ -33,7 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    _mockNavigationController = [[UINavigationController alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,12 +51,12 @@
     [zeroBinAlert show];
 }
 
+- (IBAction)logout:(id)sender {
+}
+
 - (IBAction)createTestPost:(id)sender {
     TestPostViewController *testPostViewController = [[TestPostViewController alloc] init];
     [self.navigationController pushViewController:testPostViewController animated:YES];
-}
-
-- (IBAction)logout:(id)sender {
 }
 
 - (void)switchToReadingMode {
@@ -68,10 +67,4 @@
     [featureNotAvailableAlertView show];
 }
 
-#pragma mark Test-helper methods
-
-- (UINavigationController *)navigationController
-{
-    return _mockNavigationController;
-}
 @end
