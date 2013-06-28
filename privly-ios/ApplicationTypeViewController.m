@@ -54,6 +54,11 @@
 - (IBAction)logout:(id)sender {
 }
 
+- (IBAction)createTestPost:(id)sender {
+    TestPostViewController *testPostViewController = [[TestPostViewController alloc] init];
+    [self.navigationController pushViewController:testPostViewController animated:YES];
+}
+
 - (void)switchToReadingMode {
     UIAlertView *featureNotAvailableAlertView = [[UIAlertView alloc] initWithTitle:@"Feature Not Available"
                                                                            message:@"Reading capabilities will be added soon. "

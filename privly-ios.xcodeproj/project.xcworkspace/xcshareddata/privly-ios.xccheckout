@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4DD2ACE0-063F-4C03-B81C-C969F295E2F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>privly-ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1BAB1A37-7825-4BAD-B495-70EC1351D4DF</key>
+		<string>ssh://github.com/hery/privly-ios.git</string>
+		<key>2075D4BC-005E-4C9F-B264-764BBA41A00D</key>
+		<string>ssh://github.com/hery/privly-applications.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>privly-ios.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1BAB1A37-7825-4BAD-B495-70EC1351D4DF</key>
+		<string>../..</string>
+		<key>2075D4BC-005E-4C9F-B264-764BBA41A00D</key>
+		<string>../../privly-ios/privly-applications</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/hery/privly-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1BAB1A37-7825-4BAD-B495-70EC1351D4DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2075D4BC-005E-4C9F-B264-764BBA41A00D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>privly-applications</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1BAB1A37-7825-4BAD-B495-70EC1351D4DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>privly-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
