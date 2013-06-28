@@ -17,8 +17,40 @@
 		358D71D81724752700979F57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D71724752700979F57 /* Default@2x.png */; };
 		358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358D71D91724752700979F57 /* Default-568h@2x.png */; };
 		358D71E917248B3000979F57 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D71E717248B3000979F57 /* LoginViewController.m */; };
-		358D71EA17248B3000979F57 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358D71E817248B3000979F57 /* LoginViewController.xib */; };
+		35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */; };
+		35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */; };
+		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
+		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
+		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
+		99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
+		99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
+		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
+		99307B36175FD29500954F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99307B34175FD29500954F16 /* InfoPlist.strings */; };
+		99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B38175FD29500954F16 /* privly_ios_tests.m */; };
+		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
+		99C6F77C177E150A00C21BDF /* privly-applications in Resources */ = {isa = PBXBuildFile; fileRef = 99C6F77B177E150A00C21BDF /* privly-applications */; };
+		99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34455177653C60044CC04 /* LoginViewControllerTests.m */; };
+		99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */; };
+		99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */; };
+		99E3445D17779F6C0044CC04 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
+		99E4E2FB177B5973006DD692 /* TestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* TestPostViewController.m */; };
+		99E4E2FC177B5973006DD692 /* TestPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* TestPostViewController.xib */; };
+		99E4E362177B5E7B006DD692 /* TestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* TestPostViewController.m */; };
+		99E4E363177B622A006DD692 /* TestPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* TestPostViewController.xib */; };
+		99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */; };
+		99EC26A91758080400EC234F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26A81758080400EC234F /* Accounts.framework */; };
+		99EC26AB1758080800EC234F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99307B3E175FEDAB00954F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 358D71B81724752700979F57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 358D71BF1724752700979F57;
+			remoteInfo = "privly-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		358D71C01724752700979F57 /* privly-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "privly-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +68,36 @@
 		358D71D91724752700979F57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		358D71E617248B3000979F57 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		358D71E717248B3000979F57 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		358D71E817248B3000979F57 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewController.h; sourceTree = "<group>"; };
+		35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewController.m; sourceTree = "<group>"; };
+		35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationTypeViewController.xib; sourceTree = "<group>"; };
+		35A944001731A497009052DC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
+		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
+		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
+		99307B2D175FD29500954F16 /* privly-ios-tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "privly-ios-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "privly-ios-tests-Info.plist"; sourceTree = "<group>"; };
+		99307B35175FD29500954F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99307B37175FD29500954F16 /* privly_ios_tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = privly_ios_tests.h; sourceTree = "<group>"; };
+		99307B38175FD29500954F16 /* privly_ios_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = privly_ios_tests.m; sourceTree = "<group>"; };
+		99307B3A175FD29500954F16 /* privly-ios-tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "privly-ios-tests-Prefix.pch"; sourceTree = "<group>"; };
+		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
+		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
+		9992CD5E175A853900EC283F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		99C6F77B177E150A00C21BDF /* privly-applications */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "privly-applications"; sourceTree = "<group>"; };
+		99E34454177653C60044CC04 /* LoginViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControllerTests.h; sourceTree = "<group>"; };
+		99E34455177653C60044CC04 /* LoginViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControllerTests.m; sourceTree = "<group>"; };
+		99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewControllerTest.h; sourceTree = "<group>"; };
+		99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewControllerTest.m; sourceTree = "<group>"; };
+		99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialNetworksRequestTest.h; path = "../privly-ios/SocialNetworksRequestTest.h"; sourceTree = "<group>"; };
+		99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialNetworksRequestTest.m; path = "../privly-ios/SocialNetworksRequestTest.m"; sourceTree = "<group>"; };
+		99E4E2F8177B5973006DD692 /* TestPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPostViewController.h; sourceTree = "<group>"; };
+		99E4E2F9177B5973006DD692 /* TestPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPostViewController.m; sourceTree = "<group>"; };
+		99E4E2FA177B5973006DD692 /* TestPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPostViewController.xib; sourceTree = "<group>"; };
+		99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworksRequest.h; sourceTree = "<group>"; };
+		99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworksRequest.m; sourceTree = "<group>"; };
+		99EC26A81758080400EC234F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		99EC26AA1758080800EC234F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +105,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EC26AB1758080800EC234F /* Social.framework in Frameworks */,
+				99EC26A91758080400EC234F /* Accounts.framework in Frameworks */,
 				358D71C41724752700979F57 /* UIKit.framework in Frameworks */,
 				358D71C61724752700979F57 /* Foundation.framework in Frameworks */,
 				358D71C81724752700979F57 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99307B29175FD29500954F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99E3445D17779F6C0044CC04 /* Social.framework in Frameworks */,
+				99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */,
+				99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */,
+				99307B30175FD29500954F16 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +130,10 @@
 		358D71B71724752700979F57 = {
 			isa = PBXGroup;
 			children = (
+				99EC26AA1758080800EC234F /* Social.framework */,
+				99EC26A81758080400EC234F /* Accounts.framework */,
 				358D71C91724752700979F57 /* privly-ios */,
+				99307B31175FD29500954F16 /* privly-ios-tests */,
 				358D71C21724752700979F57 /* Frameworks */,
 				358D71C11724752700979F57 /* Products */,
 			);
@@ -66,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				358D71C01724752700979F57 /* privly-ios.app */,
+				99307B2D175FD29500954F16 /* privly-ios-tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +154,7 @@
 				358D71C31724752700979F57 /* UIKit.framework */,
 				358D71C51724752700979F57 /* Foundation.framework */,
 				358D71C71724752700979F57 /* CoreGraphics.framework */,
+				9992CD5E175A853900EC283F /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,7 +166,13 @@
 				358D71D31724752700979F57 /* AppDelegate.m */,
 				358D71E617248B3000979F57 /* LoginViewController.h */,
 				358D71E717248B3000979F57 /* LoginViewController.m */,
-				358D71E817248B3000979F57 /* LoginViewController.xib */,
+				35A944001731A497009052DC /* LoginViewController.xib */,
+				35A943F91731A2F0009052DC /* ApplicationTypeViewController.h */,
+				35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */,
+				35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */,
+				99B6B295177D35060002F7E6 /* Resources */,
+				99EC26A11757BBB700EC234F /* Helpers */,
+				996E2634175695A9003B51A5 /* Posting */,
 				358D71CA1724752700979F57 /* Supporting Files */,
 			);
 			path = "privly-ios";
@@ -105,6 +190,80 @@
 				358D71D91724752700979F57 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99307B31175FD29500954F16 /* privly-ios-tests */ = {
+			isa = PBXGroup;
+			children = (
+				99307B37175FD29500954F16 /* privly_ios_tests.h */,
+				99307B38175FD29500954F16 /* privly_ios_tests.m */,
+				99E34454177653C60044CC04 /* LoginViewControllerTests.h */,
+				99E34455177653C60044CC04 /* LoginViewControllerTests.m */,
+				99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */,
+				99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */,
+				99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */,
+				99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */,
+				99307B32175FD29500954F16 /* Supporting Files */,
+			);
+			path = "privly-ios-tests";
+			sourceTree = "<group>";
+		};
+		99307B32175FD29500954F16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */,
+				99307B34175FD29500954F16 /* InfoPlist.strings */,
+				99307B3A175FD29500954F16 /* privly-ios-tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		996E2634175695A9003B51A5 /* Posting */ = {
+			isa = PBXGroup;
+			children = (
+				99E4E2F7177B595D006DD692 /* TestPost */,
+				996E2635175695BC003B51A5 /* PlainPost */,
+			);
+			name = Posting;
+			sourceTree = "<group>";
+		};
+		996E2635175695BC003B51A5 /* PlainPost */ = {
+			isa = PBXGroup;
+			children = (
+				996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */,
+				996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */,
+				9912C02C174AD62700E13A01 /* PlainPostViewController.h */,
+				9912C02D174AD62700E13A01 /* PlainPostViewController.m */,
+				9912C02E174AD62700E13A01 /* PlainPostViewController.xib */,
+			);
+			name = PlainPost;
+			sourceTree = "<group>";
+		};
+		99B6B295177D35060002F7E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99C6F77B177E150A00C21BDF /* privly-applications */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		99E4E2F7177B595D006DD692 /* TestPost */ = {
+			isa = PBXGroup;
+			children = (
+				99E4E2F8177B5973006DD692 /* TestPostViewController.h */,
+				99E4E2F9177B5973006DD692 /* TestPostViewController.m */,
+				99E4E2FA177B5973006DD692 /* TestPostViewController.xib */,
+			);
+			name = TestPost;
+			sourceTree = "<group>";
+		};
+		99EC26A11757BBB700EC234F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */,
+				99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +285,25 @@
 			productName = "privly-ios";
 			productReference = 358D71C01724752700979F57 /* privly-ios.app */;
 			productType = "com.apple.product-type.application";
+		};
+		99307B2C175FD29500954F16 /* privly-ios-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99307B3B175FD29500954F16 /* Build configuration list for PBXNativeTarget "privly-ios-tests" */;
+			buildPhases = (
+				99307B28175FD29500954F16 /* Sources */,
+				99307B29175FD29500954F16 /* Frameworks */,
+				99307B2A175FD29500954F16 /* Resources */,
+				99307B2B175FD29500954F16 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99307B3F175FEDAB00954F16 /* PBXTargetDependency */,
+			);
+			name = "privly-ios-tests";
+			productName = "privly-ios-tests";
+			productReference = 99307B2D175FD29500954F16 /* privly-ios-tests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,6 +327,7 @@
 			projectRoot = "";
 			targets = (
 				358D71BF1724752700979F57 /* privly-ios */,
+				99307B2C175FD29500954F16 /* privly-ios-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,11 +341,40 @@
 				358D71D61724752700979F57 /* Default.png in Resources */,
 				358D71D81724752700979F57 /* Default@2x.png in Resources */,
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
-				358D71EA17248B3000979F57 /* LoginViewController.xib in Resources */,
+				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
+				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
+				99E4E363177B622A006DD692 /* TestPostViewController.xib in Resources */,
+				99C6F77C177E150A00C21BDF /* privly-applications in Resources */,
+				9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99307B2A175FD29500954F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99307B36175FD29500954F16 /* InfoPlist.strings in Resources */,
+				99E4E2FC177B5973006DD692 /* TestPostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99307B2B175FD29500954F16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		358D71BC1724752700979F57 /* Sources */ = {
@@ -176,16 +384,49 @@
 				358D71D01724752700979F57 /* main.m in Sources */,
 				358D71D41724752700979F57 /* AppDelegate.m in Sources */,
 				358D71E917248B3000979F57 /* LoginViewController.m in Sources */,
+				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
+				99E4E362177B5E7B006DD692 /* TestPostViewController.m in Sources */,
+				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
+				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
+				99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99307B28175FD29500954F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */,
+				99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */,
+				99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */,
+				99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */,
+				99E4E2FB177B5973006DD692 /* TestPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99307B3F175FEDAB00954F16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 358D71BF1724752700979F57 /* privly-ios */;
+			targetProxy = 99307B3E175FEDAB00954F16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		358D71CC1724752700979F57 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				358D71CD1724752700979F57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		99307B34175FD29500954F16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99307B35175FD29500954F16 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -277,6 +518,40 @@
 			};
 			name = Release;
 		};
+		99307B3C175FD29500954F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/privly-ios.app/privly-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "privly-ios-tests/privly-ios-tests-Prefix.pch";
+				INFOPLIST_FILE = "privly-ios-tests/privly-ios-tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		99307B3D175FD29500954F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/privly-ios.app/privly-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "privly-ios-tests/privly-ios-tests-Prefix.pch";
+				INFOPLIST_FILE = "privly-ios-tests/privly-ios-tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -296,6 +571,16 @@
 				358D71DF1724752700979F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99307B3B175FD29500954F16 /* Build configuration list for PBXNativeTarget "privly-ios-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99307B3C175FD29500954F16 /* Debug */,
+				99307B3D175FD29500954F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

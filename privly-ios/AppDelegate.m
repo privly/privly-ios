@@ -16,6 +16,7 @@
     
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    nav.navigationBar.tintColor = [UIColor blackColor];
     
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
