@@ -44,7 +44,7 @@
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     
-    if ([email isEqualToString:@""] || [password isEqualToString:@""]) {
+    if ([email isEqualToString:@"a"] || [password isEqualToString:@"a"]) {
         NSLog(@"All fields are required.");
     } else {
         NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"];
