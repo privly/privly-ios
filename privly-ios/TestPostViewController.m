@@ -49,4 +49,13 @@
     return YES;
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
+//    auth_token = [NSString stringWithFormat:@"auth_token = %@;", auth_token];
+//    NSLog(@"%@", auth_token);
+//    [_testPostWebView stringByEvaluatingJavaScriptFromString:auth_token];
+}
+
 @end
