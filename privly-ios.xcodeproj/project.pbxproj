@@ -22,6 +22,7 @@
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
 		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
+		9926CCC3178C563E00015084 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9926CCC2178C563E00015084 /* CustomNavigationViewController.m */; };
 		99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
 		99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
 		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
@@ -75,6 +76,8 @@
 		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
 		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
 		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
+		9926CCC1178C563E00015084 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomNavigationViewController.h; path = ../CustomNavigationViewController.h; sourceTree = "<group>"; };
+		9926CCC2178C563E00015084 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomNavigationViewController.m; path = ../CustomNavigationViewController.m; sourceTree = "<group>"; };
 		99307B2D175FD29500954F16 /* privly-ios-tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "privly-ios-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "privly-ios-tests-Info.plist"; sourceTree = "<group>"; };
 		99307B35175FD29500954F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -130,8 +133,6 @@
 		358D71B71724752700979F57 = {
 			isa = PBXGroup;
 			children = (
-				99EC26AA1758080800EC234F /* Social.framework */,
-				99EC26A81758080400EC234F /* Accounts.framework */,
 				358D71C91724752700979F57 /* privly-ios */,
 				99307B31175FD29500954F16 /* privly-ios-tests */,
 				358D71C21724752700979F57 /* Frameworks */,
@@ -151,6 +152,8 @@
 		358D71C21724752700979F57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99EC26AA1758080800EC234F /* Social.framework */,
+				99EC26A81758080400EC234F /* Accounts.framework */,
 				358D71C31724752700979F57 /* UIKit.framework */,
 				358D71C51724752700979F57 /* Foundation.framework */,
 				358D71C71724752700979F57 /* CoreGraphics.framework */,
@@ -164,6 +167,8 @@
 			children = (
 				358D71D21724752700979F57 /* AppDelegate.h */,
 				358D71D31724752700979F57 /* AppDelegate.m */,
+				9926CCC1178C563E00015084 /* CustomNavigationViewController.h */,
+				9926CCC2178C563E00015084 /* CustomNavigationViewController.m */,
 				358D71E617248B3000979F57 /* LoginViewController.h */,
 				358D71E717248B3000979F57 /* LoginViewController.m */,
 				35A944001731A497009052DC /* LoginViewController.xib */,
@@ -388,6 +393,7 @@
 				99E4E362177B5E7B006DD692 /* TestPostViewController.m in Sources */,
 				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
 				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
+				9926CCC3178C563E00015084 /* CustomNavigationViewController.m in Sources */,
 				99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

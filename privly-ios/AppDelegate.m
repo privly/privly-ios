@@ -5,6 +5,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CustomNavigationViewController.h"
 
 @implementation AppDelegate
 
@@ -15,7 +16,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    CustomNavigationViewController *nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
     nav.navigationBar.tintColor = [UIColor blackColor];
     
     [self.window setRootViewController:nav];

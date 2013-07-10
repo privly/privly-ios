@@ -49,13 +49,13 @@
     return YES;
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
+- (void)webViewDidFinishLoad:(UIWebView *)webView                               
 {
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//    NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
-//    auth_token = [NSString stringWithFormat:@"auth_token = %@;", auth_token];
-//    NSLog(@"%@", auth_token);
-//    [_testPostWebView stringByEvaluatingJavaScriptFromString:auth_token];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
+    auth_token = [NSString stringWithFormat:@"privlyNetworkService.authToken('%@');", auth_token];
+    NSLog(@"Calling %@ function", auth_token);
+    [_testPostWebView stringByEvaluatingJavaScriptFromString:auth_token];
 }
 
 @end
