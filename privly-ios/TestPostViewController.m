@@ -53,7 +53,7 @@
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
-    auth_token = [NSString stringWithFormat:@"privlyNetworkService.authToken('%@');", auth_token];
+    auth_token = [NSString stringWithFormat:@"privlyNetworkService.setAuthTokenString('%@');", auth_token];
     NSLog(@"Calling %@ function", auth_token);
     [_testPostWebView stringByEvaluatingJavaScriptFromString:auth_token];
 }
