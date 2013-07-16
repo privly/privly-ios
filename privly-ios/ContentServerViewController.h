@@ -7,6 +7,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ContentServerViewController : UIViewController
+/*
+ * Content Server is set in this view and passed to 
+ * the JavaScript app when the user wants to create a post.
+ */
 
 @property (weak, nonatomic) IBOutlet UILabel *currentContentServerLabel;
 @property (weak, nonatomic) IBOutlet UITextField *customContentServerTextField;
