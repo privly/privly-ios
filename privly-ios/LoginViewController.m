@@ -41,6 +41,7 @@
 #pragma mark - Authentication
 
 - (IBAction)getToken:(id)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; 
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     
@@ -70,7 +71,6 @@
                     NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
                     NSLog(@"Authentication token received: %@.", authenticationKey);
                     // Save token in user preferences.
-                    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
                     [userDefaults setObject:authenticationKey forKey:@"auth_token"];
                     [userDefaults synchronize];
                     NSLog(@"Authentication token saved in user preferences.");

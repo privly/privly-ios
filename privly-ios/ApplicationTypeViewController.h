@@ -11,9 +11,9 @@
 
 @interface ApplicationTypeViewController : UIViewController
 
-- (IBAction)createPlainPost:(id)sender;
-- (IBAction)createZeroBinPost:(id)sender;
+- (IBAction)createPost:(id)sender;
 - (IBAction)logout:(id)sender;
-- (IBAction)createTestPost:(id)sender;
+- (IBAction)readingMode:(id)sender;
+- (IBAction)contentServer:(id)sender;
 
 @end

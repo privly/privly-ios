@@ -3,6 +3,7 @@
 //  privly-ios
 //  Copyright 2013 The Privly Foundation.
 //
+
 #import "TestPostViewController.h"
 
 @interface TestPostViewController ()
@@ -16,7 +17,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Integration Test";
+        self.title = @"New Post";
     }
     return self;
 }

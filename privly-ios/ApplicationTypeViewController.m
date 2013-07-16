@@ -5,6 +5,7 @@
 //
 
 #import "ApplicationTypeViewController.h"
+#import "ContentServerViewController.h"
 
 @interface ApplicationTypeViewController ()
 
@@ -17,13 +18,13 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Post Type";
+        self.title = @"Privly";
         
-        UIBarButtonItem *readingMode = [[UIBarButtonItem alloc] initWithTitle:@"Read"
+        UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
                                                                         style:UIBarButtonItemStylePlain target:self
-                                                                       action:@selector(switchToReadingMode)];
+                                                                       action:@selector(logout)];
         UINavigationItem *nav = self.navigationItem;
-        [nav setRightBarButtonItem:readingMode];
+        [nav setRightBarButtonItem:logoutButton];
     }
     return self;
 }
@@ -32,7 +33,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,30 +41,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)createPlainPost:(id)snder {
-    PlainPostDestinationViewController *plainPostDestinationViewController = [[PlainPostDestinationViewController alloc] init];
-    [self.navigationController pushViewController:plainPostDestinationViewController animated:YES];
-}
-
-- (IBAction)createZeroBinPost:(id)sender {
-    UIAlertView *zeroBinAlert = [[UIAlertView alloc] initWithTitle:@"ZeroBin" message:@"The app is currently being implemented..." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
-    [zeroBinAlert show];
-}
-
 - (IBAction)logout:(id)sender {
 }
 
-- (IBAction)createTestPost:(id)sender {
+- (IBAction)createPost:(id)sender {
     TestPostViewController *testPostViewController = [[TestPostViewController alloc] init];
     [self.navigationController pushViewController:testPostViewController animated:YES];
 }
 
-- (void)switchToReadingMode {
-    UIAlertView *featureNotAvailableAlertView = [[UIAlertView alloc] initWithTitle:@"Feature Not Available"
-                                                                           message:@"Reading capabilities will be added soon. "
-                                                                          delegate:self cancelButtonTitle:@"Ok"
-                                                                 otherButtonTitles:nil];
-    [featureNotAvailableAlertView show];
+- (IBAction)readingMode:(id)sender {
+    UIAlertView *readingModeAlert = [[UIAlertView alloc] initWithTitle:@"Not Available" message:@"Reading Mode is currently being implemented." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
+    [readingModeAlert show];
+}
+
+- (IBAction)contentServer:(id)sender {
+    ContentServerViewController *contentServerViewController = [[ContentServerViewController alloc] init];
+    contentServerViewController.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self.navigationController presentViewController:contentServerViewController animated:YES completion:nil];
 }
 
 @end

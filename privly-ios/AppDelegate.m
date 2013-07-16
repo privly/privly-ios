@@ -6,6 +6,8 @@
 
 #import "AppDelegate.h"
 #import "CustomNavigationViewController.h"
+#import "LoginViewController.h"
+#import "ApplicationTypeViewController.h"
 
 @implementation AppDelegate
 
@@ -15,9 +17,20 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    CustomNavigationViewController *nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
-    nav.navigationBar.tintColor = [UIColor blackColor];
+    CustomNavigationViewController *nav;
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *authToken = [userDefaults valueForKey:@"auth_token"];
+    NSLog(@"Authentication Token: %@", authToken);
+    // Check authToken validity with server. Must be async.
+    // Assumes authToken is always valid for now.
+    if (authToken) {
+        ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+        nav = [[CustomNavigationViewController alloc] initWithRootViewController:applicationTypeViewController];
+    } else {
+        LoginViewController *loginViewController = [[LoginViewController alloc] init];
+        nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
+    }
     
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
