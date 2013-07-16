@@ -29,6 +29,10 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    /*
+     * If the Content Server is set,
+     * update text label.
+     */
     [super viewWillAppear:animated];
     NSString *contentServerString = [[NSUserDefaults standardUserDefaults] valueForKey:@"content_server"];
     if (![contentServerString isEqualToString:@""]) {
@@ -49,12 +53,42 @@
 }
 
 - (IBAction)setContentServer:(id)sender {
+    /*
+     * If the button's title is Update, set the content server
+     * as the value of the Custom TextField if not empty.
+     * Else, set the value of one of the default buttons.
+     * Content Server is saved in user preferences.
+     */
+    UIAlertView *contentServerSetAlert = [[UIAlertView alloc] initWithTitle:@"Content Server Updated"
+                                                                    message:nil
+                                                                   delegate:self
+                                                          cancelButtonTitle:@"Back"
+                                                          otherButtonTitles:nil];
+    
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     UIButton *contentServerButton = (UIButton *)sender;
     NSString *contentServerString = contentServerButton.titleLabel.text;
-    [userDefaults setValue:contentServerString forKey:@"content_server"];
-    _currentContentServerLabel.text = [NSString stringWithFormat:@"Current Content Server is:\n%@", contentServerString]; 
-    UIAlertView *contentServerAlert = [[UIAlertView alloc] initWithTitle:@"Content Server Updated" message:nil delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
-    [contentServerAlert show];
+    NSString *customContentServer = _customContentServerTextField.text;
+    
+    // User enters empty custom content server.
+    // Todo: Validate content server URL.
+    if ([contentServerString isEqualToString:@"Update"] && [customContentServer isEqualToString:@""]) {
+        UIAlertView *emptyContentServerAlert = [[UIAlertView alloc] initWithTitle:@"Invalid Content Server"
+                                                                          message:nil
+                                                                         delegate:self
+                                                                cancelButtonTitle:@"Back"
+                                                                otherButtonTitles:nil];
+        [emptyContentServerAlert show];
+    // Users enter valid content server.
+    } else if ([contentServerString isEqualToString:@"Update"] && ![_customContentServerTextField.text isEqualToString:@""]) {
+        [userDefaults setValue:customContentServer forKey:@"content_server"];
+        _currentContentServerLabel.text = [NSString stringWithFormat:@"Current Content Server:\n%@", customContentServer];
+        [contentServerSetAlert show];
+    } else {
+    // User chooses default content server.
+        [userDefaults setValue:contentServerString forKey:@"content_server"];
+        _currentContentServerLabel.text = [NSString stringWithFormat:@"Current Content Server:\n%@", contentServerString];
+        [contentServerSetAlert show];
+    }
 }
 @end
