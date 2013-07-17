@@ -24,13 +24,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-6Z-ipu">
-                    <rect key="frame" x="71" y="175" width="77" height="30"/>
+                    <rect key="frame" x="71" y="215" width="77" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="5jX-Ee-pZr"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-id-c3l">
-                    <rect key="frame" x="158" y="175" width="52" height="30"/>
+                    <rect key="frame" x="158" y="215" width="52" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Update">
@@ -71,8 +74,20 @@
                         <action selector="setContentServer:" destination="-1" eventType="touchUpInside" id="j0Y-0m-1iQ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dev.privly.org" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFC-4c-egX">
+                    <rect key="frame" x="71" y="175" width="106" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="privlyalpha.org">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="setContentServer:" destination="-1" eventType="touchUpInside" id="08S-no-ok5"/>
+                    </connections>
+                </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Server is not set." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="4tl-NH-pMZ">
-                    <rect key="frame" x="20" y="255" width="280" height="20"/>
+                    <rect key="frame" x="20" y="388" width="280" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="6x2-2c-nGb"/>
@@ -84,20 +99,19 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="REz-kN-wsP" firstAttribute="top" secondItem="wIC-1j-Zpf" secondAttribute="bottom" constant="15" id="6uf-bK-jxs"/>
+                <constraint firstItem="wIC-1j-Zpf" firstAttribute="top" secondItem="1" secondAttribute="top" constant="100" id="1pH-FJ-LZX"/>
+                <constraint firstItem="rFC-4c-egX" firstAttribute="leading" secondItem="REz-kN-wsP" secondAttribute="leading" id="3KR-f3-mbu"/>
                 <constraint firstItem="OVK-6Z-ipu" firstAttribute="leading" secondItem="REz-kN-wsP" secondAttribute="leading" id="9Us-od-ufA"/>
-                <constraint firstItem="wIC-1j-Zpf" firstAttribute="leading" secondItem="REz-kN-wsP" secondAttribute="leading" id="HNp-iY-p5f"/>
-                <constraint firstItem="4tl-NH-pMZ" firstAttribute="top" secondItem="OVK-6Z-ipu" secondAttribute="bottom" constant="50" id="Mbs-Hw-ZL9"/>
-                <constraint firstItem="wIC-1j-Zpf" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Qti-6T-cjX"/>
+                <constraint firstItem="OVK-6Z-ipu" firstAttribute="top" secondItem="rFC-4c-egX" secondAttribute="bottom" constant="10" id="AVL-Wa-Ahl"/>
+                <constraint firstItem="wIC-1j-Zpf" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="CAd-n3-J4k"/>
+                <constraint firstItem="wIC-1j-Zpf" firstAttribute="centerX" secondItem="4tl-NH-pMZ" secondAttribute="centerX" id="INi-Dc-D59"/>
+                <constraint firstItem="rFC-4c-egX" firstAttribute="top" secondItem="REz-kN-wsP" secondAttribute="bottom" constant="10" id="M3S-Nh-fvP"/>
+                <constraint firstItem="REz-kN-wsP" firstAttribute="top" secondItem="wIC-1j-Zpf" secondAttribute="bottom" constant="15" id="N8P-Y1-fNR"/>
                 <constraint firstItem="Gjt-id-c3l" firstAttribute="leading" secondItem="OVK-6Z-ipu" secondAttribute="trailing" constant="10" id="SeT-Jt-lP5"/>
-                <constraint firstItem="4tl-NH-pMZ" firstAttribute="centerX" secondItem="wIC-1j-Zpf" secondAttribute="centerX" id="VlL-oq-XLn"/>
-                <constraint firstItem="REz-kN-wsP" firstAttribute="centerX" secondItem="wIC-1j-Zpf" secondAttribute="centerX" constant="-42" id="XFo-P2-4rC"/>
+                <constraint firstItem="kO0-56-L3H" firstAttribute="top" secondItem="4tl-NH-pMZ" secondAttribute="bottom" constant="10" id="YUZ-IM-vXH"/>
                 <constraint firstItem="Gjt-id-c3l" firstAttribute="top" secondItem="OVK-6Z-ipu" secondAttribute="top" id="aO9-O0-NGv"/>
-                <constraint firstItem="wIC-1j-Zpf" firstAttribute="top" secondItem="1" secondAttribute="top" constant="100" id="aop-uU-BQE"/>
-                <constraint firstItem="Gjt-id-c3l" firstAttribute="baseline" secondItem="OVK-6Z-ipu" secondAttribute="baseline" id="hrD-TR-424"/>
-                <constraint firstItem="OVK-6Z-ipu" firstAttribute="top" secondItem="REz-kN-wsP" secondAttribute="bottom" constant="10" id="juf-uc-Z26"/>
-                <constraint firstItem="OVK-6Z-ipu" firstAttribute="trailing" secondItem="wIC-1j-Zpf" secondAttribute="trailing" constant="-102" id="t16-Su-Wnz"/>
-                <constraint firstItem="wIC-1j-Zpf" firstAttribute="leading" secondItem="OVK-6Z-ipu" secondAttribute="leading" id="upY-4V-JQx"/>
+                <constraint firstItem="Gjt-id-c3l" firstAttribute="baseline" secondItem="OVK-6Z-ipu" secondAttribute="baseline" constant="2" id="hrD-TR-424"/>
+                <constraint firstItem="wIC-1j-Zpf" firstAttribute="leading" secondItem="REz-kN-wsP" secondAttribute="leading" id="uft-qj-166"/>
                 <constraint firstAttribute="bottom" secondItem="kO0-56-L3H" secondAttribute="bottom" constant="100" id="x5j-1d-Hmd"/>
                 <constraint firstItem="kO0-56-L3H" firstAttribute="centerX" secondItem="Gjt-id-c3l" secondAttribute="centerX" constant="-21.5" id="xDh-V0-49q"/>
             </constraints>

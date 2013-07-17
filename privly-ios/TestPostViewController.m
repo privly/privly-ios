@@ -54,9 +54,13 @@
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
+    NSString *content_server= [userDefaults objectForKey:@"content_server"];
     auth_token = [NSString stringWithFormat:@"privlyNetworkService.setAuthTokenString('%@');", auth_token];
+    content_server = [NSString stringWithFormat:@"localStorage[\"posting_content_server_url\"] = \"%@\";", content_server];
     NSLog(@"Calling %@ function", auth_token);
     [_testPostWebView stringByEvaluatingJavaScriptFromString:auth_token];
+    NSLog(@"Calling %@ function", content_server);
+    [_testPostWebView stringByEvaluatingJavaScriptFromString:content_server];
 }
 
 @end

@@ -6,6 +6,7 @@
 
 #import "ApplicationTypeViewController.h"
 #import "ContentServerViewController.h"
+#import "LoginViewController.h"
 
 @interface ApplicationTypeViewController ()
 
@@ -22,7 +23,7 @@
         
         UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
                                                                         style:UIBarButtonItemStylePlain target:self
-                                                                       action:@selector(logout)];
+                                                                        action:@selector(logout:)];
         UINavigationItem *nav = self.navigationItem;
         [nav setRightBarButtonItem:logoutButton];
     }
@@ -42,6 +43,8 @@
 }
 
 - (IBAction)logout:(id)sender {
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    [self.navigationController pushViewController:loginViewController animated:YES];
 }
 
 - (IBAction)createPost:(id)sender {

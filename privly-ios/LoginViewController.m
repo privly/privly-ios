@@ -67,6 +67,7 @@
                 // If successful request, deserialize JSON response and get authentication key
                 id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
                 if (jsonResponse != nil && error == nil) {
+                    NSLog(@"%@", jsonResponse);
                     NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
                     NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
                     NSLog(@"Authentication token received: %@.", authenticationKey);
