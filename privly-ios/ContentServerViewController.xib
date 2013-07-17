@@ -63,10 +63,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dev.privly.org" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REz-kN-wsP">
-                    <rect key="frame" x="71" y="135" width="94" height="30"/>
+                    <rect key="frame" x="71" y="135" width="146" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                    <state key="normal" title="dev.privly.org">
+                    <state key="normal" title="https://dev.privly.org">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -75,10 +75,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dev.privly.org" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFC-4c-egX">
-                    <rect key="frame" x="71" y="175" width="106" height="30"/>
+                    <rect key="frame" x="71" y="175" width="158" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                    <state key="normal" title="privlyalpha.org">
+                    <state key="normal" title="https://privlyalpha.org">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>

@@ -24,6 +24,10 @@
 
 - (void)viewDidLoad
 {
+    /*
+     * Load the PlainPost app by default.
+     * Users can switch to ZeroBin from within the JS app.
+     */
     [super viewDidLoad];
     self.testPostWebView.delegate = self;
     NSBundle *main = [NSBundle mainBundle];
@@ -52,6 +56,10 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView                               
 {
+    /**
+     * Send authentication token and posting content server to JS runtime
+     * once the web view is done loading.
+     */
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
     NSString *content_server= [userDefaults objectForKey:@"content_server"];

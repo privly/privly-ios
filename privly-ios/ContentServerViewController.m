@@ -29,7 +29,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    /*
+    /**
      * If the Content Server is set,
      * update text label.
      */
@@ -53,12 +53,6 @@
 }
 
 - (IBAction)setContentServer:(id)sender {
-    /*
-     * If the button's title is Update, set the content server
-     * as the value of the Custom TextField if not empty.
-     * Else, set the value of one of the default buttons.
-     * Content Server is saved in user preferences.
-     */
     UIAlertView *contentServerSetAlert = [[UIAlertView alloc] initWithTitle:@"Content Server Updated"
                                                                     message:nil
                                                                    delegate:self

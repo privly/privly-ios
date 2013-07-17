@@ -8,7 +8,7 @@
 #import "ApplicationTypeViewController.h"
 
 /**
- View controller that handles user authentication.
+ * View controller that handles user authentication.
  */
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
@@ -19,8 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 /**
- Parses username and password and fire authentication request. 
- @returns Stores authentication token in NSUserDefaults and returns
+ * Parses username and password and fire authentication request.
+ * @returns Stores authentication token in NSUserDefaults and returns
  */
 - (IBAction)getToken:(id)sender;
 

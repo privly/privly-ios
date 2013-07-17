@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
     /**
-      set textfields delegate as self to receive the textFieldShouldReturn message
+      * Sets textfields delegate as self to receive the textFieldShouldReturn message
       */
     self.passwordTextField.delegate = self;
     self.emailTextField.delegate = self;
