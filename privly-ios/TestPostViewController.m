@@ -50,15 +50,29 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSLog(@"Request URL: %@", [[request URL] absoluteString]);
-    return YES;
+    /**
+     * If it's a js-frame request, it was sent by a privly-application, 
+     * so handle it. Otherwise, load it.
+     */
+    NSString *URLString = [NSString stringWithFormat:@"%@", [request URL]];
+    NSLog(@"URL: %@", URLString);
+    NSRange jsFrameRange = [URLString rangeOfString:@"js-frame"];
+    NSLog(@"js-frame location: %i", jsFrameRange.length);
+    if (jsFrameRange.length > 0) {
+        // Request was sent by a privly-application
+        NSLog(@"A privly-application sent a request.");
+    } else {
+        NSLog(@"A non-privly-application request was received.");
+        return YES;
+    }
+    return NO;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView                               
 {
     /**
-     * Send authentication token and posting content server to JS runtime
-     * once the web view is done loading.
+     * Send authentication token and posting content server
+     *  to webView once the web view is done loading.
      */
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *auth_token = [userDefaults objectForKey:@"auth_token"];
