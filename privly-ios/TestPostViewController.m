@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad
 {
-    /*
+    /**
      * Load the PlainPost app by default.
      * Users can switch to ZeroBin from within the JS app.
      */

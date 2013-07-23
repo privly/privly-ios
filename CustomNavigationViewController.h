@@ -7,5 +7,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomNavigationViewController : UINavigationController
+/**
+  * UINavigationController subclass enabling
+  * all interface orientations.
+  */
 
 @end
