@@ -1,9 +1,7 @@
 //
 //  PlainPostDestinationViewController.h
 //  privly-ios
-//
-//  Created by Hery Ratsimihah on 5/29/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
+//  Copyright 2013 The Privly Foundation.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,5 +10,7 @@
 @interface PlainPostDestinationViewController : UITableViewController {
     NSArray *availableServices;
 }
+
+@property (nonatomic) NSString *link;
 
 @end

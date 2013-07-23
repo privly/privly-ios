@@ -5,6 +5,7 @@
 //
 
 #import "PlainPostDestinationViewController.h"
+#import "SocialNetworksRequest.h"
 
 @interface PlainPostDestinationViewController ()
 
@@ -63,14 +64,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 2) {
-        // handle privly as a destination here
-    } else {
-    PlainPostViewController *plainPostViewController = [[PlainPostViewController alloc] init];
-    plainPostViewController.title = [availableServices objectAtIndex:indexPath.row];
-    plainPostViewController.socialNetworkId = indexPath.row;
-    [self.navigationController pushViewController:plainPostViewController animated:YES];
-    }
+    SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] init];
+    // Set delegate to push SocialNetworkRequest's SLComposeViewController
+    requestHandler.delegate = self;
+    requestHandler.link = _link;
+    // Select appropriate social network
+    [requestHandler setupAccountForServiceTypeInt:indexPath.row];
+    [requestHandler postMessage];
 }
 
 @end

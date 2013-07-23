@@ -5,6 +5,7 @@
 //
 
 #import "TestPostViewController.h"
+#import "PlainPostDestinationViewController.h"
 
 @interface TestPostViewController ()
 
@@ -52,17 +53,19 @@
 {
     /**
      * If it's a js-frame request, it was sent by a privly-application, 
-     * so handle it. Otherwise, load it.
+     * so get the Privly link and share it. Otherwise, load request.
      */
     NSString *URLString = [NSString stringWithFormat:@"%@", [request URL]];
-    NSLog(@"URL: %@", URLString);
     NSRange jsFrameRange = [URLString rangeOfString:@"js-frame"];
-    NSLog(@"js-frame location: %i", jsFrameRange.length);
     if (jsFrameRange.length > 0) {
         // Request was sent by a privly-application
-        NSLog(@"A privly-application sent a request.");
+        // Get link and pass it to a PlainPostDestination ViewController
+        NSString *privlyLink = [URLString substringFromIndex:jsFrameRange.length+1];
+        PlainPostDestinationViewController *dest = [[PlainPostDestinationViewController alloc] init];
+        dest.link = privlyLink;
+        [self.navigationController pushViewController:dest
+                                             animated:YES];
     } else {
-        NSLog(@"A non-privly-application request was received.");
         return YES;
     }
     return NO;

@@ -14,7 +14,7 @@
 @property (nonatomic) NSString *accountIdentifierString;
 
 @property (nonatomic) UIViewController *delegate;
-@property (nonatomic) NSString *postContent;
+@property (nonatomic) NSString *link;
 
 - (void)setupAccountForServiceTypeInt:(int)serviceTypeInt;
 - (BOOL)userHasAccessToService;

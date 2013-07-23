@@ -38,8 +38,15 @@
 - (void)postMessage {
     if ([self userHasAccessToService]) {
         SLComposeViewController *socialNetworkViewController = [SLComposeViewController composeViewControllerForServiceType:_serviceTypeString];
-        [socialNetworkViewController setInitialText:_postContent];
+        [socialNetworkViewController setInitialText:_link];
         [_delegate presentViewController:socialNetworkViewController animated:YES completion:nil];
+    } else {
+        UIAlertView *serviceUnavailableAlert = [[UIAlertView alloc] initWithTitle:@"Service Unavailable"
+                                                                          message:@"Login in your Settings to post content on social networks."
+                                                                         delegate:self
+                                                                cancelButtonTitle:@"Back"
+                                                                otherButtonTitles:nil];
+        [serviceUnavailableAlert show];
     }
 }
 

@@ -75,7 +75,7 @@
     SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] init];
     // Set delegate to push SocialNetworkRequest's SLComposeViewController
     requestHandler.delegate = self;
-    requestHandler.postContent = postContent;
+    requestHandler.link = postContent;
     // Select appropriate social network
     [requestHandler setupAccountForServiceTypeInt:_socialNetworkId];
     [requestHandler postMessage];
