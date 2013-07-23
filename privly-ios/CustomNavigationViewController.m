@@ -1,16 +1,16 @@
 //
-//  PostDestinationViewController.m
+//  CustomNavigationViewController.m
 //  privly-ios
 //  Copyright 2013 The Privly Foundation.
 //
 
-#import "PostDestinationViewController.h"
+#import "CustomNavigationViewController.h"
 
-@interface PostDestinationViewController ()
+@interface CustomNavigationViewController ()
 
 @end
 
-@implementation PostDestinationViewController
+@implementation CustomNavigationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,13 +24,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end
