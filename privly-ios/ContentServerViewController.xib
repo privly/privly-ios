@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4488.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentServerViewController">
@@ -18,13 +18,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Content Server" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-1j-Zpf">
-                    <rect key="frame" x="71" y="100" width="179" height="20"/>
+                    <rect key="frame" x="70" y="100" width="180" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-6Z-ipu">
-                    <rect key="frame" x="71" y="215" width="77" height="30"/>
+                    <rect key="frame" x="70" y="216" width="77" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="5jX-Ee-pZr"/>
@@ -33,7 +33,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-id-c3l">
-                    <rect key="frame" x="158" y="215" width="52" height="30"/>
+                    <rect key="frame" x="157" y="217" width="52" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Update">
@@ -48,7 +48,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-56-L3H">
-                    <rect key="frame" x="144" y="418" width="37" height="30"/>
+                    <rect key="frame" x="144" y="418" width="36" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Back">
@@ -63,7 +63,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dev.privly.org" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REz-kN-wsP">
-                    <rect key="frame" x="71" y="135" width="146" height="30"/>
+                    <rect key="frame" x="70" y="136" width="146" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                     <state key="normal" title="https://dev.privly.org">
@@ -75,7 +75,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dev.privly.org" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFC-4c-egX">
-                    <rect key="frame" x="71" y="175" width="158" height="30"/>
+                    <rect key="frame" x="70" y="176" width="158" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                     <state key="normal" title="https://privlyalpha.org">
@@ -87,7 +87,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Server is not set." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="4tl-NH-pMZ">
-                    <rect key="frame" x="20" y="388" width="280" height="20"/>
+                    <rect key="frame" x="20" y="387" width="280" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="6x2-2c-nGb"/>
@@ -109,8 +109,8 @@
                 <constraint firstItem="REz-kN-wsP" firstAttribute="top" secondItem="wIC-1j-Zpf" secondAttribute="bottom" constant="15" id="N8P-Y1-fNR"/>
                 <constraint firstItem="Gjt-id-c3l" firstAttribute="leading" secondItem="OVK-6Z-ipu" secondAttribute="trailing" constant="10" id="SeT-Jt-lP5"/>
                 <constraint firstItem="kO0-56-L3H" firstAttribute="top" secondItem="4tl-NH-pMZ" secondAttribute="bottom" constant="10" id="YUZ-IM-vXH"/>
-                <constraint firstItem="Gjt-id-c3l" firstAttribute="top" secondItem="OVK-6Z-ipu" secondAttribute="top" id="aO9-O0-NGv"/>
-                <constraint firstItem="Gjt-id-c3l" firstAttribute="baseline" secondItem="OVK-6Z-ipu" secondAttribute="baseline" constant="2" id="hrD-TR-424"/>
+                <constraint firstItem="Gjt-id-c3l" firstAttribute="top" secondItem="OVK-6Z-ipu" secondAttribute="top" constant="1" id="aO9-O0-NGv"/>
+                <constraint firstItem="Gjt-id-c3l" firstAttribute="baseline" secondItem="OVK-6Z-ipu" secondAttribute="baseline" constant="1" id="hrD-TR-424"/>
                 <constraint firstItem="wIC-1j-Zpf" firstAttribute="leading" secondItem="REz-kN-wsP" secondAttribute="leading" id="uft-qj-166"/>
                 <constraint firstAttribute="bottom" secondItem="kO0-56-L3H" secondAttribute="bottom" constant="100" id="x5j-1d-Hmd"/>
                 <constraint firstItem="kO0-56-L3H" firstAttribute="centerX" secondItem="Gjt-id-c3l" secondAttribute="centerX" constant="-21.5" id="xDh-V0-49q"/>
