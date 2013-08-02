@@ -18,8 +18,9 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        self.title = @"Destination";
+        self.title = @"Share";
         availableServices = [NSArray arrayWithObjects:@"Facebook", @"Twitter", nil];
+        self.tableView.separatorColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:0.851 green:0.816 blue:0.733 alpha:1.000];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,6 +58,8 @@
                                        reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = [availableServices objectAtIndex:indexPath.row];
+    cell.backgroundColor = [UIColor colorWithRed:0.851 green:0.816 blue:0.733 alpha:1.000];
+
     
     return cell;
 }

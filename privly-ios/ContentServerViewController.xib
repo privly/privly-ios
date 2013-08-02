@@ -90,7 +90,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.87843143939971924" green="0.84705889225006104" blue="0.78431379795074463" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="OVK-6Z-ipu" secondAttribute="centerX" constant="29.5" id="2vt-1R-zyc"/>
                 <constraint firstItem="rFC-4c-egX" firstAttribute="top" secondItem="wIC-1j-Zpf" secondAttribute="bottom" constant="8" symbolic="YES" id="961-3i-k9L"/>
