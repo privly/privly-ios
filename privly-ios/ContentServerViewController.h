@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContentServerViewController : UIViewController
+@interface ContentServerViewController : UIViewController <UITextFieldDelegate>
 /*
  * Content Server is set in this view and passed to 
  * the JavaScript app when the user wants to create a post.

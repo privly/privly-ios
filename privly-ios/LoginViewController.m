@@ -17,7 +17,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Login";
+        self.title = @"Privly";
     }
     return self;
 }

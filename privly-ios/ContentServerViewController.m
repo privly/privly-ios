@@ -25,6 +25,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _customContentServerTextField.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -84,5 +85,11 @@
         _currentContentServerLabel.text = [NSString stringWithFormat:@"Current Content Server:\n%@", contentServerString];
         [contentServerSetAlert show];
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 @end

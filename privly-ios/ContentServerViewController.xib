@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentServerViewController">
             <connections>
                 <outlet property="currentContentServerLabel" destination="4tl-NH-pMZ" id="Qlb-bj-hCi"/>
-                <outlet property="customContentServerTextField" destination="OVK-6Z-ipu" id="hRU-29-pTH"/>
+                <outlet property="customContentServerTextField" destination="OVK-6Z-ipu" id="gGU-ul-fbn"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -30,7 +30,10 @@
                         <constraint firstAttribute="width" constant="77" id="5jX-Ee-pZr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="u50-9F-K92"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-id-c3l">
                     <rect key="frame" x="157" y="217" width="52" height="30"/>

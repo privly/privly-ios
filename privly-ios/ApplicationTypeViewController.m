@@ -24,8 +24,13 @@
         UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
                                                                         style:UIBarButtonItemStylePlain target:self
                                                                         action:@selector(logout:)];
+        UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
+                                                                           style:UIBarButtonItemStylePlain
+                                                                          target:self
+                                                                          action:@selector(contentServer:)];
         UINavigationItem *nav = self.navigationItem;
-        [nav setRightBarButtonItem:logoutButton];
+        [nav setLeftBarButtonItem:logoutButton];
+        [nav setRightBarButtonItem:settingsButton];
     }
     return self;
 }

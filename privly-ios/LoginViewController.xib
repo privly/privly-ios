@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                    <rect key="frame" x="44" y="188" width="232" height="30"/>
+                    <rect key="frame" x="44" y="124" width="232" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="135"/>
@@ -26,25 +26,17 @@
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                 </textField>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="priv.ly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
-                    <rect key="frame" x="255" y="74" width="45" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5">
-                    <rect key="frame" x="44" y="150" width="232" height="30"/>
+                    <rect key="frame" x="44" y="84" width="232" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="232" id="86"/>
-                        <constraint firstAttribute="height" constant="30" id="134"/>
+                        <constraint firstAttribute="height" constant="30" id="RUe-jy-Cp9"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                    <rect key="frame" x="215" y="226" width="61" height="31"/>
+                    <rect key="frame" x="215" y="162" width="61" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="61" id="166"/>
@@ -59,7 +51,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to privlyalpha.org or select your own content server, which determines where your data will be stored." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-sh-VYz">
-                    <rect key="frame" x="40" y="307" width="241" height="89"/>
+                    <rect key="frame" x="40" y="193" width="241" height="89"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="89" id="Lme-i6-5Nd"/>
@@ -69,7 +61,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom content server" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zsc-bI-5RT">
-                    <rect key="frame" x="40" y="411" width="241" height="30"/>
+                    <rect key="frame" x="40" y="292" width="241" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -84,24 +76,23 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="5" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="115"/>
-                <constraint firstItem="5" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="118"/>
-                <constraint firstItem="3" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="8" symbolic="YES" id="119"/>
-                <constraint firstItem="5" firstAttribute="top" secondItem="2" secondAttribute="top" constant="150" id="159"/>
                 <constraint firstItem="7" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="8" id="169"/>
                 <constraint firstItem="3" firstAttribute="centerX" secondItem="7" secondAttribute="centerX" constant="-85.5" id="170"/>
                 <constraint firstItem="7" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" constant="85.5" id="175"/>
-                <constraint firstItem="4" firstAttribute="top" secondItem="IxI-RD-jdd" secondAttribute="bottom" constant="30" id="2QN-yG-d5E"/>
                 <constraint firstAttribute="centerX" secondItem="gvn-sh-VYz" secondAttribute="centerX" id="2uX-85-4G4"/>
-                <constraint firstItem="Zsc-bI-5RT" firstAttribute="top" secondItem="gvn-sh-VYz" secondAttribute="bottom" constant="15" id="5W3-kU-O1Q"/>
+                <constraint firstItem="5" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="5Ib-mh-ehr"/>
+                <constraint firstItem="Zsc-bI-5RT" firstAttribute="top" secondItem="gvn-sh-VYz" secondAttribute="bottom" constant="10" id="5W3-kU-O1Q"/>
                 <constraint firstItem="gvn-sh-VYz" firstAttribute="leading" secondItem="Zsc-bI-5RT" secondAttribute="leading" id="J5E-2W-3D6"/>
-                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="20" id="Syb-va-rLG"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="10" id="LQW-ep-AJu"/>
+                <constraint firstItem="5" firstAttribute="centerX" secondItem="IxI-RD-jdd" secondAttribute="centerX" id="MIo-PF-tO1"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="IxI-RD-jdd" secondAttribute="bottom" constant="40" id="Psy-Iv-WUu"/>
                 <constraint firstItem="IxI-RD-jdd" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="d0h-0b-xB7"/>
-                <constraint firstItem="gvn-sh-VYz" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="50" id="n63-oP-yUP"/>
+                <constraint firstItem="5" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="lea-KI-BaV"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="mQH-1H-Zdh"/>
+                <constraint firstItem="gvn-sh-VYz" firstAttribute="top" secondItem="7" secondAttribute="bottom" id="n63-oP-yUP"/>
                 <constraint firstItem="Zsc-bI-5RT" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="5" id="pVY-rD-35u"/>
                 <constraint firstItem="IxI-RD-jdd" firstAttribute="top" secondItem="2" secondAttribute="top" id="ptH-cQ-07W"/>
                 <constraint firstItem="gvn-sh-VYz" firstAttribute="trailing" secondItem="Zsc-bI-5RT" secondAttribute="trailing" id="pzj-eV-bEU"/>
-                <constraint firstItem="IxI-RD-jdd" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="sP1-EX-0C8"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
