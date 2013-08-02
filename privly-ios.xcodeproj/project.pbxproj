@@ -20,8 +20,6 @@
 		35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */; };
 		35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */; };
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
-		9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912C02D174AD62700E13A01 /* PlainPostViewController.m */; };
-		9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912C02E174AD62700E13A01 /* PlainPostViewController.xib */; };
 		99166D3E17945B7000AEADA2 /* ContentServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99166D3C17945B7000AEADA2 /* ContentServerViewController.m */; };
 		99166D3F17945B7000AEADA2 /* ContentServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99166D3D17945B7000AEADA2 /* ContentServerViewController.xib */; };
 		99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
@@ -35,10 +33,10 @@
 		99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */; };
 		99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */; };
 		99E3445D17779F6C0044CC04 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
-		99E4E2FB177B5973006DD692 /* TestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* TestPostViewController.m */; };
-		99E4E2FC177B5973006DD692 /* TestPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* TestPostViewController.xib */; };
-		99E4E362177B5E7B006DD692 /* TestPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* TestPostViewController.m */; };
-		99E4E363177B622A006DD692 /* TestPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* TestPostViewController.xib */; };
+		99E4E2FB177B5973006DD692 /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* CreatePostViewController.m */; };
+		99E4E2FC177B5973006DD692 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* CreatePostViewController.xib */; };
+		99E4E362177B5E7B006DD692 /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* CreatePostViewController.m */; };
+		99E4E363177B622A006DD692 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* CreatePostViewController.xib */; };
 		99E9A181179EBCA800BC5CC2 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9A180179EBCA800BC5CC2 /* CustomNavigationViewController.m */; };
 		99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */; };
 		99EC26A91758080400EC234F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26A81758080400EC234F /* Accounts.framework */; };
@@ -75,9 +73,6 @@
 		35A943FA1731A2F0009052DC /* ApplicationTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewController.m; sourceTree = "<group>"; };
 		35A943FB1731A2F0009052DC /* ApplicationTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationTypeViewController.xib; sourceTree = "<group>"; };
 		35A944001731A497009052DC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		9912C02C174AD62700E13A01 /* PlainPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostViewController.h; sourceTree = "<group>"; };
-		9912C02D174AD62700E13A01 /* PlainPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostViewController.m; sourceTree = "<group>"; };
-		9912C02E174AD62700E13A01 /* PlainPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlainPostViewController.xib; sourceTree = "<group>"; };
 		99166D3B17945B7000AEADA2 /* ContentServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentServerViewController.h; sourceTree = "<group>"; };
 		99166D3C17945B7000AEADA2 /* ContentServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentServerViewController.m; sourceTree = "<group>"; };
 		99166D3D17945B7000AEADA2 /* ContentServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentServerViewController.xib; sourceTree = "<group>"; };
@@ -97,9 +92,9 @@
 		99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTypeViewControllerTest.m; sourceTree = "<group>"; };
 		99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialNetworksRequestTest.h; path = "../privly-ios/SocialNetworksRequestTest.h"; sourceTree = "<group>"; };
 		99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialNetworksRequestTest.m; path = "../privly-ios/SocialNetworksRequestTest.m"; sourceTree = "<group>"; };
-		99E4E2F8177B5973006DD692 /* TestPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPostViewController.h; sourceTree = "<group>"; };
-		99E4E2F9177B5973006DD692 /* TestPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPostViewController.m; sourceTree = "<group>"; };
-		99E4E2FA177B5973006DD692 /* TestPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPostViewController.xib; sourceTree = "<group>"; };
+		99E4E2F8177B5973006DD692 /* CreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostViewController.h; sourceTree = "<group>"; };
+		99E4E2F9177B5973006DD692 /* CreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostViewController.m; sourceTree = "<group>"; };
+		99E4E2FA177B5973006DD692 /* CreatePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
 		99E9A17F179EBCA800BC5CC2 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		99E9A180179EBCA800BC5CC2 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
 		99EC26A51757BCB000EC234F /* SocialNetworksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialNetworksRequest.h; sourceTree = "<group>"; };
@@ -234,22 +229,19 @@
 		996E2634175695A9003B51A5 /* Posting */ = {
 			isa = PBXGroup;
 			children = (
-				99E4E2F7177B595D006DD692 /* TestPost */,
-				996E2635175695BC003B51A5 /* PlainPost */,
+				99E4E2F7177B595D006DD692 /* New Post */,
+				996E2635175695BC003B51A5 /* Destination */,
 			);
 			name = Posting;
 			sourceTree = "<group>";
 		};
-		996E2635175695BC003B51A5 /* PlainPost */ = {
+		996E2635175695BC003B51A5 /* Destination */ = {
 			isa = PBXGroup;
 			children = (
 				996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */,
 				996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */,
-				9912C02C174AD62700E13A01 /* PlainPostViewController.h */,
-				9912C02D174AD62700E13A01 /* PlainPostViewController.m */,
-				9912C02E174AD62700E13A01 /* PlainPostViewController.xib */,
 			);
-			name = PlainPost;
+			name = Destination;
 			sourceTree = "<group>";
 		};
 		99B6B295177D35060002F7E6 /* Resources */ = {
@@ -260,14 +252,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		99E4E2F7177B595D006DD692 /* TestPost */ = {
+		99E4E2F7177B595D006DD692 /* New Post */ = {
 			isa = PBXGroup;
 			children = (
-				99E4E2F8177B5973006DD692 /* TestPostViewController.h */,
-				99E4E2F9177B5973006DD692 /* TestPostViewController.m */,
-				99E4E2FA177B5973006DD692 /* TestPostViewController.xib */,
+				99E4E2F8177B5973006DD692 /* CreatePostViewController.h */,
+				99E4E2F9177B5973006DD692 /* CreatePostViewController.m */,
+				99E4E2FA177B5973006DD692 /* CreatePostViewController.xib */,
 			);
-			name = TestPost;
+			name = "New Post";
 			sourceTree = "<group>";
 		};
 		99EC26A11757BBB700EC234F /* Helpers */ = {
@@ -356,10 +348,9 @@
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
 				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
-				99E4E363177B622A006DD692 /* TestPostViewController.xib in Resources */,
+				99E4E363177B622A006DD692 /* CreatePostViewController.xib in Resources */,
 				99166D3F17945B7000AEADA2 /* ContentServerViewController.xib in Resources */,
 				99C6F77C177E150A00C21BDF /* privly-applications in Resources */,
-				9912C030174AD62700E13A01 /* PlainPostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99307B36175FD29500954F16 /* InfoPlist.strings in Resources */,
-				99E4E2FC177B5973006DD692 /* TestPostViewController.xib in Resources */,
+				99E4E2FC177B5973006DD692 /* CreatePostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,9 +391,8 @@
 				358D71D41724752700979F57 /* AppDelegate.m in Sources */,
 				358D71E917248B3000979F57 /* LoginViewController.m in Sources */,
 				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
-				99E4E362177B5E7B006DD692 /* TestPostViewController.m in Sources */,
+				99E4E362177B5E7B006DD692 /* CreatePostViewController.m in Sources */,
 				99166D3E17945B7000AEADA2 /* ContentServerViewController.m in Sources */,
-				9912C02F174AD62700E13A01 /* PlainPostViewController.m in Sources */,
 				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
 				99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */,
 			);
@@ -416,7 +406,7 @@
 				99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */,
 				99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */,
 				99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */,
-				99E4E2FB177B5973006DD692 /* TestPostViewController.m in Sources */,
+				99E4E2FB177B5973006DD692 /* CreatePostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

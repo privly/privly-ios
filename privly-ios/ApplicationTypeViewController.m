@@ -53,7 +53,7 @@
 }
 
 - (IBAction)createPost:(id)sender {
-    TestPostViewController *testPostViewController = [[TestPostViewController alloc] init];
+    CreatePostViewController *testPostViewController = [[CreatePostViewController alloc] init];
     [self.navigationController pushViewController:testPostViewController animated:YES];
 }
 

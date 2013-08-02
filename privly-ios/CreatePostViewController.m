@@ -4,14 +4,14 @@
 //  Copyright 2013 The Privly Foundation.
 //
 
-#import "TestPostViewController.h"
+#import "CreatePostViewController.h"
 #import "PlainPostDestinationViewController.h"
 
-@interface TestPostViewController ()
+@interface CreatePostViewController ()
 
 @end
 
-@implementation TestPostViewController
+@implementation CreatePostViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

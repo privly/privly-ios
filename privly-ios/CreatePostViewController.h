@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestPostViewController : UIViewController <UIWebViewDelegate>
+@interface CreatePostViewController : UIViewController <UIWebViewDelegate>
 
 /** Web view for Privly JavaScript posting applications */
 @property (weak, nonatomic) IBOutlet UIWebView *testPostWebView;

@@ -7,7 +7,7 @@
 #import <UIKit/UIKit.h>
 #import "ApplicationTypeViewController.h"
 #import "PlainPostDestinationViewController.h"
-#import "TestPostViewController.h"
+#import "CreatePostViewController.h"
 
 @interface ApplicationTypeViewController : UIViewController
 

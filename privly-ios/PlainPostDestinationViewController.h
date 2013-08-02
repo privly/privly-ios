@@ -5,7 +5,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PlainPostViewController.h"
 
 @interface PlainPostDestinationViewController : UITableViewController {
     NSArray *availableServices;
