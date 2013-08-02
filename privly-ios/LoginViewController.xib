@@ -17,8 +17,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                    <rect key="frame" x="44" y="129" width="232" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="44" y="149" width="232" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="135"/>
@@ -26,8 +26,8 @@
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5">
-                    <rect key="frame" x="44" y="89" width="232" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="44" y="109" width="232" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="RUe-jy-Cp9"/>
@@ -35,8 +35,8 @@
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                    <rect key="frame" x="215" y="167" width="61" height="31"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                    <rect key="frame" x="215" y="187" width="61" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="61" id="166"/>
@@ -49,8 +49,8 @@
                         <action selector="getToken:" destination="-1" eventType="touchUpInside" id="33"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to privlyalpha.org or select your own content server, which determines where your data will be stored." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-sh-VYz">
-                    <rect key="frame" x="40" y="198" width="241" height="89"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Login to privlyalpha.org or select your own content server, which determines where your data will be stored." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-sh-VYz">
+                    <rect key="frame" x="40" y="218" width="241" height="89"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="89" id="Lme-i6-5Nd"/>
@@ -59,15 +59,8 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-RD-jdd">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Title" id="eaZ-40-tf8"/>
-                    </items>
-                </navigationBar>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA3-4T-bHC">
-                    <rect key="frame" x="44" y="287" width="232" height="34"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA3-4T-bHC">
+                    <rect key="frame" x="44" y="307" width="232" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="Custom content server"/>
@@ -84,16 +77,12 @@
                 <constraint firstAttribute="centerX" secondItem="gvn-sh-VYz" secondAttribute="centerX" id="2uX-85-4G4"/>
                 <constraint firstItem="5" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="5Ib-mh-ehr"/>
                 <constraint firstItem="3" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="10" id="LQW-ep-AJu"/>
-                <constraint firstItem="5" firstAttribute="centerX" secondItem="IxI-RD-jdd" secondAttribute="centerX" id="MIo-PF-tO1"/>
-                <constraint firstItem="5" firstAttribute="top" secondItem="IxI-RD-jdd" secondAttribute="bottom" constant="45" id="Psy-Iv-WUu"/>
                 <constraint firstItem="rA3-4T-bHC" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="TGn-fD-T9X"/>
                 <constraint firstItem="rA3-4T-bHC" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="Xrh-wT-Mmj"/>
-                <constraint firstItem="IxI-RD-jdd" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="d0h-0b-xB7"/>
                 <constraint firstItem="rA3-4T-bHC" firstAttribute="top" secondItem="gvn-sh-VYz" secondAttribute="bottom" id="dIg-DG-Ykq"/>
                 <constraint firstItem="5" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="lea-KI-BaV"/>
                 <constraint firstItem="5" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="mQH-1H-Zdh"/>
                 <constraint firstItem="gvn-sh-VYz" firstAttribute="top" secondItem="7" secondAttribute="bottom" id="n63-oP-yUP"/>
-                <constraint firstItem="IxI-RD-jdd" firstAttribute="top" secondItem="2" secondAttribute="top" id="ptH-cQ-07W"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

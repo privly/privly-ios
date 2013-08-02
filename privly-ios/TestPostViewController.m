@@ -66,6 +66,11 @@
         [self.navigationController pushViewController:dest
                                              animated:YES];
     } else {
+        NSHTTPCookie *cookie;
+        NSHTTPCookieStorage *jar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+        for (cookie in [jar cookies]) {
+            NSLog(@"%@", cookie);
+        }
         return YES;
     }
     return NO;

@@ -32,6 +32,12 @@
     _passwordTextField.delegate = self;
     _emailTextField.delegate = self;
     originalCenter = self.view.center;
+    // Hide Back button to prevent user from poping back a ApplicationTypeViewController
+    UIBarButtonItem *noBack = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                               style:UIBarButtonItemStyleBordered
+                                                              target:self
+                                                              action:nil];
+    [[self navigationItem] setLeftBarButtonItem:noBack];
 }
 
 - (void)didReceiveMemoryWarning
