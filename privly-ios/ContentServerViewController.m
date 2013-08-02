@@ -54,6 +54,7 @@
 }
 
 - (IBAction)setContentServer:(id)sender {
+    // Prepare alert to notify content server has been set.
     UIAlertView *contentServerSetAlert = [[UIAlertView alloc] initWithTitle:@"Content Server Updated"
                                                                     message:nil
                                                                    delegate:self
@@ -74,6 +75,7 @@
                                                                 cancelButtonTitle:@"Back"
                                                                 otherButtonTitles:nil];
         [emptyContentServerAlert show];
+    // Save content server.
     // Users enter valid content server.
     } else if ([contentServerString isEqualToString:@"Update"] && ![_customContentServerTextField.text isEqualToString:@""]) {
         [userDefaults setValue:customContentServer forKey:@"content_server"];
@@ -89,7 +91,9 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    // ToDo: Update Content Server on TextField return.
     [textField resignFirstResponder];
     return YES;
 }
+
 @end

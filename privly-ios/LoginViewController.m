@@ -5,6 +5,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ContentServerViewController.h"
 
 @interface LoginViewController ()
 
@@ -28,8 +29,9 @@
     /**
       * Sets textfields delegate as self to receive the textFieldShouldReturn message
       */
-    self.passwordTextField.delegate = self;
-    self.emailTextField.delegate = self;
+    _passwordTextField.delegate = self;
+    _emailTextField.delegate = self;
+    originalCenter = self.view.center;
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,14 +43,19 @@
 #pragma mark - Authentication
 
 - (IBAction)getToken:(id)sender {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; 
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     
-    if ([email isEqualToString:@"a"] || [password isEqualToString:@"a"]) {
-        NSLog(@"All fields are required.");
+    // Get Content Server
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *contentServerString = [userDefaults valueForKey:@"content_server"];
+
+    
+    if ([email isEqualToString:@""] || [password isEqualToString:@""]) {
+        UIAlertView *emptyFieldsAlert = [[UIAlertView alloc] initWithTitle:@"Hold on!" message:@"Email or password can't be empty." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
+        [emptyFieldsAlert show];
     } else {
-        NSString *stringURL = [NSString stringWithFormat:@"https://privlyalpha.org/token_authentications.json"];
+        NSString *stringURL = [NSString stringWithFormat:@"%@/token_authentications.json", contentServerString];
         NSURL *requestURL = [NSURL URLWithString:stringURL];
         NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
         
@@ -96,4 +103,8 @@
     return YES;
 }
 
+- (IBAction)showContentServerViewController:(id)sender {
+    ContentServerViewController *contentServerViewController = [[ContentServerViewController alloc] init];
+    [self.navigationController presentViewController:contentServerViewController animated:YES completion:nil];
+}
 @end

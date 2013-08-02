@@ -11,7 +11,9 @@
  * View controller that handles user authentication.
  */
 
-@interface LoginViewController : UIViewController <UITextFieldDelegate>
+@interface LoginViewController : UIViewController <UITextFieldDelegate> {
+    CGPoint originalCenter;
+}
 
 /** Outlet for user email address textfield */
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -23,5 +25,6 @@
  * @returns Stores authentication token in NSUserDefaults and returns
  */
 - (IBAction)getToken:(id)sender;
+- (IBAction)showContentServerViewController:(id)sender;
 
 @end
