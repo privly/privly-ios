@@ -7,6 +7,7 @@
 #import "ApplicationTypeViewController.h"
 #import "ContentServerViewController.h"
 #import "LoginViewController.h"
+#import "ReadingStreamViewController.h"
 
 @interface ApplicationTypeViewController ()
 
@@ -58,8 +59,9 @@
 }
 
 - (IBAction)readingMode:(id)sender {
-    UIAlertView *readingModeAlert = [[UIAlertView alloc] initWithTitle:@"Not Available" message:@"Reading Mode is currently being implemented." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
-    [readingModeAlert show];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    ReadingStreamViewController *readingStreamViewController = [[ReadingStreamViewController alloc] initWithCollectionViewLayout:layout];
+    [self.navigationController pushViewController:readingStreamViewController animated:YES];
 }
 
 - (IBAction)contentServer:(id)sender {
