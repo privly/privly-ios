@@ -7,7 +7,7 @@
 #import "ApplicationTypeViewController.h"
 #import "ContentServerViewController.h"
 #import "LoginViewController.h"
-#import "ReadingStreamViewController.h"
+#import "ReadingModeViewController.h"
 
 @interface ApplicationTypeViewController ()
 
@@ -59,9 +59,8 @@
 }
 
 - (IBAction)readingMode:(id)sender {
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    ReadingStreamViewController *readingStreamViewController = [[ReadingStreamViewController alloc] initWithCollectionViewLayout:layout];
-    [self.navigationController pushViewController:readingStreamViewController animated:YES];
+    ReadingModeViewController *readingModeViewController = [[ReadingModeViewController alloc] init];
+    [self.navigationController pushViewController:readingModeViewController animated:YES];
 }
 
 - (IBAction)contentServer:(id)sender {
