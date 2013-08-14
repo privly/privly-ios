@@ -22,6 +22,7 @@
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 		99166D3E17945B7000AEADA2 /* ContentServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99166D3C17945B7000AEADA2 /* ContentServerViewController.m */; };
 		99166D3F17945B7000AEADA2 /* ContentServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99166D3D17945B7000AEADA2 /* ContentServerViewController.xib */; };
+		9926174617BB908300EFE0EE /* ReadingStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9926174517BB908300EFE0EE /* ReadingStreamViewController.m */; };
 		99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
 		99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
 		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
@@ -76,6 +77,8 @@
 		99166D3B17945B7000AEADA2 /* ContentServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentServerViewController.h; sourceTree = "<group>"; };
 		99166D3C17945B7000AEADA2 /* ContentServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentServerViewController.m; sourceTree = "<group>"; };
 		99166D3D17945B7000AEADA2 /* ContentServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentServerViewController.xib; sourceTree = "<group>"; };
+		9926174417BB908300EFE0EE /* ReadingStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingStreamViewController.h; sourceTree = "<group>"; };
+		9926174517BB908300EFE0EE /* ReadingStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingStreamViewController.m; sourceTree = "<group>"; };
 		99307B2D175FD29500954F16 /* privly-ios-tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "privly-ios-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "privly-ios-tests-Info.plist"; sourceTree = "<group>"; };
 		99307B35175FD29500954F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 		9989CC0417B78659004BFBE0 /* Reading App */ = {
 			isa = PBXGroup;
 			children = (
+				9926174417BB908300EFE0EE /* ReadingStreamViewController.h */,
+				9926174517BB908300EFE0EE /* ReadingStreamViewController.m */,
 			);
 			name = "Reading App";
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				99166D3E17945B7000AEADA2 /* ContentServerViewController.m in Sources */,
 				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
 				99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */,
+				9926174617BB908300EFE0EE /* ReadingStreamViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
