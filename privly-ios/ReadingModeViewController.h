@@ -1,9 +1,7 @@
 //
 //  ReadingModeViewController.h
 //  privly-ios
-//
-//  Created by Hery on 8/14/13.
-//  Copyright (c) 2013 Hery Ratsimihah. All rights reserved.
+//  Copyright 2013 The Privly Foundation.
 //
 
 #import <UIKit/UIKit.h>

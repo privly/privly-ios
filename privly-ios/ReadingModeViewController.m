@@ -5,6 +5,7 @@
 //
 
 #import "ReadingModeViewController.h"
+#import "PostReadingViewController.h"
 
 @interface ReadingModeViewController ()
 
@@ -70,6 +71,8 @@
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"%@", URLList[indexPath.row]);
+    PostReadingViewController *postReadingViewController = [[PostReadingViewController alloc] init];
+    [self.navigationController pushViewController:postReadingViewController animated:YES];
 }
 
 @end

@@ -22,15 +22,18 @@
 		35A944011731A497009052DC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A944001731A497009052DC /* LoginViewController.xib */; };
 		99166D3E17945B7000AEADA2 /* ContentServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99166D3C17945B7000AEADA2 /* ContentServerViewController.m */; };
 		99166D3F17945B7000AEADA2 /* ContentServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99166D3D17945B7000AEADA2 /* ContentServerViewController.xib */; };
-		9926174917BB931600EFE0EE /* ReadingStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9926174817BB931600EFE0EE /* ReadingStreamViewController.m */; };
-		9926174D17BB946400EFE0EE /* ReadingModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9926174C17BB946400EFE0EE /* ReadingModeViewController.m */; };
 		99307B2E175FD29500954F16 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9992CD5E175A853900EC283F /* SenTestingKit.framework */; };
 		99307B2F175FD29500954F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C31724752700979F57 /* UIKit.framework */; };
 		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
 		99307B36175FD29500954F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99307B34175FD29500954F16 /* InfoPlist.strings */; };
 		99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B38175FD29500954F16 /* privly_ios_tests.m */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
+		99C3D9F717BFC27B007C3B2A /* PostReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C3D9F517BFC27B007C3B2A /* PostReadingViewController.m */; };
+		99C3D9F817BFC27B007C3B2A /* PostReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C3D9F617BFC27B007C3B2A /* PostReadingViewController.xib */; };
+		99C3D9FC17BFC5CD007C3B2A /* ReadingModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C3D9FB17BFC5CD007C3B2A /* ReadingModeViewController.m */; };
 		99C6F77C177E150A00C21BDF /* privly-applications in Resources */ = {isa = PBXBuildFile; fileRef = 99C6F77B177E150A00C21BDF /* privly-applications */; };
+		99C91D5517BFCBF50095621C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 99C91D5317BFCBF50095621C /* fishhook.c */; };
+		99C91D5717BFCC0C0095621C /* QuietAssertMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 99C91D5617BFCC0C0095621C /* QuietAssertMacros.c */; };
 		99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34455177653C60044CC04 /* LoginViewControllerTests.m */; };
 		99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */; };
 		99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */; };
@@ -78,10 +81,6 @@
 		99166D3B17945B7000AEADA2 /* ContentServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentServerViewController.h; sourceTree = "<group>"; };
 		99166D3C17945B7000AEADA2 /* ContentServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentServerViewController.m; sourceTree = "<group>"; };
 		99166D3D17945B7000AEADA2 /* ContentServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentServerViewController.xib; sourceTree = "<group>"; };
-		9926174717BB931600EFE0EE /* ReadingStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingStreamViewController.h; sourceTree = "<group>"; };
-		9926174817BB931600EFE0EE /* ReadingStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingStreamViewController.m; sourceTree = "<group>"; };
-		9926174B17BB946400EFE0EE /* ReadingModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingModeViewController.h; sourceTree = "<group>"; };
-		9926174C17BB946400EFE0EE /* ReadingModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingModeViewController.m; sourceTree = "<group>"; };
 		99307B2D175FD29500954F16 /* privly-ios-tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "privly-ios-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99307B33175FD29500954F16 /* privly-ios-tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "privly-ios-tests-Info.plist"; sourceTree = "<group>"; };
 		99307B35175FD29500954F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -91,7 +90,15 @@
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
 		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
 		9992CD5E175A853900EC283F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		99C3D9F417BFC27B007C3B2A /* PostReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostReadingViewController.h; sourceTree = "<group>"; };
+		99C3D9F517BFC27B007C3B2A /* PostReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostReadingViewController.m; sourceTree = "<group>"; };
+		99C3D9F617BFC27B007C3B2A /* PostReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostReadingViewController.xib; sourceTree = "<group>"; };
+		99C3D9FA17BFC5CD007C3B2A /* ReadingModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingModeViewController.h; sourceTree = "<group>"; };
+		99C3D9FB17BFC5CD007C3B2A /* ReadingModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingModeViewController.m; sourceTree = "<group>"; };
 		99C6F77B177E150A00C21BDF /* privly-applications */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "privly-applications"; sourceTree = "<group>"; };
+		99C91D5317BFCBF50095621C /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		99C91D5417BFCBF50095621C /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		99C91D5617BFCC0C0095621C /* QuietAssertMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuietAssertMacros.c; sourceTree = "<group>"; };
 		99E34454177653C60044CC04 /* LoginViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControllerTests.h; sourceTree = "<group>"; };
 		99E34455177653C60044CC04 /* LoginViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControllerTests.m; sourceTree = "<group>"; };
 		99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewControllerTest.h; sourceTree = "<group>"; };
@@ -195,6 +202,8 @@
 		358D71CA1724752700979F57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99C91D5317BFCBF50095621C /* fishhook.c */,
+				99C91D5417BFCBF50095621C /* fishhook.h */,
 				358D71CB1724752700979F57 /* privly-ios-Info.plist */,
 				358D71CC1724752700979F57 /* InfoPlist.strings */,
 				358D71CF1724752700979F57 /* main.m */,
@@ -202,6 +211,7 @@
 				358D71D51724752700979F57 /* Default.png */,
 				358D71D71724752700979F57 /* Default@2x.png */,
 				358D71D91724752700979F57 /* Default-568h@2x.png */,
+				99C91D5617BFCC0C0095621C /* QuietAssertMacros.c */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -254,10 +264,11 @@
 		9989CC0417B78659004BFBE0 /* Reading App */ = {
 			isa = PBXGroup;
 			children = (
-				9926174717BB931600EFE0EE /* ReadingStreamViewController.h */,
-				9926174817BB931600EFE0EE /* ReadingStreamViewController.m */,
-				9926174B17BB946400EFE0EE /* ReadingModeViewController.h */,
-				9926174C17BB946400EFE0EE /* ReadingModeViewController.m */,
+				99C3D9F417BFC27B007C3B2A /* PostReadingViewController.h */,
+				99C3D9F517BFC27B007C3B2A /* PostReadingViewController.m */,
+				99C3D9F617BFC27B007C3B2A /* PostReadingViewController.xib */,
+				99C3D9FA17BFC5CD007C3B2A /* ReadingModeViewController.h */,
+				99C3D9FB17BFC5CD007C3B2A /* ReadingModeViewController.m */,
 			);
 			name = "Reading App";
 			sourceTree = "<group>";
@@ -336,6 +347,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Hery Ratsimihah";
+				TargetAttributes = {
+					358D71BF1724752700979F57 = {
+						DevelopmentTeam = A37Q98AM7E;
+					};
+				};
 			};
 			buildConfigurationList = 358D71BB1724752700979F57 /* Build configuration list for PBXProject "privly-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -365,6 +381,7 @@
 				358D71D81724752700979F57 /* Default@2x.png in Resources */,
 				358D71DA1724752700979F57 /* Default-568h@2x.png in Resources */,
 				35A943FD1731A2F0009052DC /* ApplicationTypeViewController.xib in Resources */,
+				99C3D9F817BFC27B007C3B2A /* PostReadingViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
 				99E4E363177B622A006DD692 /* CreatePostViewController.xib in Resources */,
 				99166D3F17945B7000AEADA2 /* ContentServerViewController.xib in Resources */,
@@ -407,14 +424,16 @@
 				358D71D01724752700979F57 /* main.m in Sources */,
 				99E9A181179EBCA800BC5CC2 /* CustomNavigationViewController.m in Sources */,
 				358D71D41724752700979F57 /* AppDelegate.m in Sources */,
-				9926174D17BB946400EFE0EE /* ReadingModeViewController.m in Sources */,
+				99C91D5717BFCC0C0095621C /* QuietAssertMacros.c in Sources */,
 				358D71E917248B3000979F57 /* LoginViewController.m in Sources */,
 				35A943FC1731A2F0009052DC /* ApplicationTypeViewController.m in Sources */,
 				99E4E362177B5E7B006DD692 /* CreatePostViewController.m in Sources */,
 				99166D3E17945B7000AEADA2 /* ContentServerViewController.m in Sources */,
+				99C3D9FC17BFC5CD007C3B2A /* ReadingModeViewController.m in Sources */,
+				99C3D9F717BFC27B007C3B2A /* PostReadingViewController.m in Sources */,
 				996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */,
+				99C91D5517BFCBF50095621C /* fishhook.c in Sources */,
 				99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */,
-				9926174917BB931600EFE0EE /* ReadingStreamViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,11 +540,14 @@
 		358D71DE1724752700979F57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "privly-ios/privly-ios-Prefix.pch";
 				INFOPLIST_FILE = "privly-ios/privly-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -534,11 +556,14 @@
 		358D71DF1724752700979F57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "privly-ios/privly-ios-Prefix.pch";
 				INFOPLIST_FILE = "privly-ios/privly-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
