@@ -5,9 +5,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomNavigationViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate> 
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    CustomNavigationViewController *nav;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+- (void)login;
 
 @end

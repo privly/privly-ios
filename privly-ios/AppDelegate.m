@@ -5,9 +5,9 @@
 //
 
 #import "AppDelegate.h"
-#import "CustomNavigationViewController.h"
 #import "LoginViewController.h"
 #import "ApplicationTypeViewController.h"
+#import "InitViewController.h"
 
 @implementation AppDelegate
 
@@ -17,7 +17,6 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    CustomNavigationViewController *nav;
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
     NSString *authToken = [userDefaults valueForKey:@"auth_token"];
@@ -25,12 +24,41 @@
     // Check authToken validity with server. Must be async.
     // Assumes authToken is always valid for now.
     if (authToken) {
-        ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
-        nav = [[CustomNavigationViewController alloc] initWithRootViewController:applicationTypeViewController];
+        // Check that auth_token is valid
+        NSString *contentServerString = [userDefaults valueForKey:@"content_server"];
+        NSString *stringURL = [NSString stringWithFormat:@"%@/token_authentications.json", contentServerString];
+        NSURL *requestURL = [NSURL URLWithString:stringURL];
+        NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+        
+        [mutableURLRequest setHTTPMethod:@"GET"];
+        
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response,
+                                                                                                   NSData *data,
+                                                                                                   NSError *error) {
+            if ([data length] > 0 && error == nil) {
+                // If successful request, deserialize JSON response and get authentication key
+                id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+                if (jsonResponse != nil && error == nil) {
+                    NSLog(@"Response to auth_token verification: %@", jsonResponse);
+                    // If valid, load application type view controller directly
+                    [self skipLogin];
+                }
+            } else if ([data length] == 0 && error == nil) {
+                NSLog(@"Success, no response.");
+                [self login];
+            } else if (error != nil) {
+                NSLog(@"Something went wrong");
+                [self login];
+            }
+        }];
     } else {
         LoginViewController *loginViewController = [[LoginViewController alloc] init];
         nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
     }
+    
+    InitViewController *initViewController = [[InitViewController alloc] init];
+    nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
     
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
@@ -63,6 +91,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)login {
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    [nav pushViewController:loginViewController animated:YES];
+}
+
+- (void)skipLogin {
+    ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+    [nav pushViewController:applicationTypeViewController animated:YES];
 }
 
 @end
