@@ -14,7 +14,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -48,18 +47,20 @@
                 NSLog(@"Success, no response.");
                 [self login];
             } else if (error != nil) {
-                NSLog(@"Something went wrong");
+                NSLog(@"Couldn't validate authentication token.");
                 [self login];
             }
         }];
     } else {
         LoginViewController *loginViewController = [[LoginViewController alloc] init];
         nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
+        [self.window setRootViewController:nav];
+        [self.window makeKeyAndVisible];
+        return YES;
     }
     
     InitViewController *initViewController = [[InitViewController alloc] init];
     nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
-    
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
     

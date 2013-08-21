@@ -28,6 +28,7 @@
 		99307B36175FD29500954F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99307B34175FD29500954F16 /* InfoPlist.strings */; };
 		99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B38175FD29500954F16 /* privly_ios_tests.m */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
+		99A3E44017C4CDF90036F720 /* logo_large_bleed.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A3E43F17C4CDF90036F720 /* logo_large_bleed.png */; };
 		99C3D9F717BFC27B007C3B2A /* PostReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C3D9F517BFC27B007C3B2A /* PostReadingViewController.m */; };
 		99C3D9F817BFC27B007C3B2A /* PostReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C3D9F617BFC27B007C3B2A /* PostReadingViewController.xib */; };
 		99C3D9FC17BFC5CD007C3B2A /* ReadingModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C3D9FB17BFC5CD007C3B2A /* ReadingModeViewController.m */; };
@@ -36,7 +37,6 @@
 		99C91D5717BFCC0C0095621C /* QuietAssertMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 99C91D5617BFCC0C0095621C /* QuietAssertMacros.c */; };
 		99E32A8C17C3C7A200FB5992 /* InitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E32A8A17C3C7A200FB5992 /* InitViewController.xib */; };
 		99E32A8E17C3C7C800FB5992 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E32A8D17C3C7C800FB5992 /* InitViewController.m */; };
-		99E32A9117C3CCB200FB5992 /* logo_large_bleed.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E32A9017C3CCB200FB5992 /* logo_large_bleed.png */; };
 		99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34455177653C60044CC04 /* LoginViewControllerTests.m */; };
 		99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */; };
 		99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */; };
@@ -93,6 +93,7 @@
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
 		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
 		9992CD5E175A853900EC283F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		99A3E43F17C4CDF90036F720 /* logo_large_bleed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_large_bleed.png; sourceTree = "<group>"; };
 		99C3D9F417BFC27B007C3B2A /* PostReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostReadingViewController.h; sourceTree = "<group>"; };
 		99C3D9F517BFC27B007C3B2A /* PostReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostReadingViewController.m; sourceTree = "<group>"; };
 		99C3D9F617BFC27B007C3B2A /* PostReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostReadingViewController.xib; sourceTree = "<group>"; };
@@ -105,7 +106,6 @@
 		99E32A8817C3C7A200FB5992 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
 		99E32A8A17C3C7A200FB5992 /* InitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitViewController.xib; sourceTree = "<group>"; };
 		99E32A8D17C3C7C800FB5992 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
-		99E32A9017C3CCB200FB5992 /* logo_large_bleed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_large_bleed.png; path = ../../../Desktop/logo_large_bleed.png; sourceTree = "<group>"; };
 		99E34454177653C60044CC04 /* LoginViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControllerTests.h; sourceTree = "<group>"; };
 		99E34455177653C60044CC04 /* LoginViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControllerTests.m; sourceTree = "<group>"; };
 		99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTypeViewControllerTest.h; sourceTree = "<group>"; };
@@ -295,7 +295,7 @@
 		99E32A8F17C3CCA900FB5992 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				99E32A9017C3CCB200FB5992 /* logo_large_bleed.png */,
+				99A3E43F17C4CDF90036F720 /* logo_large_bleed.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 				99E32A8C17C3C7A200FB5992 /* InitViewController.xib in Resources */,
 				35A944011731A497009052DC /* LoginViewController.xib in Resources */,
 				99E4E363177B622A006DD692 /* CreatePostViewController.xib in Resources */,
-				99E32A9117C3CCB200FB5992 /* logo_large_bleed.png in Resources */,
+				99A3E44017C4CDF90036F720 /* logo_large_bleed.png in Resources */,
 				99166D3F17945B7000AEADA2 /* ContentServerViewController.xib in Resources */,
 				99C6F77C177E150A00C21BDF /* privly-applications in Resources */,
 			);
