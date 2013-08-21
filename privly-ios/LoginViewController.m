@@ -29,6 +29,8 @@
     /**
       * Sets textfields delegate as self to receive the textFieldShouldReturn message
       */
+    self.navigationController.navigationBarHidden = NO;
+
     _passwordTextField.delegate = self;
     _emailTextField.delegate = self;
     originalCenter = self.view.center;
