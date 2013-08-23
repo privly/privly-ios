@@ -40,6 +40,15 @@
                                                               target:self
                                                               action:nil];
     [[self navigationItem] setLeftBarButtonItem:noBack];
+    
+    // Set content server label
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *currentContentServer = [userDefaults valueForKey:@"content_server"];
+    if (currentContentServer) {
+        _contentServerLabel.text = currentContentServer;
+    } else {
+        _contentServerLabel.text = @"None. Please set a content server below.";
+    }
 }
 
 - (void)didReceiveMemoryWarning

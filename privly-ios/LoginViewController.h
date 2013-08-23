@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 /** Outlet for user password textfield */
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UILabel *contentServerLabel;
 
 /**
  * Parses username and password and fire authentication request.
