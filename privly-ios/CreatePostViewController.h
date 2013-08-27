@@ -10,5 +10,6 @@
 
 /** Web view for Privly JavaScript posting applications */
 @property (weak, nonatomic) IBOutlet UIWebView *testPostWebView;
+@property (nonatomic) NSString *postType;
 
 @end

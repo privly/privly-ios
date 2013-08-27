@@ -32,7 +32,8 @@
     [super viewDidLoad];
     self.testPostWebView.delegate = self;
     NSBundle *main = [NSBundle mainBundle];
-    NSString *urlStringForHTML = [main pathForResource:@"new" ofType:@".html" inDirectory:@"privly-applications/PlainPost"];
+    NSString *directoryName = [NSString stringWithFormat:@"privly-applications/%@", _postType];
+    NSString *urlStringForHTML = [main pathForResource:@"new" ofType:@".html" inDirectory:directoryName];
     // Encode string using Core Foundation String
     NSString *escapedURLString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                                                     (CFStringRef)urlStringForHTML,

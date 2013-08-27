@@ -8,6 +8,7 @@
 #import "ContentServerViewController.h"
 #import "LoginViewController.h"
 #import "ReadingModeViewController.h"
+#import "PostTypeViewController.h"
 
 @interface ApplicationTypeViewController ()
 
@@ -54,8 +55,8 @@
 }
 
 - (IBAction)createPost:(id)sender {
-    CreatePostViewController *testPostViewController = [[CreatePostViewController alloc] init];
-    [self.navigationController pushViewController:testPostViewController animated:YES];
+    PostTypeViewController *postTypeViewController = [[PostTypeViewController alloc] init];
+    [self.navigationController pushViewController:postTypeViewController animated:YES];
 }
 
 - (IBAction)readingMode:(id)sender {
