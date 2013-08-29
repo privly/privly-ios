@@ -8,6 +8,7 @@
 
 @interface PostReadingViewController : UIViewController <UIWebViewDelegate>
 
+/** UIWebView that loads the reading application. */
 @property (weak, nonatomic) IBOutlet UIWebView *readingAppWebView;
 
 @end

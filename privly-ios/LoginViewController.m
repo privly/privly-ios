@@ -17,8 +17,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        self.title = @"Privly";
+        self.title = @"Login";
+        NSLog(@"Login VC done initializing.");
     }
     return self;
 }
@@ -27,21 +27,21 @@
 {
     [super viewDidLoad];
     /**
-      * Sets textfields delegate as self to receive the textFieldShouldReturn message
+      * Sets textfields delegate as self to receive the textFieldShouldReturn message.
+      * Hide the back button to prevent users from going back to an undesired state
+      * where an ApplicationTypeViewController is popped when the user is not logged in.
       */
     self.navigationController.navigationBarHidden = NO;
 
     _passwordTextField.delegate = self;
     _emailTextField.delegate = self;
     originalCenter = self.view.center;
-    // Hide Back button to prevent user from poping back a ApplicationTypeViewController
     UIBarButtonItem *noBack = [[UIBarButtonItem alloc] initWithTitle:@""
                                                                style:UIBarButtonItemStyleBordered
                                                               target:self
                                                               action:nil];
     [[self navigationItem] setLeftBarButtonItem:noBack];
     
-    // Set content server label
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *currentContentServer = [userDefaults valueForKey:@"content_server"];
     if (currentContentServer) {
@@ -49,6 +49,13 @@
     } else {
         _contentServerLabel.text = @"None. Please set a content server below.";
     }
+    NSLog(@"Login VC done loading.");
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"Login VC done appearing.");
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,10 +67,15 @@
 #pragma mark - Authentication
 
 - (IBAction)getToken:(id)sender {
+    /**
+     * Upon login, the appropriate request is sent to the chosen
+     * content server, which returns an authentication token.
+     * The authentication token is stored in user preferences for subsequent requests.
+     * In this case, it is passed to the UIWebViews that load the posting applications.
+     */
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     
-    // Get Content Server
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *contentServerString = [userDefaults valueForKey:@"content_server"];
 

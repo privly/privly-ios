@@ -8,8 +8,9 @@
 
 @interface CreatePostViewController : UIViewController <UIWebViewDelegate>
 
-/** Web view for Privly JavaScript posting applications */
+/** UIWebView that loads the JavaScript posting applications */
 @property (weak, nonatomic) IBOutlet UIWebView *testPostWebView;
+/** Property used to determine post type. */
 @property (nonatomic) NSString *postType;
 
 @end

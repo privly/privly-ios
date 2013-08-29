@@ -16,8 +16,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        self.title = @"checking credentials";
     }
     return self;
 }
@@ -25,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Hide the navigation bar in the loading screen.
     self.navigationController.navigationBarHidden = YES;
 
 }

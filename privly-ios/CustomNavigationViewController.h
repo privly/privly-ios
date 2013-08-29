@@ -8,8 +8,9 @@
 
 @interface CustomNavigationViewController : UINavigationController
 /**
-  * UINavigationController subclass enabling
-  * all interface orientations.
+  * UINavigationController subclass enabling all interface orientations.
+  * Implement the shouldAutorotate and supportedInterfaceOrientations
+  * methods required to enable all interface orientations.
   */
 
 @end

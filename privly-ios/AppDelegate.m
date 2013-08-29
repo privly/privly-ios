@@ -20,10 +20,10 @@
     
     NSString *authToken = [userDefaults valueForKey:@"auth_token"];
     NSLog(@"Authentication Token: %@", authToken);
-    // Check authToken validity with server. Must be async.
-    // Assumes authToken is always valid for now.
+    // Check authentication token validity with content server
+    // If the check passes, the users is redirected to the home page.
+    // If not, the user is redirected to the login screen.
     if (authToken) {
-        // Check that auth_token is valid
         NSString *contentServerString = [userDefaults valueForKey:@"content_server"];
         NSString *stringURL = [NSString stringWithFormat:@"%@/token_authentications.json", contentServerString];
         NSURL *requestURL = [NSURL URLWithString:stringURL];
@@ -50,6 +50,7 @@
                 NSLog(@"Couldn't validate authentication token.");
                 [self login];
             }
+            NSLog(@"End of block.");
         }];
     } else {
         LoginViewController *loginViewController = [[LoginViewController alloc] init];
@@ -97,6 +98,9 @@
 - (void)login {
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     [nav pushViewController:loginViewController animated:YES];
+    [_window setNeedsDisplay];
+    NSLog(@"Done pushing view on navigation controller.");
+    
 }
 
 - (void)skipLogin {

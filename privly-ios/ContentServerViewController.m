@@ -54,7 +54,11 @@
 }
 
 - (IBAction)setContentServer:(id)sender {
-    // Prepare alert to notify content server has been set.
+    /**
+     * Sets content server with appropriate field validation
+     */
+    
+    // Prepare an alert to notify users that the content server has been successfully set.
     UIAlertView *contentServerSetAlert = [[UIAlertView alloc] initWithTitle:@"Content Server Updated"
                                                                     message:nil
                                                                    delegate:self
@@ -66,10 +70,10 @@
     NSString *contentServerString = contentServerButton.titleLabel.text;
     NSString *customContentServer = _customContentServerTextField.text;
     
-    // User enters empty custom content server.
-    // Todo: Validate content server URL.
+    // Case where user enters empty custom content server.
+    // ToDo: Validate content server URL.
     if ([contentServerString isEqualToString:@"Update"] && [customContentServer isEqualToString:@""]) {
-        UIAlertView *emptyContentServerAlert = [[UIAlertView alloc] initWithTitle:@"Invalid Content Server"
+        UIAlertView *emptyContentServerAlert = [[UIAlertView alloc] initWithTitle:@"Content Server cannot be empty."
                                                                           message:nil
                                                                          delegate:self
                                                                 cancelButtonTitle:@"Back"

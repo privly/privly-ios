@@ -26,8 +26,8 @@
 - (void)viewDidLoad
 {
     /**
-     * Load the PlainPost app by default.
-     * Users can switch to ZeroBin from within the JS app.
+     * The appropriate posting application is loaded based
+     * on the postType property.
      */
     [super viewDidLoad];
     self.testPostWebView.delegate = self;

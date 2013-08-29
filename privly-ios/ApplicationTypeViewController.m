@@ -20,8 +20,11 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        self.title = @"Privly";
+        /**
+         * Custom initialization.
+         * Sets navigation bar buttons.
+         */
+        self.title = @"Application Type";
         
         UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
                                                                         style:UIBarButtonItemStylePlain target:self
@@ -50,6 +53,10 @@
 }
 
 - (IBAction)logout:(id)sender {
+    /**
+     * Logout is implemented by pushing a new LoginViewController on the navigation controller.
+     * ToDo: The current token needs to be destroyed using a DELETE request.
+     */
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     [self.navigationController pushViewController:loginViewController animated:YES];
 }

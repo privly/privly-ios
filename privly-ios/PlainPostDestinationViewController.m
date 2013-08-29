@@ -17,8 +17,12 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
         self.title = @"Share";
+        /**
+         * Available services are hard-coded into the app.
+         * Their row index is then used by the SocialNetworksRequest helper
+         * to setup the SL Framework.
+         */
         availableServices = [NSArray arrayWithObjects:@"Facebook", @"Twitter", nil];
         self.tableView.separatorColor = [UIColor whiteColor];
     }
