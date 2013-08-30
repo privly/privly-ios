@@ -55,6 +55,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /**
+     * Dequeue a reusable cell,
+     * bind URL to cell and set background color
+     */
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (nil == cell) {
@@ -72,6 +76,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /**
+     * Post a message using the SocialNetworksRequest handler.
+     */
     SocialNetworksRequest *requestHandler = [[SocialNetworksRequest alloc] init];
     // Set delegate to push SocialNetworkRequest's SLComposeViewController
     requestHandler.delegate = self;
