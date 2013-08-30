@@ -24,7 +24,7 @@
          * Custom initialization.
          * Sets navigation bar buttons.
          */
-        self.title = @"Application Type";
+        self.title = @"Privly";
         
         UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
                                                                         style:UIBarButtonItemStylePlain target:self

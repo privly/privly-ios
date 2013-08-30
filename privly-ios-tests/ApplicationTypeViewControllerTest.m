@@ -23,14 +23,20 @@
 - (void)testTitle
 {
     STAssertEqualObjects(applicationTypeViewController.title,
-                         @"Post Type",
-                         @"Title is not set.");
+                         @"Privly",
+                         @"Title is different from Privly.");
 }
 
 - (void)testReadButton
 {
     STAssertEqualObjects(applicationTypeViewController.navigationItem.rightBarButtonItem.title,
-                         @"Read", @"Reading mode button is not set.");
+                         @"Settings", @"Reading mode button is not set.");
+}
+
+- (void)testLogoutButton
+{
+    STAssertEqualObjects(applicationTypeViewController.navigationItem.leftBarButtonItem.title,
+                         @"Logout", @"Reading mode button is not set.");
 }
 
 @end

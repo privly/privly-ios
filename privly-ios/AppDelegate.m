@@ -98,8 +98,6 @@
 - (void)login {
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     [nav pushViewController:loginViewController animated:YES];
-    [_window setNeedsDisplay];
-    NSLog(@"Done pushing view on navigation controller.");
     
 }
 
