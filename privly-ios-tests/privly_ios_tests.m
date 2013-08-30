@@ -40,4 +40,14 @@
     NSLog(@"%@ end", self.name);
 }
 
+- (void)testSkipLogin {
+    NSLog(@"%@ start", self.name);
+    [appDelegate skipLogin];
+    NSInteger applicationTypeViewControllerIndex = [appDelegate.nav.viewControllers count]-1;
+    ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+    STAssertEqualObjects([appDelegate.nav.viewControllers[applicationTypeViewControllerIndex] class],
+                         [applicationTypeViewController class],
+                         @"Application Type view controller couldn't be pushed.");
+    NSLog(@"%@ end", self.name);
+}
 @end

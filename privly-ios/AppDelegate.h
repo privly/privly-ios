@@ -14,5 +14,6 @@
 @property (nonatomic) CustomNavigationViewController *nav;
 
 - (void)login;
+- (void)skipLogin;
 
 @end
