@@ -27,6 +27,7 @@
 		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
 		99307B36175FD29500954F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99307B34175FD29500954F16 /* InfoPlist.strings */; };
 		99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B38175FD29500954F16 /* privly_ios_tests.m */; };
+		9953F8A917D13FB200B8570C /* CustomNavigationViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9953F8A817D13FB200B8570C /* CustomNavigationViewControllerTest.m */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
 		9997555217CD331600059FD0 /* PostTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997555117CD331600059FD0 /* PostTypeViewController.m */; };
 		99A3E44017C4CDF90036F720 /* logo_large_bleed.png in Resources */ = {isa = PBXBuildFile; fileRef = 99A3E43F17C4CDF90036F720 /* logo_large_bleed.png */; };
@@ -43,7 +44,6 @@
 		99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */; };
 		99E3445D17779F6C0044CC04 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
 		99E4E2FB177B5973006DD692 /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* CreatePostViewController.m */; };
-		99E4E2FC177B5973006DD692 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* CreatePostViewController.xib */; };
 		99E4E362177B5E7B006DD692 /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E4E2F9177B5973006DD692 /* CreatePostViewController.m */; };
 		99E4E363177B622A006DD692 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E4E2FA177B5973006DD692 /* CreatePostViewController.xib */; };
 		99E9A181179EBCA800BC5CC2 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9A180179EBCA800BC5CC2 /* CustomNavigationViewController.m */; };
@@ -91,6 +91,8 @@
 		99307B37175FD29500954F16 /* privly_ios_tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = privly_ios_tests.h; sourceTree = "<group>"; };
 		99307B38175FD29500954F16 /* privly_ios_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = privly_ios_tests.m; sourceTree = "<group>"; };
 		99307B3A175FD29500954F16 /* privly-ios-tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "privly-ios-tests-Prefix.pch"; sourceTree = "<group>"; };
+		9953F8A717D13FB200B8570C /* CustomNavigationViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewControllerTest.h; sourceTree = "<group>"; };
+		9953F8A817D13FB200B8570C /* CustomNavigationViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewControllerTest.m; sourceTree = "<group>"; };
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
 		996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPostDestinationViewController.m; sourceTree = "<group>"; };
 		9992CD5E175A853900EC283F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -236,6 +238,8 @@
 			children = (
 				99307B37175FD29500954F16 /* privly_ios_tests.h */,
 				99307B38175FD29500954F16 /* privly_ios_tests.m */,
+				9953F8A717D13FB200B8570C /* CustomNavigationViewControllerTest.h */,
+				9953F8A817D13FB200B8570C /* CustomNavigationViewControllerTest.m */,
 				99E34454177653C60044CC04 /* LoginViewControllerTests.h */,
 				99E34455177653C60044CC04 /* LoginViewControllerTests.m */,
 				99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */,
@@ -420,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99307B36175FD29500954F16 /* InfoPlist.strings in Resources */,
-				99E4E2FC177B5973006DD692 /* CreatePostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +475,7 @@
 				99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */,
 				99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */,
 				99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */,
+				9953F8A917D13FB200B8570C /* CustomNavigationViewControllerTest.m in Sources */,
 				99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */,
 				99E4E2FB177B5973006DD692 /* CreatePostViewController.m in Sources */,
 			);

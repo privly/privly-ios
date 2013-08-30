@@ -14,5 +14,4 @@
     LoginViewController *loginViewController;
 }
 
-
 @end
