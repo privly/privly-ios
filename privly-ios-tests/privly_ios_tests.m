@@ -29,4 +29,15 @@
     NSLog(@"%@ end", self.name);
 }
 
+- (void)testLogin {
+    NSLog(@"%@ start", self.name);
+    [appDelegate login];
+    NSInteger loginViewControllerIndex = [appDelegate.nav.viewControllers count]-1;
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    STAssertEqualObjects([appDelegate.nav.viewControllers[loginViewControllerIndex] class],
+                          [loginViewController class],
+                          @"Login view controller couldn't be pushed.");
+    NSLog(@"%@ end", self.name);
+}
+
 @end

@@ -54,15 +54,15 @@
         }];
     } else {
         LoginViewController *loginViewController = [[LoginViewController alloc] init];
-        nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
-        [self.window setRootViewController:nav];
+        _nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
+        [self.window setRootViewController:_nav];
         [self.window makeKeyAndVisible];
         return YES;
     }
     
     InitViewController *initViewController = [[InitViewController alloc] init];
-    nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
-    [self.window setRootViewController:nav];
+    _nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
+    [self.window setRootViewController:_nav];
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -97,13 +97,13 @@
 
 - (void)login {
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    [nav pushViewController:loginViewController animated:YES];
+    [_nav pushViewController:loginViewController animated:YES];
     
 }
 
 - (void)skipLogin {
     ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
-    [nav pushViewController:applicationTypeViewController animated:YES];
+    [_nav pushViewController:applicationTypeViewController animated:YES];
 }
 
 @end

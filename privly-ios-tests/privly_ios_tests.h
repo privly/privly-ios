@@ -10,7 +10,6 @@
 
 @interface privly_ios_tests : SenTestCase {
     AppDelegate *appDelegate;
-    LoginViewController *loginViewController;
 }
 
 @end
