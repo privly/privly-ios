@@ -23,7 +23,7 @@
 
 /**
  * Parses username and password and fire authentication request.
- * @returns Stores authentication token in NSUserDefaults and returns
+ * @returns Stores authentication token in NSUserDefaults and returns nothing
  */
 - (IBAction)getToken:(id)sender;
 - (IBAction)showContentServerViewController:(id)sender;

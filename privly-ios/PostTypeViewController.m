@@ -47,11 +47,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /** Set up cells backgroun color and title. */
     static NSString *CellIdentifier = @"Cell";
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
     cell.backgroundColor = [UIColor colorWithRed:0.878 green:0.847 blue:0.784 alpha:1.000];
     cell.textLabel.text = [postTypes objectAtIndex:indexPath.row];
     return cell;
@@ -59,6 +59,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /** Push a CreatePostViewController instance on cell selection. */
     CreatePostViewController *testPostViewController = [[CreatePostViewController alloc] init];
     NSString *postType = postTypes[indexPath.row];
     testPostViewController.postType = postType;

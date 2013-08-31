@@ -32,9 +32,8 @@
 - (void)testLogin {
     NSLog(@"%@ start", self.name);
     [appDelegate login];
-    NSInteger loginViewControllerIndex = [appDelegate.nav.viewControllers count]-1;
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    STAssertEqualObjects([appDelegate.nav.viewControllers[loginViewControllerIndex] class],
+    STAssertEqualObjects([appDelegate.nav.topViewController class],
                           [loginViewController class],
                           @"Login view controller couldn't be pushed.");
     NSLog(@"%@ end", self.name);
@@ -43,9 +42,8 @@
 - (void)testSkipLogin {
     NSLog(@"%@ start", self.name);
     [appDelegate skipLogin];
-    NSInteger applicationTypeViewControllerIndex = [appDelegate.nav.viewControllers count]-1;
     ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
-    STAssertEqualObjects([appDelegate.nav.viewControllers[applicationTypeViewControllerIndex] class],
+    STAssertEqualObjects([appDelegate.nav.topViewController class],
                          [applicationTypeViewController class],
                          @"Application Type view controller couldn't be pushed.");
     NSLog(@"%@ end", self.name);

@@ -6,6 +6,7 @@
 
 #import "LoginViewController.h"
 #import "ContentServerViewController.h"
+#import "CustomNavigationViewController.h"
 
 @interface LoginViewController ()
 
