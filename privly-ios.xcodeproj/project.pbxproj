@@ -27,6 +27,7 @@
 		99307B30175FD29500954F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D71C51724752700979F57 /* Foundation.framework */; };
 		99307B36175FD29500954F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99307B34175FD29500954F16 /* InfoPlist.strings */; };
 		99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99307B38175FD29500954F16 /* privly_ios_tests.m */; };
+		995321AA17D794830029D96D /* PostTypeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 995321A917D794830029D96D /* PostTypeViewControllerTest.m */; };
 		9953F8A917D13FB200B8570C /* CustomNavigationViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9953F8A817D13FB200B8570C /* CustomNavigationViewControllerTest.m */; };
 		996E263317568F28003B51A5 /* PlainPostDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996E263217568F28003B51A5 /* PlainPostDestinationViewController.m */; };
 		9997555217CD331600059FD0 /* PostTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997555117CD331600059FD0 /* PostTypeViewController.m */; };
@@ -91,6 +92,8 @@
 		99307B37175FD29500954F16 /* privly_ios_tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = privly_ios_tests.h; sourceTree = "<group>"; };
 		99307B38175FD29500954F16 /* privly_ios_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = privly_ios_tests.m; sourceTree = "<group>"; };
 		99307B3A175FD29500954F16 /* privly-ios-tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "privly-ios-tests-Prefix.pch"; sourceTree = "<group>"; };
+		995321A817D794830029D96D /* PostTypeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTypeViewControllerTest.h; sourceTree = "<group>"; };
+		995321A917D794830029D96D /* PostTypeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTypeViewControllerTest.m; sourceTree = "<group>"; };
 		9953F8A717D13FB200B8570C /* CustomNavigationViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewControllerTest.h; sourceTree = "<group>"; };
 		9953F8A817D13FB200B8570C /* CustomNavigationViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewControllerTest.m; sourceTree = "<group>"; };
 		996E263117568F28003B51A5 /* PlainPostDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPostDestinationViewController.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				99E34455177653C60044CC04 /* LoginViewControllerTests.m */,
 				99E34457177660290044CC04 /* ApplicationTypeViewControllerTest.h */,
 				99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */,
+				995321A817D794830029D96D /* PostTypeViewControllerTest.h */,
+				995321A917D794830029D96D /* PostTypeViewControllerTest.m */,
 				99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */,
 				99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */,
 				99307B32175FD29500954F16 /* Supporting Files */,
@@ -472,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995321AA17D794830029D96D /* PostTypeViewControllerTest.m in Sources */,
 				99307B39175FD29500954F16 /* privly_ios_tests.m in Sources */,
 				99E34456177653C60044CC04 /* LoginViewControllerTests.m in Sources */,
 				99E34459177660290044CC04 /* ApplicationTypeViewControllerTest.m in Sources */,

@@ -17,7 +17,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        postTypes = @[@"PlainPost", @"ZeroBin"];
+        _postTypes = @[@"PlainPost", @"ZeroBin"];
     }
     return self;
 }
@@ -42,7 +42,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [postTypes count];
+    return [_postTypes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -53,7 +53,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor colorWithRed:0.878 green:0.847 blue:0.784 alpha:1.000];
-    cell.textLabel.text = [postTypes objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_postTypes objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -61,7 +61,7 @@
 {
     /** Push a CreatePostViewController instance on cell selection. */
     CreatePostViewController *testPostViewController = [[CreatePostViewController alloc] init];
-    NSString *postType = postTypes[indexPath.row];
+    NSString *postType = _postTypes[indexPath.row];
     testPostViewController.postType = postType;
     [self.navigationController pushViewController:testPostViewController animated:YES];
 }
