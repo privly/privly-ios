@@ -17,6 +17,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        _customContentServerTextField = [[UITextField alloc] init];
     }
     return self;
 }
@@ -69,6 +70,9 @@
     UIButton *contentServerButton = (UIButton *)sender;
     NSString *contentServerString = contentServerButton.titleLabel.text;
     NSString *customContentServer = _customContentServerTextField.text;
+    
+    NSLog(@"CUSTOM CONTENT SERVER IN FILE: %@", _customContentServerTextField);
+
     
     // Case where user enters empty custom content server.
     // ToDo: Validate content server URL.

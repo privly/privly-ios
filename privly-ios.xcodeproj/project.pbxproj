@@ -51,6 +51,7 @@
 		99EC26A71757BCB000EC234F /* SocialNetworksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */; };
 		99EC26A91758080400EC234F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26A81758080400EC234F /* Accounts.framework */; };
 		99EC26AB1758080800EC234F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EC26AA1758080800EC234F /* Social.framework */; };
+		99FFD2FB17D81A83003A369B /* ContentServerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FFD2FA17D81A83003A369B /* ContentServerViewControllerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		99EC26A61757BCB000EC234F /* SocialNetworksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialNetworksRequest.m; sourceTree = "<group>"; };
 		99EC26A81758080400EC234F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		99EC26AA1758080800EC234F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		99FFD2F917D81A83003A369B /* ContentServerViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentServerViewControllerTest.h; sourceTree = "<group>"; };
+		99FFD2FA17D81A83003A369B /* ContentServerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentServerViewControllerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,8 @@
 				99E34458177660290044CC04 /* ApplicationTypeViewControllerTest.m */,
 				995321A817D794830029D96D /* PostTypeViewControllerTest.h */,
 				995321A917D794830029D96D /* PostTypeViewControllerTest.m */,
+				99FFD2F917D81A83003A369B /* ContentServerViewControllerTest.h */,
+				99FFD2FA17D81A83003A369B /* ContentServerViewControllerTest.m */,
 				99E3445A177798880044CC04 /* SocialNetworksRequestTest.h */,
 				99E3445B177798880044CC04 /* SocialNetworksRequestTest.m */,
 				99307B32175FD29500954F16 /* Supporting Files */,
@@ -484,6 +489,7 @@
 				9953F8A917D13FB200B8570C /* CustomNavigationViewControllerTest.m in Sources */,
 				99E3445C177798880044CC04 /* SocialNetworksRequestTest.m in Sources */,
 				99E4E2FB177B5973006DD692 /* CreatePostViewController.m in Sources */,
+				99FFD2FB17D81A83003A369B /* ContentServerViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

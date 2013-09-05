@@ -13,7 +13,11 @@
  */
 
 @property (weak, nonatomic) IBOutlet UILabel *currentContentServerLabel;
-@property (weak, nonatomic) IBOutlet UITextField *customContentServerTextField;
+/**
+ * customContentServerTextField is strong because 
+ * it needs to be retained in the test.
+ */
+@property (strong, nonatomic) IBOutlet UITextField *customContentServerTextField;
 
 /**
  * Dismisses modal view controller.
