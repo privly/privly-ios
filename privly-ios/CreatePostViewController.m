@@ -42,6 +42,7 @@
                                                                                                     kCFStringEncodingUTF8));
     NSURL *urlRequestForHTML = [NSURL URLWithString:escapedURLString];    
     [self.testPostWebView loadRequest:[NSURLRequest requestWithURL:urlRequestForHTML]];
+    NSLog(@"Request URL: %@", urlRequestForHTML);
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,18 +61,15 @@
     NSRange jsFrameRange = [URLString rangeOfString:@"js-frame"];
     if (jsFrameRange.length > 0) {
         // Request was sent by a privly-application
-        // Get link and pass it to a PlainPostDestination ViewController
+        // Get link and pass it to a PlainPostDestination ViewController.
+        // Do not load the request.
         NSString *privlyLink = [URLString substringFromIndex:jsFrameRange.length+1];
         PlainPostDestinationViewController *dest = [[PlainPostDestinationViewController alloc] init];
         dest.link = privlyLink;
         [self.navigationController pushViewController:dest
                                              animated:YES];
     } else {
-        NSHTTPCookie *cookie;
-        NSHTTPCookieStorage *jar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-        for (cookie in [jar cookies]) {
-            NSLog(@"%@", cookie);
-        }
+        // Not a js-frame request, so load it.
         return YES;
     }
     return NO;
@@ -81,7 +79,7 @@
 {
     /**
      * Send authentication token and posting content server
-     *  to webView once the web view is done loading.
+     * to webView once the web view is done loading.
      */
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *auth_token = [userDefaults objectForKey:@"auth_token"];

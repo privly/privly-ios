@@ -23,7 +23,7 @@
          * Their row index is then used by the SocialNetworksRequest helper
          * to setup the SL Framework.
          */
-        availableServices = [NSArray arrayWithObjects:@"Facebook", @"Twitter", nil];
+        _availableServices = [NSArray arrayWithObjects:@"Facebook", @"Twitter", nil];
         self.tableView.separatorColor = [UIColor whiteColor];
     }
     return self;
@@ -50,7 +50,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [availableServices count];
+    return [_availableServices count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,9 +65,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                        reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [availableServices objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_availableServices objectAtIndex:indexPath.row];
     cell.backgroundColor = [UIColor colorWithRed:0.851 green:0.816 blue:0.733 alpha:1.000];
-
     
     return cell;
 }

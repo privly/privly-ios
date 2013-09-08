@@ -6,11 +6,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlainPostDestinationViewController : UITableViewController {
-    NSArray *availableServices;
-}
+@interface PlainPostDestinationViewController : UITableViewController
 
 /** Property used to pass the link from the previous view to the next view. */
 @property (nonatomic) NSString *link;
+
+@property (nonatomic) NSArray *availableServices;
 
 @end
