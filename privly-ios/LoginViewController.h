@@ -13,6 +13,7 @@
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate> {
     CGPoint originalCenter;
+    UIAlertView *checkingCredentialsAlert;
 }
 
 /** Outlet for user email address textfield */

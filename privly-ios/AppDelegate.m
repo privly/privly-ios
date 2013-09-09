@@ -16,6 +16,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    InitViewController *initViewController = [[InitViewController alloc] init];
+    _nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
+    [self.window setRootViewController:_nav];
+    [self.window makeKeyAndVisible];
+    
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
     NSString *authToken = [userDefaults valueForKey:@"auth_token"];
@@ -59,12 +64,6 @@
         [self.window makeKeyAndVisible];
         return YES;
     }
-    
-    InitViewController *initViewController = [[InitViewController alloc] init];
-    _nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
-    [self.window setRootViewController:_nav];
-    [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
@@ -98,7 +97,6 @@
 - (void)login {
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     [_nav pushViewController:loginViewController animated:YES];
-    
 }
 
 - (void)skipLogin {

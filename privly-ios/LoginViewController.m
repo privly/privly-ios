@@ -20,6 +20,11 @@
     if (self) {
         self.title = @"Login";
         NSLog(@"Login VC done initializing.");
+        checkingCredentialsAlert = [[UIAlertView alloc] initWithTitle:@"Checking credentials,\nplease wait..."
+                                                              message:nil
+                                                             delegate:self
+                                                    cancelButtonTitle:nil
+                                                    otherButtonTitles:nil];
     }
     return self;
 }
@@ -103,26 +108,39 @@
             if ([data length] > 0 && error == nil) {
                 // If successful request, deserialize JSON response and get authentication key
                 id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+                NSLog(@"%@", jsonResponse);
                 if (jsonResponse != nil && error == nil) {
-                    NSLog(@"%@", jsonResponse);
-                    NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
-                    NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
-                    NSLog(@"Authentication token received: %@.", authenticationKey);
-                    // Save token in user preferences.
-                    [userDefaults setObject:authenticationKey forKey:@"auth_token"];
-                    [userDefaults synchronize];
-                    NSLog(@"Authentication token saved in user preferences.");
-                }
+                    NSDictionary *jsonDictionary = [NSDictionary dictionaryWithDictionary:jsonResponse];
+                    if ([[jsonDictionary objectForKey:@"error"] isEqualToString:@"incorrect email or password"]) {
+                        // Request is successful but credentials are wrong.
+                        [checkingCredentialsAlert dismissWithClickedButtonIndex:0 animated:YES];
+                        UIAlertView *invalidCredentials = [[UIAlertView alloc] initWithTitle:@"Invalid Credentials"
+                                                                                     message:@"Incorrect email or password."
+                                                                                    delegate:self cancelButtonTitle:@"Back"
+                                                                           otherButtonTitles:nil];
+                        [invalidCredentials show];
+                    } else {
+                        // Request is successful and credentials are valid.
+                        NSDictionary *authKeyDictionary = (NSDictionary *)jsonResponse;
+                        NSString *authenticationKey = [authKeyDictionary objectForKey:@"auth_key"];
+                        NSLog(@"Authentication token received: %@.", authenticationKey);
+                        // Save token in user preferences.
+                        [userDefaults setObject:authenticationKey forKey:@"auth_token"];
+                        [userDefaults synchronize];
+                        NSLog(@"Authentication token saved in user preferences.");
+                        [checkingCredentialsAlert dismissWithClickedButtonIndex:0 animated:YES];
+                        ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+                        [self.navigationController pushViewController:applicationTypeViewController animated:YES];
+                    }
+                                    }
             } else if ([data length] == 0 && error == nil) {
                 NSLog(@"Success, no response.");
             } else if (error != nil) {
                 NSLog(@"Something went wrong");
             }
         }];
-        
         [self.view endEditing:YES];
-        ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
-        [self.navigationController pushViewController:applicationTypeViewController animated:YES];
+        [checkingCredentialsAlert show];
     }
 }
 
@@ -137,5 +155,10 @@
     ContentServerViewController *contentServerViewController = [[ContentServerViewController alloc] init];
     [self.navigationController presentViewController:contentServerViewController animated:YES completion:nil];
 }
+
+- (void)successfulLoginCallBack {
+
+}
+
 @end
 
