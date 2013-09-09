@@ -87,7 +87,11 @@
 
     
     if ([email isEqualToString:@""] || [password isEqualToString:@""]) {
-        UIAlertView *emptyFieldsAlert = [[UIAlertView alloc] initWithTitle:@"Hold on!" message:@"Email or password can't be empty." delegate:self cancelButtonTitle:@"Back" otherButtonTitles:nil];
+        UIAlertView *emptyFieldsAlert = [[UIAlertView alloc] initWithTitle:@"Hold on!"
+                                                                   message:@"Email or password can't be empty."
+                                                                  delegate:self
+                                                         cancelButtonTitle:@"Back"
+                                                         otherButtonTitles:nil];
         [emptyFieldsAlert show];
     } else {
         NSString *stringURL = [NSString stringWithFormat:@"%@/token_authentications.json", contentServerString];
@@ -132,7 +136,7 @@
                         ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
                         [self.navigationController pushViewController:applicationTypeViewController animated:YES];
                     }
-                                    }
+                }
             } else if ([data length] == 0 && error == nil) {
                 NSLog(@"Success, no response.");
             } else if (error != nil) {
@@ -154,10 +158,6 @@
 - (IBAction)showContentServerViewController:(id)sender {
     ContentServerViewController *contentServerViewController = [[ContentServerViewController alloc] init];
     [self.navigationController presentViewController:contentServerViewController animated:YES completion:nil];
-}
-
-- (void)successfulLoginCallBack {
-
 }
 
 @end
