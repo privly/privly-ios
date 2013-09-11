@@ -13,5 +13,7 @@
  * and refered to in the cellForRowAtIndexPath and didSelectRowAtIndexPath methods.
  */
 @property (nonatomic) NSArray *postTypes;
+@property (nonatomic) NSArray *postDescription;
+@property (nonatomic) UIViewController *applicationTypeViewController;
 
 @end

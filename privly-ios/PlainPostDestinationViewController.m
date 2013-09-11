@@ -82,6 +82,7 @@
     // Set delegate to push SocialNetworkRequest's SLComposeViewController
     requestHandler.delegate = self;
     requestHandler.link = _link;
+    requestHandler.returnViewController = self.applicationTypeViewController;
     // Select appropriate social network
     [requestHandler setupAccountForServiceTypeInt:indexPath.row];
     [requestHandler postMessage];

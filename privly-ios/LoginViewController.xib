@@ -37,10 +37,10 @@
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                    <rect key="frame" x="220" y="227" width="61" height="34"/>
+                    <rect key="frame" x="44" y="227" width="237" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="61" id="166"/>
+                        <constraint firstAttribute="width" constant="237" id="166"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                     <state key="normal" title="Login"/>
@@ -81,8 +81,8 @@
             <color key="backgroundColor" red="0.87843143939971924" green="0.84705889225006104" blue="0.78431379795074463" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
                 <constraint firstItem="7" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="8" id="169"/>
-                <constraint firstItem="3" firstAttribute="centerX" secondItem="7" secondAttribute="centerX" constant="-90.5" id="170"/>
-                <constraint firstItem="7" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" constant="90.5" id="175"/>
+                <constraint firstItem="3" firstAttribute="centerX" secondItem="7" secondAttribute="centerX" constant="-2.5" id="170"/>
+                <constraint firstItem="7" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" constant="2.5" id="175"/>
                 <constraint firstItem="rA3-4T-bHC" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="10" id="2sa-OX-Z9Q"/>
                 <constraint firstItem="5" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="-5" id="5Ib-mh-ehr"/>
                 <constraint firstItem="SQu-a0-hQu" firstAttribute="top" secondItem="gvn-sh-VYz" secondAttribute="bottom" id="8B2-We-T0M"/>

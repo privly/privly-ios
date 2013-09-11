@@ -13,4 +13,6 @@
 
 @property (nonatomic) NSArray *availableServices;
 
+@property (nonatomic) UIViewController *applicationTypeViewController;
+
 @end

@@ -39,6 +39,12 @@
     if ([self userHasAccessToService]) {
         SLComposeViewController *socialNetworkViewController = [SLComposeViewController composeViewControllerForServiceType:_serviceTypeString];
         [socialNetworkViewController setInitialText:_link];
+        
+        // Redirect users to the READ/POST page when they're done writing their post.
+        socialNetworkViewController.completionHandler = ^(SLComposeViewControllerResult result) {
+            [self.delegate.navigationController popToViewController:self.returnViewController animated:YES];
+        };
+        
         [_delegate presentViewController:socialNetworkViewController animated:YES completion:nil];
     } else {
         UIAlertView *serviceUnavailableAlert = [[UIAlertView alloc] initWithTitle:@"Service Unavailable"

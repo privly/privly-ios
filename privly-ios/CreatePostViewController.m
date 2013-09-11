@@ -65,6 +65,7 @@
         // Do not load the request.
         NSString *privlyLink = [URLString substringFromIndex:jsFrameRange.length+1];
         PlainPostDestinationViewController *dest = [[PlainPostDestinationViewController alloc] init];
+        dest.applicationTypeViewController = self.applicationTypeViewController;
         dest.link = privlyLink;
         [self.navigationController pushViewController:dest
                                              animated:YES];

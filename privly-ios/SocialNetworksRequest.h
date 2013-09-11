@@ -19,6 +19,8 @@
 /** Property used to store the link to be passed to the SLComposeViewController. */
 @property (nonatomic) NSString *link;
 
+@property (nonatomic) UIViewController *returnViewController;
+
 /** 
   * Sets the service type based on integer parameter,
   * which is useful when used with a table view.

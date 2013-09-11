@@ -63,6 +63,7 @@
 
 - (IBAction)createPost:(id)sender {
     PostTypeViewController *postTypeViewController = [[PostTypeViewController alloc] init];
+    postTypeViewController.applicationTypeViewController = self;
     [self.navigationController pushViewController:postTypeViewController animated:YES];
 }
 

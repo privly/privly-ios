@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIWebView *testPostWebView;
 /** Property used to determine post type. */
 @property (nonatomic) NSString *postType;
+@property (nonatomic) UIViewController *applicationTypeViewController;
 
 @end
