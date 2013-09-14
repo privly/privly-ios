@@ -19,6 +19,8 @@
 /** Property used to store the link to be passed to the SLComposeViewController. */
 @property (nonatomic) NSString *link;
 
+/** Property holding the return view controllerp pushed when a user
+ is done sharing a post. */
 @property (nonatomic) UIViewController *returnViewController;
 
 /** 
