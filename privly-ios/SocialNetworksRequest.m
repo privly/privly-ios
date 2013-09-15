@@ -49,7 +49,7 @@
     } else {
         UIAlertView *serviceUnavailableAlert = [[UIAlertView alloc] initWithTitle:@"Service Unavailable"
                                                                           message:@"Login in your Settings to post content on social networks."
-                                                                         delegate:self
+                                                                         delegate:self.delegate
                                                                 cancelButtonTitle:@"Back"
                                                                 otherButtonTitles:nil];
         [serviceUnavailableAlert show];
