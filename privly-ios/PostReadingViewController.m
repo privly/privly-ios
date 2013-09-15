@@ -35,6 +35,7 @@
                                                                                                        NULL,
                                                                                                        CFSTR(":?#[]@!$&’()*+,;="),
                                                                                                        kCFStringEncodingUTF8));
+    escapedURLString = [escapedURLString stringByAppendingFormat:@"?privlyOriginalURL=%@", _applicationURL];
     NSURL *urlRequestForHTML = [NSURL URLWithString:escapedURLString];
     [self.readingAppWebView loadRequest:[NSURLRequest requestWithURL:urlRequestForHTML]];
 }

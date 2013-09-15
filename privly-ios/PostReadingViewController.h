@@ -11,4 +11,6 @@
 /** UIWebView that loads the reading application. */
 @property (weak, nonatomic) IBOutlet UIWebView *readingAppWebView;
 
+@property (nonatomic) NSString *applicationURL;
+
 @end

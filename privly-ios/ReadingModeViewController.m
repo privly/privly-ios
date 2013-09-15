@@ -19,9 +19,7 @@
     if (self) {
         // Custom initialization
         URLList = [[NSArray alloc] initWithObjects:
-                   @"https://privlyalpha.org/apps/PlainPost/show?privlyApp=PlainPost&privlyInject1=true&random_token=8286588067&privlyDataURL=https%3A%2F%2Fprivlyalpha.org%2Fposts%2F1016.json%3Frandom_token%3D8286588067#privlyInject1=true&p=p",
-                   @"https://privlyalpha.org/apps/PlainPost/show?privlyApp=PlainPost&privlyInject1=true&random_token=c72d4aeb70&privlyDataURL=https%3A%2F%2Fprivlyalpha.org%2Fposts%2F1015.json%3Frandom_token%3Dc72d4aeb70#privlyInject1=true&p=p",
-                   @"https://privlyalpha.org/apps/PlainPost/show?privlyApp=PlainPost&privlyInject1=true&random_token=67bdb9de26&privlyDataURL=https%3A%2F%2Fprivlyalpha.org%2Fposts%2F1004.json%3Frandom_token%3D67bdb9de26#privlyInject1=true&p=p", nil];
+                   @"https://privlyalpha.org/apps/PlainPost/show?privlyApp=PlainPost&privlyInject1=true&random_token=94d8fcbe71&privlyDataURL=https%3A%2F%2Fprivlyalpha.org%2Fposts%2F1070.json%3Frandom_token%3D94d8fcbe71#privlyInject1=true&p=p", nil];
     }
     return self;
 }
@@ -59,10 +57,10 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%@", URLList[indexPath.row]);
     PostReadingViewController *postReadingViewController = [[PostReadingViewController alloc] init];
+    postReadingViewController.applicationURL = URLList[indexPath.row];
     [self.navigationController pushViewController:postReadingViewController animated:YES];
 }
 
