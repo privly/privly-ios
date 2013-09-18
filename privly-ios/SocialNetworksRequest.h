@@ -10,12 +10,18 @@
 
 @interface SocialNetworksRequest : NSObject
 
+/** Container holding the social network accounts. */
+@property (nonatomic) ACAccountStore *accountStore;
+
 /** Property used to store the serviceType (e.g: Facebook, Twitter) */
 @property (nonatomic) NSString *serviceTypeString;
+
 /** Property used to store the user's account identifier. */
 @property (nonatomic) NSString *accountIdentifierString;
 
+/** Property used to show and dismiss alert views */
 @property (nonatomic) UIViewController *delegate;
+
 /** Property used to store the link to be passed to the SLComposeViewController. */
 @property (nonatomic) NSString *link;
 
@@ -28,11 +34,16 @@
   * which is useful when used with a table view.
   */
 - (void)setupAccountForServiceTypeInt:(int)serviceTypeInt;
+
 /** Verifies that user has access to the appropriate service. */
 - (BOOL)userHasAccessToService;
+
 /** Creates a SLComposeViewController that posts a message containing
   * the post's link to the appropriate service.
   */
 - (void)postMessage;
+
+/** Download a user's posts for the appropriate service. */
+- (void)getPosts;
 
 @end

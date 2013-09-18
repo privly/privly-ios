@@ -29,6 +29,15 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    snHelper = [[SocialNetworksRequest alloc] init];
+    snHelper.serviceTypeString = SLServiceTypeTwitter;
+    snHelper.delegate = self;
+    [snHelper getPosts];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -329,11 +329,11 @@
 		9989CC0417B78659004BFBE0 /* Reading App */ = {
 			isa = PBXGroup;
 			children = (
+				99C3D9FA17BFC5CD007C3B2A /* ReadingModeViewController.h */,
+				99C3D9FB17BFC5CD007C3B2A /* ReadingModeViewController.m */,
 				99C3D9F417BFC27B007C3B2A /* PostReadingViewController.h */,
 				99C3D9F517BFC27B007C3B2A /* PostReadingViewController.m */,
 				99C3D9F617BFC27B007C3B2A /* PostReadingViewController.xib */,
-				99C3D9FA17BFC5CD007C3B2A /* ReadingModeViewController.h */,
-				99C3D9FB17BFC5CD007C3B2A /* ReadingModeViewController.m */,
 			);
 			name = "Reading App";
 			sourceTree = "<group>";
