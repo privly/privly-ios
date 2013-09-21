@@ -6,6 +6,7 @@
 
 #import "ReadingModeViewController.h"
 #import "PostReadingViewController.h"
+#import "SocialNetworksRequest.h"
 
 @interface ReadingModeViewController ()
 
@@ -18,8 +19,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        URLList = [[NSArray alloc] initWithObjects:
-                   @"https://privlyalpha.org/apps/PlainPost/show?privlyApp=PlainPost&privlyInject1=true&random_token=94d8fcbe71&privlyDataURL=https%3A%2F%2Fprivlyalpha.org%2Fposts%2F1070.json%3Frandom_token%3D94d8fcbe71#privlyInject1=true&p=p", nil];
+        _URLList = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -35,7 +35,11 @@
     snHelper = [[SocialNetworksRequest alloc] init];
     snHelper.serviceTypeString = SLServiceTypeTwitter;
     snHelper.delegate = self;
-    [snHelper getPosts];
+    [snHelper getPostsWithCompletionHandler:^(NSString *tweet) {
+    NSLog(@"NSLog called from called from ReadingModeViewController: %@\n", tweet);
+        [_URLList addObject:tweet];
+        [[self tableView] reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [URLList count];
+    return [_URLList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,14 +66,14 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = URLList[indexPath.row];
+    cell.textLabel.text = _URLList[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PostReadingViewController *postReadingViewController = [[PostReadingViewController alloc] init];
-    postReadingViewController.applicationURL = URLList[indexPath.row];
+    postReadingViewController.applicationURL = _URLList[indexPath.row];
     [self.navigationController pushViewController:postReadingViewController animated:YES];
 }
 

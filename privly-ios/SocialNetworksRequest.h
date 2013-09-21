@@ -7,10 +7,11 @@
 #import <Foundation/Foundation.h>
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
+#import "ReadingModeViewController.h"
 
 @interface SocialNetworksRequest : NSObject
 
-/** Container holding the social network accounts. */
+/** Property container holding the social network accounts. */
 @property (nonatomic) ACAccountStore *accountStore;
 
 /** Property used to store the serviceType (e.g: Facebook, Twitter) */
@@ -29,6 +30,9 @@
  is done sharing a post. */
 @property (nonatomic) UIViewController *returnViewController;
 
+/** Property holding a list of URL to display */
+@property (nonatomic) NSMutableArray *URLList;
+
 /** 
   * Sets the service type based on integer parameter,
   * which is useful when used with a table view.
@@ -44,6 +48,7 @@
 - (void)postMessage;
 
 /** Download a user's posts for the appropriate service. */
-- (void)getPosts;
+- (void)getPostsWithCompletionHandler:(void (^)(NSString *tweet))completionHandler;
 
+    
 @end

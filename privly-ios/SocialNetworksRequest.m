@@ -13,6 +13,7 @@
     self = [super init];
     if (self) {
         _accountStore = [[ACAccountStore alloc] init];
+        _URLList = [[NSMutableArray alloc] init];
     }    
     return self;
 }
@@ -57,7 +58,7 @@
     }
 }
 
-- (void)getPosts {
+- (void)getPostsWithCompletionHandler:(void (^)(NSString *tweet))completionHandler {
     if ([_serviceTypeString isEqualToString:SLServiceTypeFacebook]) {
         // Handle Facebook case here
     } else if ([_serviceTypeString isEqualToString:SLServiceTypeTwitter]) {
@@ -71,7 +72,7 @@
                     NSArray *twitterAccounts = [_accountStore accountsWithAccountType:twitterAccountType];
                     ACAccount *userAccount = [twitterAccounts lastObject];
                     NSURL *requestUrl = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/user_timeline.json"];
-                    NSDictionary *parameters = @{@"count":@"200", @"screen_name":userAccount.username};
+                    NSDictionary *parameters = @{@"count":@"200", @"screen_name":userAccount.username, @"include_entities":@"true"};
                     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:requestUrl parameters:parameters];
                     request.account = userAccount;
                     [request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
@@ -80,10 +81,21 @@
                             NSArray *userPosts = [NSJSONSerialization JSONObjectWithData:responseData
                                                                                       options:NSJSONReadingAllowFragments
                                                                                         error:&jsonError];
+                            
+                            NSString *thisTweet;
+                            NSArray *urlArray = [[NSArray alloc] init];
+                            NSLog(@"%@", userPosts[0]);
                             for (NSDictionary *tweet in userPosts) {
                                 // filter URLs here and add them to data source.
-                                // Handle errors below.
-                                NSLog(@"%@", tweet[@"text"]);
+                                // ToDo: Handle errors below.
+                                urlArray = tweet[@"entities"][@"urls"];
+                                if ([urlArray count] > 0) {
+                                    thisTweet = urlArray[0][@"expanded_url"];
+                                    if ([thisTweet rangeOfString:@"privlyInject1"].location != NSNotFound) {
+                                        // The tweet contains a privly URL
+                                        completionHandler(thisTweet);
+                                    }
+                                }
                             }
                         }
                     }];

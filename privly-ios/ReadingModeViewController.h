@@ -5,14 +5,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SocialNetworksRequest.h"
+
+@class SocialNetworksRequest;
 
 @interface ReadingModeViewController : UITableViewController {
-    /** Array holding a hard-coded list of URLs used by the reading application. */
-    NSArray *URLList;
-    
     /** SocialNetworkRequest instance dealing with social networks network operations. */
     SocialNetworksRequest *snHelper;
 }
+
+/** Array holding a hard-coded list of URLs used by the reading application. */
+@property (nonatomic) NSMutableArray *URLList;
 
 @end
