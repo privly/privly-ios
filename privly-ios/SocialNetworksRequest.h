@@ -33,6 +33,12 @@
 /** Property holding a list of URL to display */
 @property (nonatomic) NSMutableArray *URLList;
 
+
+/** Facebook API properties **/
+@property (nonatomic) NSString *facebookAppID;
+@property (nonatomic) NSArray *facebookPermissions;
+@property (nonatomic) NSDictionary *facebookOptions;
+
 /** 
   * Sets the service type based on integer parameter,
   * which is useful when used with a table view.

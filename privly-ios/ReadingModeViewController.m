@@ -33,12 +33,16 @@
 {
     [super viewWillAppear:animated];
     snHelper = [[SocialNetworksRequest alloc] init];
-    snHelper.serviceTypeString = SLServiceTypeTwitter;
-    snHelper.delegate = self;
-    [snHelper getPostsWithCompletionHandler:^(NSString *tweet) {
-    NSLog(@"NSLog called from called from ReadingModeViewController: %@\n", tweet);
-        [_URLList addObject:tweet];
-        [[self tableView] reloadData];
+//    snHelper.serviceTypeString = SLServiceTypeTwitter;
+//    snHelper.delegate = self;
+//    [snHelper getPostsWithCompletionHandler:^(NSString *tweet) {
+//    NSLog(@"NSLog called from called from ReadingModeViewController: %@\n", tweet);
+//        [_URLList addObject:tweet];
+//        [[self tableView] reloadData];
+//    }];
+    snHelper.serviceTypeString = SLServiceTypeFacebook;
+    [snHelper getPostsWithCompletionHandler:^(NSString *post) {
+        // do nothing.
     }];
 }
 

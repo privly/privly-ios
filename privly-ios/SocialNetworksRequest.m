@@ -61,6 +61,7 @@
 - (void)getPostsWithCompletionHandler:(void (^)(NSString *tweet))completionHandler {
     if ([_serviceTypeString isEqualToString:SLServiceTypeFacebook]) {
         // Handle Facebook case here
+        [self requestFacebookPermissions];
     } else if ([_serviceTypeString isEqualToString:SLServiceTypeTwitter]) {
         // Handle Twitter case here
         if ([self userHasAccessToService]) {
@@ -87,22 +88,58 @@
                             NSLog(@"%@", userPosts[0]);
                             for (NSDictionary *tweet in userPosts) {
                                 // filter URLs here and add them to data source.
-                                // ToDo: Handle errors below.
                                 urlArray = tweet[@"entities"][@"urls"];
                                 if ([urlArray count] > 0) {
                                     thisTweet = urlArray[0][@"expanded_url"];
                                     if ([thisTweet rangeOfString:@"privlyInject1"].location != NSNotFound) {
                                         // The tweet contains a privly URL
                                         completionHandler(thisTweet);
-                                    }
-                                }
-                            }
-                        }
-                    }];
-                }
+                                    } // end of if ([thisTweet...])
+                                } // end of if ([urlArray count] > 0)
+                            } // end of for loop
+                        } // end of if (responseData)
+                    }]; // end of performRequestWithHandler
+                } // end of if (granted)
             }];
+        } else { // end of if ([self userHasAccessToService])
+            UIAlertView *accessDeniedAlertView = [[UIAlertView alloc] initWithTitle:@"Hold On!"
+                                                                            message:@"Access to your Twitter account was denied. Please set up an account and try again."
+                                                                           delegate:self.delegate
+                                                                  cancelButtonTitle:@"Back"
+                                                                  otherButtonTitles:nil];
+            [accessDeniedAlertView show];
         }
     }
+}
+
+- (void)requestFacebookPermissions {
+    _facebookAppID = @"630036107036663";
+    _facebookPermissions = @[@"email, read_stream"];
+    _facebookOptions = @{ACFacebookAppIdKey : _facebookAppID,
+                         ACFacebookPermissionsKey : _facebookPermissions};
+    
+    ACAccountType *facebookAccountType = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierFacebook];
+    [_accountStore requestAccessToAccountsWithType:facebookAccountType options:_facebookOptions completion:^(BOOL granted, NSError *error) {
+        if (granted) {
+            NSLog(@"Access to Facebook granted.");
+            NSURL *postsURL = [NSURL URLWithString:@"https://graph.facebook.com/me"];
+            SLRequest *postsRequest = [SLRequest requestForServiceType:SLServiceTypeFacebook
+                                                         requestMethod:SLRequestMethodGET
+                                                                   URL:postsURL
+                                                            parameters:nil];
+            ACAccount *facebookAccount = [[ACAccount alloc] initWithAccountType:facebookAccountType];
+            NSArray *facebookAccounts = [_accountStore accountsWithAccountType:facebookAccountType];
+            facebookAccount = [facebookAccounts lastObject];
+            [postsRequest setAccount:facebookAccount];
+            NSError *error;
+            [postsRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+                NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&error];
+                NSLog(@"%@", jsonResponse);
+            }];
+        } else {
+            NSLog(@"Error: %@", [error localizedDescription]);
+        }
+    }];
 }
 
 @end
