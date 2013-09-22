@@ -61,7 +61,50 @@
 - (void)getPostsWithCompletionHandler:(void (^)(NSString *tweet))completionHandler {
     if ([_serviceTypeString isEqualToString:SLServiceTypeFacebook]) {
         // Handle Facebook case here
-        [self requestFacebookPermissions];
+        _facebookAppID = @"630036107036663";
+        _facebookPermissions = @[@"email, read_stream"];
+        _facebookOptions = @{ACFacebookAppIdKey : _facebookAppID,
+                             ACFacebookPermissionsKey : _facebookPermissions};
+        
+        ACAccountType *facebookAccountType = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierFacebook];
+        [_accountStore requestAccessToAccountsWithType:facebookAccountType options:_facebookOptions completion:^(BOOL granted, NSError *error) {
+            if (granted) {
+                // Set up account
+                ACAccount *facebookAccount = [[ACAccount alloc] initWithAccountType:facebookAccountType];
+                NSArray *facebookAccounts = [_accountStore accountsWithAccountType:facebookAccountType];
+                facebookAccount = [facebookAccounts lastObject];
+                
+                // Format URL request
+                NSString *urlString = [NSString stringWithFormat:@"https://graph.facebook.com/me/posts"];
+                NSURL *postsURL = [NSURL URLWithString:urlString];
+                SLRequest *postsRequest = [SLRequest requestForServiceType:SLServiceTypeFacebook
+                                                             requestMethod:SLRequestMethodGET
+                                                                       URL:postsURL
+                                                                parameters:@{@"fields":@"message",@"limit":@"100"}];
+                
+                [postsRequest setAccount:facebookAccount];
+                [postsRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+                    if (responseData) {
+                        NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&error];
+                        NSArray *dataResponseArray = jsonResponse[@"data"];
+                        if ([dataResponseArray count] > 0) {
+                            for (NSDictionary *post in dataResponseArray) {
+                                if (nil!=post[@"message"]) {
+                                    // Got post.
+                                    if ([post[@"message"] rangeOfString:@"privlyInject1"].location != NSNotFound) {
+                                        completionHandler(post[@"message"]);
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        NSLog(@"%@", [error localizedDescription]);
+                    }
+                }];
+            } else {
+                NSLog(@"Error: %@", [error localizedDescription]);
+            }
+        }];
     } else if ([_serviceTypeString isEqualToString:SLServiceTypeTwitter]) {
         // Handle Twitter case here
         if ([self userHasAccessToService]) {
@@ -85,7 +128,6 @@
                             
                             NSString *thisTweet;
                             NSArray *urlArray = [[NSArray alloc] init];
-                            NSLog(@"%@", userPosts[0]);
                             for (NSDictionary *tweet in userPosts) {
                                 // filter URLs here and add them to data source.
                                 urlArray = tweet[@"entities"][@"urls"];
@@ -122,19 +164,38 @@
     [_accountStore requestAccessToAccountsWithType:facebookAccountType options:_facebookOptions completion:^(BOOL granted, NSError *error) {
         if (granted) {
             NSLog(@"Access to Facebook granted.");
-            NSURL *postsURL = [NSURL URLWithString:@"https://graph.facebook.com/me"];
-            SLRequest *postsRequest = [SLRequest requestForServiceType:SLServiceTypeFacebook
-                                                         requestMethod:SLRequestMethodGET
-                                                                   URL:postsURL
-                                                            parameters:nil];
+            
+            // Set up account
             ACAccount *facebookAccount = [[ACAccount alloc] initWithAccountType:facebookAccountType];
             NSArray *facebookAccounts = [_accountStore accountsWithAccountType:facebookAccountType];
             facebookAccount = [facebookAccounts lastObject];
+            
+            // Format URL request
+            NSString *urlString = [NSString stringWithFormat:@"https://graph.facebook.com/me/posts"];
+            NSURL *postsURL = [NSURL URLWithString:urlString];
+            SLRequest *postsRequest = [SLRequest requestForServiceType:SLServiceTypeFacebook
+                                                         requestMethod:SLRequestMethodGET
+                                                                   URL:postsURL
+                                                            parameters:@{@"fields":@"message",@"limit":@"100"}];
+            
             [postsRequest setAccount:facebookAccount];
-            NSError *error;
             [postsRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-                NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&error];
-                NSLog(@"%@", jsonResponse);
+                if (responseData) {
+                    NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&error];
+                    NSArray *dataResponseArray = jsonResponse[@"data"];
+                    if ([dataResponseArray count] > 0) {
+                        for (NSDictionary *post in dataResponseArray) {
+                            if (nil!=post[@"message"]) {
+                                // Got post.
+                                if ([post[@"message"] rangeOfString:@"privlyInject1"].location != NSNotFound) {
+                                    NSLog(@"%@", post[@"message"]);
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    NSLog(@"%@", [error localizedDescription]);
+                }
             }];
         } else {
             NSLog(@"Error: %@", [error localizedDescription]);

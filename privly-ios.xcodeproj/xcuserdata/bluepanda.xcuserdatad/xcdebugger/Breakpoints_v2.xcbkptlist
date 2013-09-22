@@ -98,11 +98,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "privly-ios/SocialNetworksRequest.m"
-            timestampString = "401496120.804674"
+            timestampString = "401583846.713547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "-requestFacebookPermissions"
             landmarkType = "5">
          </BreakpointContent>
