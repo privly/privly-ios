@@ -19,7 +19,8 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        _URLList = [[NSMutableArray alloc] init];
+        _URLList = [[NSMutableSet alloc] init];
+        _URLListArray = [[NSArray alloc] init];
     }
     return self;
 }
@@ -31,14 +32,21 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    /**
+     * The current implementation loads both Facebook and Twitter posts. 
+     * It can be improved by adding filters, which would
+     * enable users to select which sources they want to pull URLs from.
+     */
     [super viewWillAppear:animated];
     snHelper = [[SocialNetworksRequest alloc] init];
     snHelper.delegate = self;
+    _URLListArray = nil; // Clear list when reloading page.
 
     // Load Twitter posts
     snHelper.serviceTypeString = SLServiceTypeTwitter;
     [snHelper getPostsWithCompletionHandler:^(NSString *tweet) {
         [_URLList addObject:tweet];
+        _URLListArray = [_URLList allObjects];
         [[self tableView] reloadData];
     }];
     
@@ -46,6 +54,7 @@
     snHelper.serviceTypeString = SLServiceTypeFacebook;
     [snHelper getPostsWithCompletionHandler:^(NSString *post) {
         [_URLList addObject:post];
+        _URLListArray = [_URLList allObjects];
         [[self tableView] reloadData];
     }];
 }
@@ -65,7 +74,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_URLList count];
+    return [_URLListArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -74,14 +83,14 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = _URLList[indexPath.row];
+    cell.textLabel.text = _URLListArray[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PostReadingViewController *postReadingViewController = [[PostReadingViewController alloc] init];
-    postReadingViewController.applicationURL = _URLList[indexPath.row];
+    postReadingViewController.applicationURL = _URLListArray[indexPath.row];
     [self.navigationController pushViewController:postReadingViewController animated:YES];
 }
 

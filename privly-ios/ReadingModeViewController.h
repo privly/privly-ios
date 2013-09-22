@@ -14,6 +14,7 @@
 }
 
 /** Array holding a hard-coded list of URLs used by the reading application. */
-@property (nonatomic) NSMutableArray *URLList;
+@property (nonatomic) NSArray *URLListArray;
+@property (nonatomic) NSMutableSet *URLList;
 
 @end

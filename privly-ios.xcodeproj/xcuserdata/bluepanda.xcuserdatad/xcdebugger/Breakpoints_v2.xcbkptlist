@@ -82,28 +82,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "privly-ios/SocialNetworksRequest.m"
-            timestampString = "401417838.696769"
+            timestampString = "401585441.479584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-getPostsWithCompletionHandler:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "privly-ios/SocialNetworksRequest.m"
-            timestampString = "401583846.713547"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "-requestFacebookPermissions"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
