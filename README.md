@@ -78,9 +78,9 @@ Contacts
 hery at ratsimihah dot com
 
 **Mail**:  
-Privly
-PO Box 79
-Corvallis, OR 97339
+Privly  
+PO Box 79  
+Corvallis, OR 97339  
 
 **IRC**:  
 Contact the nicks "hratsimihah" or "smcgregor" on irc.freenode.net #privly
