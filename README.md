@@ -34,7 +34,7 @@ Requirements
 
 To test the app in a simulator, you will need:
 
-+ Mac OS X 10.8+
++ Mac OS X 10.8.4+
 + Xcode 5
 
 In addition, to test the app on a device, you will need:
@@ -64,8 +64,8 @@ Resources
 [Development Mailing List](http://groups.google.com/group/privly)  
 [Testing Mailing List](http://groups.google.com/group/privly-test)  
 [Announcement Mailing List](http://groups.google.com/group/privly-announce)  
+[Mobile Mailing List](http://groups.google.com/group/privly-mobile)
 [Central Wiki](https://github.com/privly/privly-organization/wiki)  
-[Submit a Bug](http://www.privly.org/content/bug-report)  
 [IRC](http://www.privly.org/content/irc)  
 [Production Content Server](https://privlyalpha.org)  
 [Development Content Server](https://dev.privly.org)  
@@ -74,18 +74,18 @@ Resources
 Contacts
 ========
 
-*Email*: 
+**Email**: 
 hery at ratsimihah dot com
 
-*Mail*: 
+**Mail**: 
 Privly
 PO Box 79
 Corvallis, OR 97339
 
-*IRC*:
+**IRC**:
 Contact the nicks "hratsimihah" or "smcgregor" on irc.freenode.net #privly
 
-*Bug*:
+**Bug**:
 If you open a bug on this repository, you'll get someone's attention
 
 [1]: https://github.com/privly/privly-applications
