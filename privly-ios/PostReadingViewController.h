@@ -6,6 +6,11 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * View controller that loads the 
+ * reading application in a web view.
+ */
+
 @interface PostReadingViewController : UIViewController <UIWebViewDelegate>
 
 /** UIWebView that loads the reading application. */

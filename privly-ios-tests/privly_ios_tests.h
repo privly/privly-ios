@@ -8,6 +8,10 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 
+/**
+ * AppDelegate tests.
+ */
+
 @interface privly_ios_tests : SenTestCase {
     AppDelegate *appDelegate;
 }

@@ -69,7 +69,7 @@
 - (void)getPostsWithCompletionHandler:(void (^)(NSString *tweet))completionHandler {
     /**
      * The current implementation dislays alert views when accounts are not set up.
-     * For a smoother user experience, a label should be shown around the UITableView and 
+     * For a smoother user experience, a label should be shown around the UITableView and
      * update accordingly.
      * In addition, the current implementation returns URLs to be displayed as cells titles.
      * It can be improved by displaying posts metadata, which would be more descriptive.

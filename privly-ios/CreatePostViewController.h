@@ -6,6 +6,12 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * View controller that loads the posting application in a web view.
+ * It also receives requests sent by the posting application, but
+ * the only request it expects is the generated privly link.
+ */
+
 @interface CreatePostViewController : UIViewController <UIWebViewDelegate>
 
 /** UIWebView that loads the JavaScript posting applications */

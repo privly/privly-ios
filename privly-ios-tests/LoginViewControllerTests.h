@@ -4,8 +4,11 @@
 //  Copyright 2013 The Privly Foundation.
 //
 
-
 #import <SenTestingKit/SenTestingKit.h>
+
+/**
+ * LoginViewController tests.
+ */
 
 @class LoginViewController;
 

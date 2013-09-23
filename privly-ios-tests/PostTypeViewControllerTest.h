@@ -8,6 +8,10 @@
 #import "AppDelegate.h"
 #import "PostTypeViewController.h"
 
+/**
+ * PostTypeViewController tests.
+ */
+
 @interface PostTypeViewControllerTest : SenTestCase {
     AppDelegate *appDelegate;
     PostTypeViewController *postTypeViewController;

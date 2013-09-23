@@ -8,6 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+/**
+ * SocialNetworksRequest tests.
+ */
+
 @class SocialNetworksRequest;
 
 @interface SocialNetworksRequestTest : SenTestCase {

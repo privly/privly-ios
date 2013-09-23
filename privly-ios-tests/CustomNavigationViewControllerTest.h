@@ -8,6 +8,9 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "CustomNavigationViewController.h"
 
+/**
+ * CustomNavigationViewControllerTest tests.
+ */
 @interface CustomNavigationViewControllerTest : SenTestCase {
     CustomNavigationViewController *customNavigationViewController;
 }

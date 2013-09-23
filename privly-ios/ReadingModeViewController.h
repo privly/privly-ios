@@ -6,6 +6,13 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * View controller that displays the list of privly URLs
+ * fetched from external sources.
+ * It currently supports Facebook and Twitter, but was implemented
+ * to ease integration of additional services.
+ */
+
 @class SocialNetworksRequest;
 
 @interface ReadingModeViewController : UITableViewController {

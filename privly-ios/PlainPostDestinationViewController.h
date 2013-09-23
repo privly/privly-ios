@@ -6,6 +6,11 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * View controller that uses the social network helper
+ * to share generated privly links.
+ */
+
 @interface PlainPostDestinationViewController : UITableViewController
 
 /** Property used to pass the link from the previous view to the next view. */

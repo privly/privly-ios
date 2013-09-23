@@ -4,9 +4,12 @@
 //  Copyright 2013 The Privly Foundation.
 //
 
-
 #import <SenTestingKit/SenTestingKit.h>
 #import "AppDelegate.h"
+
+/**
+ * ApplicationTypeViewController tests.
+ */
 
 @class ApplicationTypeViewController;
 

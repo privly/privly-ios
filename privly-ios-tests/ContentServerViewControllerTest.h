@@ -8,6 +8,10 @@
 #import "AppDelegate.h"
 #import "ContentServerViewController.h"
 
+/**
+ * PostTypeViewController tests.
+ */
+
 @interface ContentServerViewControllerTest : SenTestCase {
     AppDelegate *appDelegate;
     ContentServerViewController *contentServerViewController;

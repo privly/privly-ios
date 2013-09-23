@@ -6,11 +6,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContentServerViewController : UIViewController <UITextFieldDelegate>
-/*
- * Content Server is set in this view and passed to 
- * the JavaScript app when the user wants to create a post.
+/**
+ * The Content Server view controller is a modal view controller that lets
+ * users set their content server, which is then passed to
+ * the JavaScript posting application when users wants to create a post.
  */
+
+@interface ContentServerViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *currentContentServerLabel;
 /**

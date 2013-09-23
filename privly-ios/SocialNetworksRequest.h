@@ -9,6 +9,12 @@
 #import <Social/Social.h>
 #import "ReadingModeViewController.h"
 
+/**
+ * The social network helper deals with social network interactions
+ * for the reading and posting applications.
+ * It handles authentication and content reading and posting.
+ */
+
 @interface SocialNetworksRequest : NSObject
 
 /** Property container holding the social network accounts. */

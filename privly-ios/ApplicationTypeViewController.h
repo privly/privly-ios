@@ -8,6 +8,13 @@
 #import "ApplicationTypeViewController.h"
 #import "PlainPostDestinationViewController.h"
 
+/**
+ * Home view controller that lets users choose
+ * between the "Reading" and "Posting" modes.
+ * It also give them the option to logout and change
+ * content server.
+ */
+
 @interface ApplicationTypeViewController : UIViewController
 
 /** Action to load web view to create new posts. */

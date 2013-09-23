@@ -8,6 +8,10 @@
 #import "AppDelegate.h"
 #import "CreatePostViewController.h"
 
+/**
+ * CreatePostViewController tests.
+ */
+
 @interface CreatePostViewControllerTest : SenTestCase {
     AppDelegate *appDelegate;
     CreatePostViewController *createPostViewController;

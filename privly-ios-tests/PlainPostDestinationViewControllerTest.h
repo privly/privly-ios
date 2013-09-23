@@ -8,6 +8,10 @@
 #import "PlainPostDestinationViewController.h"
 #import "AppDelegate.h"
 
+/**
+ * PlainPostDestinationViewController tests.
+ */
+
 @interface PlainPostDestinationViewControllerTest : SenTestCase {
     PlainPostDestinationViewController *plainPostDestinationViewController;
     AppDelegate *appDelegate;

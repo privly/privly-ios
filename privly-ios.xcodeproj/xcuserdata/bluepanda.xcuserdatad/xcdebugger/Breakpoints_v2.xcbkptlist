@@ -50,11 +50,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "privly-ios/CreatePostViewController.h"
-            timestampString = "400626646.694572"
+            timestampString = "401592154.136594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "@interface CreatePostViewController"
             landmarkType = "2">
          </BreakpointContent>

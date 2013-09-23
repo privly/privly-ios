@@ -56,6 +56,9 @@ If you have discovered a bug, only [open a public issue][2] on GitHub if it coul
 Developer Documentation
 =======================
 
+Build the documentation by running the command below in the root directory of your repository:
+`doxygen privlydoc`
+
 Resources
 =========
 
