@@ -64,7 +64,7 @@ Resources
 [Development Mailing List](http://groups.google.com/group/privly)  
 [Testing Mailing List](http://groups.google.com/group/privly-test)  
 [Announcement Mailing List](http://groups.google.com/group/privly-announce)  
-[Mobile Mailing List](http://groups.google.com/group/privly-mobile)
+[Mobile Mailing List](http://groups.google.com/group/privly-mobile)  
 [Central Wiki](https://github.com/privly/privly-organization/wiki)  
 [IRC](http://www.privly.org/content/irc)  
 [Production Content Server](https://privlyalpha.org)  
@@ -74,18 +74,18 @@ Resources
 Contacts
 ========
 
-**Email**: 
+**Email**:  
 hery at ratsimihah dot com
 
-**Mail**: 
+**Mail**:  
 Privly
 PO Box 79
 Corvallis, OR 97339
 
-**IRC**:
+**IRC**:  
 Contact the nicks "hratsimihah" or "smcgregor" on irc.freenode.net #privly
 
-**Bug**:
+**Bug**:  
 If you open a bug on this repository, you'll get someone's attention
 
 [1]: https://github.com/privly/privly-applications
