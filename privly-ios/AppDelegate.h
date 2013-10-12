@@ -5,10 +5,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginViewController.h"
+#import "CustomNavigationViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+/**
+ * Application's delegate. It sets the navigation controller and root view controller,
+ * and redirects users to the login page or home page based on their login status.
+ */
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) CustomNavigationViewController *nav;
+
+- (void)login;
+- (void)skipLogin;
 
 @end
