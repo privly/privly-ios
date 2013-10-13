@@ -5,21 +5,65 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "ApplicationTypeViewController.h"
+#import "InitViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    
-    [self.window setRootViewController:nav];
+    InitViewController *initViewController = [[InitViewController alloc] init];
+    _nav = [[CustomNavigationViewController alloc] initWithRootViewController:initViewController];
+    [self.window setRootViewController:_nav];
     [self.window makeKeyAndVisible];
     
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *authToken = [userDefaults valueForKey:@"auth_token"];
+    NSLog(@"Authentication Token: %@", authToken);
+    // Check authentication token validity with content server
+    // If the check passes, the users is redirected to the home page.
+    // If not, the user is redirected to the login screen.
+    if (authToken) {
+        NSString *contentServerString = [userDefaults valueForKey:@"content_server"];
+        NSString *stringURL = [NSString stringWithFormat:@"%@/token_authentications.json", contentServerString];
+        NSURL *requestURL = [NSURL URLWithString:stringURL];
+        NSMutableURLRequest *mutableURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+        
+        [mutableURLRequest setHTTPMethod:@"GET"];
+        
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:mutableURLRequest queue:queue completionHandler:^(NSURLResponse *response,
+                                                                                                   NSData *data,
+                                                                                                   NSError *error) {
+            if ([data length] > 0 && error == nil) {
+                // If successful request, deserialize JSON response and get authentication key
+                id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+                if (jsonResponse != nil && error == nil) {
+                    NSLog(@"Response to auth_token verification: %@", jsonResponse);
+                    // If valid, load application type view controller directly
+                    [self skipLogin];
+                }
+            } else if ([data length] == 0 && error == nil) {
+                NSLog(@"Success, no response.");
+                [self login];
+            } else if (error != nil) {
+                NSLog(@"Couldn't validate authentication token.");
+                [self login];
+            }
+            NSLog(@"End of block.");
+        }];
+    } else {
+        LoginViewController *loginViewController = [[LoginViewController alloc] init];
+        _nav = [[CustomNavigationViewController alloc] initWithRootViewController:loginViewController];
+        [self.window setRootViewController:_nav];
+        [self.window makeKeyAndVisible];
+        return YES;
+    }
     return YES;
 }
 
@@ -48,6 +92,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)login {
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    [_nav pushViewController:loginViewController animated:YES];
+}
+
+- (void)skipLogin {
+    ApplicationTypeViewController *applicationTypeViewController = [[ApplicationTypeViewController alloc] init];
+    [_nav pushViewController:applicationTypeViewController animated:YES];
 }
 
 @end

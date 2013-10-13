@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitViewController">
+            <connections>
+                <outlet property="view" destination="XPH-yJ-jE8" id="St4-AR-a77"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XPH-yJ-jE8">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait while we check whether you are still logged in..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="8sx-bH-yuZ">
+                    <rect key="frame" x="27" y="249" width="267" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="af6-Ok-vGE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_large_bleed.png" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-tW-oZ7">
+                    <rect key="frame" x="0.0" y="30" width="320" height="214"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="214" id="XdT-M0-4yk"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.8784313725490196" green="0.84705882352941175" blue="0.78431372549019607" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="8sx-bH-yuZ" firstAttribute="leading" secondItem="XPH-yJ-jE8" secondAttribute="leading" constant="27" id="0UU-f7-mbe"/>
+                <constraint firstItem="8sx-bH-yuZ" firstAttribute="centerX" secondItem="XPH-yJ-jE8" secondAttribute="centerX" id="3Wd-hH-32x"/>
+                <constraint firstItem="zGh-tW-oZ7" firstAttribute="leading" secondItem="XPH-yJ-jE8" secondAttribute="leading" id="WDF-8u-SRA"/>
+                <constraint firstItem="zGh-tW-oZ7" firstAttribute="top" secondItem="XPH-yJ-jE8" secondAttribute="top" constant="30" id="ZSS-sp-cuU"/>
+                <constraint firstItem="8sx-bH-yuZ" firstAttribute="centerY" secondItem="XPH-yJ-jE8" secondAttribute="centerY" id="cs2-3p-fjj"/>
+                <constraint firstItem="zGh-tW-oZ7" firstAttribute="centerX" secondItem="8sx-bH-yuZ" secondAttribute="centerX" id="qn5-Do-be6"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_large_bleed.png" width="779" height="345"/>
+    </resources>
+</document>
